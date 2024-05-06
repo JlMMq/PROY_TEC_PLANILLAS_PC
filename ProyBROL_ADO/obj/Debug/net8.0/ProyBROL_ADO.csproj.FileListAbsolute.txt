@@ -14,3 +14,19 @@ D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\bin\Debug\net8.0\ProyB
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\bin\Debug\net8.0\ProyBROL_BE.pdb
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL_ADO.csproj.AssemblyReference.cache
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL.BEFBA2E3.Up2Date
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_ADO\bin\Debug\net8.0\ProyBROL_ADO.deps.json
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_ADO\bin\Debug\net8.0\ProyBROL_ADO.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_ADO\bin\Debug\net8.0\ProyBROL_ADO.pdb
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_ADO\bin\Debug\net8.0\ProyBROL_BE.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_ADO\bin\Debug\net8.0\ProyBROL_BE.pdb
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL_ADO.csproj.AssemblyReference.cache
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL_ADO.GeneratedMSBuildEditorConfig.editorconfig
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL_ADO.AssemblyInfoInputs.cache
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL_ADO.AssemblyInfo.cs
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL_ADO.csproj.CoreCompileInputs.cache
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL_ADO.sourcelink.json
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL_ADO.csproj.CopyComplete
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL_ADO.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_ADO\obj\Debug\net8.0\refint\ProyBROL_ADO.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL_ADO.pdb
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_ADO\obj\Debug\net8.0\ref\ProyBROL_ADO.dll

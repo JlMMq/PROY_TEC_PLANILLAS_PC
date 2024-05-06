@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "KndbEzFbXi2UiLeVP6/VEoutXFWppeQZaxtV4VTp2c8AojAzch+M35FxK1JMgQ81jSsSXjxc0lVxxRWsIysMBg==",
+  "dgSpecHash": "aPx1SzW8+r4Z+1OL45uMG3LY5WBKl/oEp5eDnXWuWkiOY9rxgfgJ2737npDmHEmOOR74L1HW98wkr8xwYMQOTg==",
   "success": true,
-  "projectFilePath": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_BL\\ProyBROL_BL.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\JlMMq\\ProyectosISIL\\PROY_TEC_PLANILLAS_PC\\ProyBROL_BL\\ProyBROL_BL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tsoftware\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\tsoftware\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
+    "C:\\Users\\tsoftware\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\tsoftware\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

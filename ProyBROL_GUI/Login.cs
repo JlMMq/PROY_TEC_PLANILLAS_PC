@@ -1,9 +1,12 @@
-﻿using System;
+﻿using ProyBROL_ADO;
+using ProyBROL_BE;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,6 +16,8 @@ namespace ProyBROL_GUI
     public partial class Login : Form
     {
         int intentos = 0;
+        LoginADO _login = new LoginADO();
+        LoginOuBE res = new LoginOuBE();
         public Login()
         {
             InitializeComponent();
@@ -20,7 +25,33 @@ namespace ProyBROL_GUI
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            LoginInBE req = new LoginInBE();
+            if (txtNomUser.Text.Trim() != "" & txtPassUser.Text.Trim() != "")
+            {
+                req.nomUser = txtNomUser.Text.Trim();
+                req.passUser = txtPassUser.Text.Trim();
 
+                res = _login.ValidarUserSystem(req);
+
+                if (!res.estadoTrans)
+                {
+                    intentos += 1;
+                    LimiteIntentos();
+                    MessageBox.Show("Usuario o contraseña incorrectos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else 
+                {
+                    MessageBox.Show("Se inicio sesion correctamente",
+                    "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("El campo usuario y contraseña son obligatorios",
+                    "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                intentos += 1;
+                LimiteIntentos();
+            }
         }
 
         private void imgExit_Click(object sender, EventArgs e)

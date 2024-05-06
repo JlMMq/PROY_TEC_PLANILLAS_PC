@@ -24,3 +24,31 @@ D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\bin\Debug\net8.0-windo
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\bin\Debug\net8.0-windows\ProyBROL_BL.pdb
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.csproj.AssemblyReference.cache
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL.45F8BD84.Up2Date
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\bin\Debug\net8.0-windows\ProyBROL_GUI.exe
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\bin\Debug\net8.0-windows\ProyBROL_GUI.deps.json
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\bin\Debug\net8.0-windows\ProyBROL_GUI.runtimeconfig.json
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\bin\Debug\net8.0-windows\ProyBROL_GUI.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\bin\Debug\net8.0-windows\ProyBROL_GUI.pdb
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\bin\Debug\net8.0-windows\RestSharp.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\bin\Debug\net8.0-windows\ProyBROL_ADO.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\bin\Debug\net8.0-windows\ProyBROL_BE.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\bin\Debug\net8.0-windows\ProyBROL_BL.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\bin\Debug\net8.0-windows\ProyBROL_ADO.pdb
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\bin\Debug\net8.0-windows\ProyBROL_BE.pdb
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\bin\Debug\net8.0-windows\ProyBROL_BL.pdb
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.csproj.AssemblyReference.cache
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.Login.resources
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.Properties.Resources.resources
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.csproj.GenerateResource.cache
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.AssemblyInfoInputs.cache
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.AssemblyInfo.cs
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.csproj.CoreCompileInputs.cache
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.sourcelink.json
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.csproj.CopyComplete
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\refint\ProyBROL_GUI.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.pdb
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.genruntimeconfig.cache
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\ref\ProyBROL_GUI.dll

@@ -16,3 +16,21 @@ D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BL\bin\Debug\net8.0\ProyBR
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BL\bin\Debug\net8.0\ProyBROL_BE.pdb
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BL\obj\Debug\net8.0\ProyBROL_BL.csproj.AssemblyReference.cache
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BL\obj\Debug\net8.0\ProyBROL.C408ABF7.Up2Date
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BL\bin\Debug\net8.0\ProyBROL_BL.deps.json
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BL\bin\Debug\net8.0\ProyBROL_BL.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BL\bin\Debug\net8.0\ProyBROL_BL.pdb
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BL\bin\Debug\net8.0\ProyBROL_ADO.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BL\bin\Debug\net8.0\ProyBROL_BE.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BL\bin\Debug\net8.0\ProyBROL_ADO.pdb
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BL\bin\Debug\net8.0\ProyBROL_BE.pdb
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BL\obj\Debug\net8.0\ProyBROL_BL.csproj.AssemblyReference.cache
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BL\obj\Debug\net8.0\ProyBROL_BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BL\obj\Debug\net8.0\ProyBROL_BL.AssemblyInfoInputs.cache
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BL\obj\Debug\net8.0\ProyBROL_BL.AssemblyInfo.cs
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BL\obj\Debug\net8.0\ProyBROL_BL.csproj.CoreCompileInputs.cache
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BL\obj\Debug\net8.0\ProyBROL_BL.sourcelink.json
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BL\obj\Debug\net8.0\ProyBROL_BL.csproj.CopyComplete
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BL\obj\Debug\net8.0\ProyBROL_BL.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BL\obj\Debug\net8.0\refint\ProyBROL_BL.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BL\obj\Debug\net8.0\ProyBROL_BL.pdb
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BL\obj\Debug\net8.0\ref\ProyBROL_BL.dll

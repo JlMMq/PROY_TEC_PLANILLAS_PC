@@ -10,3 +10,15 @@ D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BE\obj\Debug\net8.0\ProyBR
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BE\obj\Debug\net8.0\refint\ProyBROL_BE.dll
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BE\obj\Debug\net8.0\ProyBROL_BE.pdb
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BE\obj\Debug\net8.0\ref\ProyBROL_BE.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BE\bin\Debug\net8.0\ProyBROL_BE.deps.json
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BE\bin\Debug\net8.0\ProyBROL_BE.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BE\bin\Debug\net8.0\ProyBROL_BE.pdb
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BE\obj\Debug\net8.0\ProyBROL_BE.GeneratedMSBuildEditorConfig.editorconfig
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BE\obj\Debug\net8.0\ProyBROL_BE.AssemblyInfoInputs.cache
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BE\obj\Debug\net8.0\ProyBROL_BE.AssemblyInfo.cs
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BE\obj\Debug\net8.0\ProyBROL_BE.csproj.CoreCompileInputs.cache
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BE\obj\Debug\net8.0\ProyBROL_BE.sourcelink.json
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BE\obj\Debug\net8.0\ProyBROL_BE.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BE\obj\Debug\net8.0\refint\ProyBROL_BE.dll
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BE\obj\Debug\net8.0\ProyBROL_BE.pdb
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_BE\obj\Debug\net8.0\ref\ProyBROL_BE.dll

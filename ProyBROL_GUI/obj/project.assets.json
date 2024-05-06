@@ -1,0 +1,150 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-windows7.0": {
+      "ProyBROL_ADO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "ProyBROL_BE": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProyBROL_ADO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProyBROL_ADO.dll": {}
+        }
+      },
+      "ProyBROL_BE/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/ProyBROL_BE.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProyBROL_BE.dll": {}
+        }
+      },
+      "ProyBROL_BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "ProyBROL_ADO": "1.0.0",
+          "ProyBROL_BE": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProyBROL_BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProyBROL_BL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProyBROL_ADO/1.0.0": {
+      "type": "project",
+      "path": "../ProyBROL_ADO/ProyBROL_ADO.csproj",
+      "msbuildProject": "../ProyBROL_ADO/ProyBROL_ADO.csproj"
+    },
+    "ProyBROL_BE/1.0.0": {
+      "type": "project",
+      "path": "../ProyBROL_BE/ProyBROL_BE.csproj",
+      "msbuildProject": "../ProyBROL_BE/ProyBROL_BE.csproj"
+    },
+    "ProyBROL_BL/1.0.0": {
+      "type": "project",
+      "path": "../ProyBROL_BL/ProyBROL_BL.csproj",
+      "msbuildProject": "../ProyBROL_BL/ProyBROL_BL.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0-windows7.0": [
+      "ProyBROL_ADO >= 1.0.0",
+      "ProyBROL_BE >= 1.0.0",
+      "ProyBROL_BL >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\jlmal\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ProyBROL_GUI.csproj",
+      "projectName": "ProyBROL_GUI",
+      "projectPath": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ProyBROL_GUI.csproj",
+      "packagesPath": "C:\\Users\\jlmal\\.nuget\\packages\\",
+      "outputPath": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\jlmal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "projectReferences": {
+            "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_ADO\\ProyBROL_ADO.csproj": {
+              "projectPath": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_ADO\\ProyBROL_ADO.csproj"
+            },
+            "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_BE\\ProyBROL_BE.csproj": {
+              "projectPath": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_BE\\ProyBROL_BE.csproj"
+            },
+            "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_BL\\ProyBROL_BL.csproj": {
+              "projectPath": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_BL\\ProyBROL_BL.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

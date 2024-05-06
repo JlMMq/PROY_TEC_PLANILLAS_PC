@@ -1,0 +1,16 @@
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\bin\Debug\net8.0\ProyBROL_ADO.deps.json
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\bin\Debug\net8.0\ProyBROL_ADO.dll
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\bin\Debug\net8.0\ProyBROL_ADO.pdb
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL_ADO.GeneratedMSBuildEditorConfig.editorconfig
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL_ADO.AssemblyInfoInputs.cache
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL_ADO.AssemblyInfo.cs
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL_ADO.csproj.CoreCompileInputs.cache
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL_ADO.sourcelink.json
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL_ADO.dll
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\obj\Debug\net8.0\refint\ProyBROL_ADO.dll
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL_ADO.pdb
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\obj\Debug\net8.0\ref\ProyBROL_ADO.dll
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\bin\Debug\net8.0\ProyBROL_BE.dll
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\bin\Debug\net8.0\ProyBROL_BE.pdb
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL_ADO.csproj.AssemblyReference.cache
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_ADO\obj\Debug\net8.0\ProyBROL.BEFBA2E3.Up2Date

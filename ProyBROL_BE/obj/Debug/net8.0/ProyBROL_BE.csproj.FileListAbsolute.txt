@@ -1,0 +1,12 @@
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BE\bin\Debug\net8.0\ProyBROL_BE.deps.json
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BE\bin\Debug\net8.0\ProyBROL_BE.dll
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BE\bin\Debug\net8.0\ProyBROL_BE.pdb
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BE\obj\Debug\net8.0\ProyBROL_BE.GeneratedMSBuildEditorConfig.editorconfig
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BE\obj\Debug\net8.0\ProyBROL_BE.AssemblyInfoInputs.cache
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BE\obj\Debug\net8.0\ProyBROL_BE.AssemblyInfo.cs
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BE\obj\Debug\net8.0\ProyBROL_BE.csproj.CoreCompileInputs.cache
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BE\obj\Debug\net8.0\ProyBROL_BE.sourcelink.json
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BE\obj\Debug\net8.0\ProyBROL_BE.dll
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BE\obj\Debug\net8.0\refint\ProyBROL_BE.dll
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BE\obj\Debug\net8.0\ProyBROL_BE.pdb
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_BE\obj\Debug\net8.0\ref\ProyBROL_BE.dll

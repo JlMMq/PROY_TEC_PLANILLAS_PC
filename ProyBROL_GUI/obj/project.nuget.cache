@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "roBx5ItdybxGR86DfNAOewqu2e/Ktg+mvoXdnx4caKzZGDCU9M2HM82NBbKAhDmZb5cD9op4gHnNlUeML79zxg==",
+  "dgSpecHash": "Ec/KDl7gL5dcM60EUERP4fFSD88n+FR1W9usw4f7iTWNZmSBls0LQuwklzkTmWY8rqlxzW6QMp5k+SadvaWnOg==",
   "success": true,
-  "projectFilePath": "C:\\JlMMq\\ProyectosISIL\\PROY_TEC_PLANILLAS_PC\\ProyBROL_GUI\\ProyBROL_GUI.csproj",
+  "projectFilePath": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ProyBROL_GUI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\tsoftware\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\tsoftware\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
-    "C:\\Users\\tsoftware\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\tsoftware\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+    "C:\\Users\\jlmal\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\jlmal\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
+    "C:\\Users\\jlmal\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\jlmal\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
   ],
   "logs": []
 }

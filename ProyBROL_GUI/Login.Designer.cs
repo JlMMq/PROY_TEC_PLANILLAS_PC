@@ -173,6 +173,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(500, 490);
             Controls.Add(imgLogo);
             Controls.Add(pnFormLogin);

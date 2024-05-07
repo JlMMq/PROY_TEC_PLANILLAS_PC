@@ -20,5 +20,6 @@ namespace ProyBROL_BE
     {
         public bool estadoTrans { get; set; }
         public int codUser { get; set; }
+        public int permiso { get; set; }
     }
 }

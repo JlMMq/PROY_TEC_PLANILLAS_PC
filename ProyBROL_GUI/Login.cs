@@ -41,8 +41,7 @@ namespace ProyBROL_GUI
                 }
                 else 
                 {
-                    MessageBox.Show("Se inicio sesion correctamente",
-                    "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Se inicio sesion correctamente: " + res.permiso.ToString());
                 }
             }
             else

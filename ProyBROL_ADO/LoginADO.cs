@@ -25,6 +25,7 @@ namespace ProyBROL_ADO
                 var client = new RestClient(restService);
                 var request = new RestRequest();
                 request.Method = Method.Post;
+                request.AddJsonBody(obj);
                 var response = client.Execute<LoginOuBE>(request);
                 if(response.StatusCode == System.Net.HttpStatusCode.OK)
                 {

@@ -8,15 +8,24 @@ namespace ProyBROL_BE
 {
     public class MarcasBE
     {   
-        public Int32 codMarc {  get; set; }
-        public Int32 empleado { get; set; }
-        public DateTime fecha { get; set; }
-        public DateTime hora { get; set;}
-        public Int32 tipo { get; set; }
-        public DateTime fec_Reg { get; set; }
-        public string usu_Reg { get; set; }
-        public DateTime fec_UltMod {  get; set; }
-        public String usu_UltMod { get;set; }
+        public int? codMarc {  get; set; }
+        public int? empleado { get; set; }
+        public DateTime? fecha { get; set; }
+        public DateTime? hora { get; set;}
+        public int? tipo { get; set; }
+        public DateTime? fec_Reg { get; set; }
+        public string? usu_Reg { get; set; }
+        public DateTime? fec_UltMod {  get; set; }
+        public string? usu_UltMod { get;set; }
 
+    }
+
+    public class MarcaInBE
+    {
+        public int? empleado { get; set; }
+        public int? horario { get; set; }
+        public string? usu_Reg { get; set; }
+        public DateTime? fecha { get; set; }
+        public int? tipo { get; set; }
     }
 }

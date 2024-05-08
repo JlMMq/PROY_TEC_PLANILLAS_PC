@@ -10,31 +10,30 @@ namespace ProyBROL_BE
 {
     public class EmpleadoBE
     {
-        public Int32 codEmpleado { get; set; }
+        public int codEmpleado { get; set; }
         public String numroDoc { get; set; }
         public String tipoDoc { get; set; }
-        public String apellidos {  get; set; }
-        public String nombres {  get; set; }    
-        public DateTime fecNacimiento { get; set; }
-        public String genero { get; set; }
-        public String? correo { get; set;}
+        public String apellidos { get; set; }
+        public String? nombres { get; set; }
+        public DateTime? fecNacimiento { get; set; }
+        public String? genero { get; set; }
+        public String? correo { get; set; }
         public String? direccion { get; set; }
-        public Int64? telefono { get; set; }
+        public int? telefono { get; set; }
         public DateTime? fecIngreso { get; set; }
 
-        public Int16 codCargo {  get; set; }
-        public Int16 codArea { get; set; }
-        public Int16 codSede { get; set; }
-        public Int16 codHorario { get; set; }   
-        
-        public byte[] foto { get; set; }
+        public int? codCargo { get; set; }
+        public int? codArea { get; set; }
+        public int? codSede { get; set; }
+        public int? codHorario { get; set; }
 
-        public DateTime? fec_Reg { get; set; }
-        public String? usu_Reg { get; set; }
-        public DateTime? fec_UltMod {  get; set; }
+        public byte[]? foto { get; set; }
+        public int? estado { get; set; }
 
-        public String? usu_UltMod { get; set; }
-        public Int16 estado {  get; set; }
+    }
 
+    public class EmpleadoConsInBE
+    {
+        public int codigo { get; set; }
     }
 }

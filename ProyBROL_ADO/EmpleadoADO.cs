@@ -19,7 +19,36 @@ namespace ProyBROL_ADO
             EmpleadoBE res = new EmpleadoBE();
             EmpleadoConsInBE obj = new EmpleadoConsInBE
             {
+                codigo = codigo
+            };
+            try
+            {
+                var client = new RestClient(restService);
+                var request = new RestRequest();
+                request.Method = Method.Post;
+                request.AddJsonBody(obj);
+                var response = client.Execute<EmpleadoBE>(request);
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    res = JsonConvert.DeserializeObject<EmpleadoBE>(response.Content);
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return res;
+        }
+
+        public EmpleadoBE ConsultarEmpleadoCodDoc(int codigo, string numroDoc)
+        {
+            restService = _connect + "Empleado/ConsultarEmpleado";
+            EmpleadoBE res = new EmpleadoBE();
+            EmpleadoConsCodDocInBE obj = new EmpleadoConsCodDocInBE
+            {
                 codigo = codigo,
+                numroDoc = numroDoc
             };
             try
             {

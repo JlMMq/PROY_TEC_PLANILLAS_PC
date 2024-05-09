@@ -8,7 +8,7 @@ namespace ProyBROL_BE
 {
     public class HorarioBE
     {
-        public int? codHorario { get; set; }
+        public int codHorario { get; set; }
         public String? desHorario { get; set; }
         public TimeSpan? ingLUN { get; set; }
         public TimeSpan? salLUN { get; set; }
@@ -31,6 +31,6 @@ namespace ProyBROL_BE
 
     public class HorarioConsInBE
     {
-        public int codigo { get; set; }
+        public int? codigo { get; set; }
     }
 }

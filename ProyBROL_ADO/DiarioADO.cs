@@ -20,7 +20,36 @@ namespace ProyBROL_ADO
             DiarioBE res = new DiarioBE();
             DiarioConsInBE obj = new DiarioConsInBE
             {
-                codigo = codigo,
+                codigo = codigo
+            };
+            try
+            {
+                var client = new RestClient(restService);
+                var request = new RestRequest();
+                request.Method = Method.Post;
+                request.AddJsonBody(obj);
+                var response = client.Execute<DiarioBE>(request);
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    res = JsonConvert.DeserializeObject<DiarioBE>(response.Content);
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return res;
+        }
+
+        public DiarioBE ConsultarDiarioFecEmpl(DateTime fecha, int empleado)
+        {
+            restService = _connect + "Diario/ConsultarDiarioFecEmpl";
+            DiarioBE res = new DiarioBE();
+            DiarioConsFecEmplInBE obj = new DiarioConsFecEmplInBE
+            {
+                fecha = fecha,
+                empleado = empleado
             };
             try
             {

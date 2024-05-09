@@ -8,19 +8,19 @@ namespace ProyBROL_BE
 {
     public class DiarioBE
     {
-        public int? codDiar {  get; set; }
-        public DateTime? fecha { get; set; }
+        public int codDiar {  get; set; }
+        public DateTime fecha { get; set; }
         public int? empleado { get; set; }
         public int? horario { get; set; }
-        public DateTime? hIngreso { get; set; }
-        public DateTime? hSalida { get; set; }
-        public DateTime? hora1 { get; set; }
-        public DateTime? hora2 { get; set; }
-        public DateTime? hora3 { get; set; }
-        public DateTime? hora4 { get; set; }
-        public DateTime? ingrTard { get; set; }
-        public DateTime? exeRefr { get; set; }
-        public DateTime? exeJornd { get; set; }
+        public TimeSpan? hIngreso { get; set; }
+        public TimeSpan? hSalida { get; set; }
+        public TimeSpan? hora1 { get; set; }
+        public TimeSpan? hora2 { get; set; }
+        public TimeSpan? hora3 { get; set; }
+        public TimeSpan? hora4 { get; set; }
+        public TimeSpan? ingrTard { get; set; }
+        public TimeSpan? exeRefr { get; set; }
+        public TimeSpan? exeJornd { get; set; }
         public String observ {  get; set; }
         //public DateTime? fec_Reg { get; set; }
         //public string usu_Reg { get; set; }
@@ -36,20 +36,25 @@ namespace ProyBROL_BE
         public DateTime? fecha { get; set; }
         public int? empleado { get; set; }
         public int? horario { get; set; }
-        public DateTime? hIngreso { get; set; }
-        public DateTime? hSalida { get; set; }
-        public DateTime? hora1 { get; set; }
-        public DateTime? hora2 { get; set; }
-        public DateTime? hora3 { get; set; }
-        public DateTime? hora4 { get; set; }
-        public DateTime? ingrTard { get; set; }
-        public DateTime? exeRefr { get; set; }
-        public DateTime? exeJornd { get; set; }
+        public TimeSpan? hIngreso { get; set; }
+        public TimeSpan? hSalida { get; set; }
+        public TimeSpan? hora1 { get; set; }
+        public TimeSpan? hora2 { get; set; }
+        public TimeSpan? hora3 { get; set; }
+        public TimeSpan? hora4 { get; set; }
+        public TimeSpan? ingrTard { get; set; }
+        public TimeSpan? exeRefr { get; set; }
+        public TimeSpan? exeJornd { get; set; }
         public String? observ { get; set; }
     }
 
     public class DiarioConsInBE
     {
         public int codigo {  get; set; }
+    }
+    public class DiarioConsFecEmplInBE
+    {
+        public DateTime fecha { get; set; } 
+        public int empleado { get; set; }   
     }
 }

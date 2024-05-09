@@ -16,8 +16,9 @@ namespace ProyBROL_ADO
 
         public bool InsertarMarca(MarcasBE objMarcaBE, int horario, DateTime fecha)
         {
-            bool res = false;
-            restService = _connect + "Marcas/InsertarMarca";
+            bool result = false;
+            MarcaOuBE res;
+            restService = _connect + "Marca/InsertarMarca";
             MarcaInBE obj = new MarcaInBE
             {
                 empleado = objMarcaBE.empleado,
@@ -32,18 +33,22 @@ namespace ProyBROL_ADO
                 var request = new RestRequest();
                 request.Method = Method.Post;
                 request.AddJsonBody(obj);
-                var response = client.Execute<bool>(request);
+                var response = client.Execute<MarcaOuBE>(request);
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    res = JsonConvert.DeserializeObject<bool>(response.Content);
+                    res = JsonConvert.DeserializeObject<MarcaOuBE>(response.Content);
+                    if (res.valor)
+                    {
+                        result = true;
+                    }
                 }
             }
             catch (Exception ex)
             {
-                res = false;
+                result = false;
             }
 
-            return res;
+            return result;
         }
     }
 }

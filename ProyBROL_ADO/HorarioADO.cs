@@ -13,7 +13,7 @@ namespace ProyBROL_ADO
     {
         public string restService;
         static string _connect = ConexionADO.conexString;
-        public HorarioBE ConsultarHorario(int codigo)
+        public HorarioBE ConsultarHorario(int? codigo)
         {
             restService = _connect + "Horario/ConsultarHorario";
             HorarioBE res = new HorarioBE();

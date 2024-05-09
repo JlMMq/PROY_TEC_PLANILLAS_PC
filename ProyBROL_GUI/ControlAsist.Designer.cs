@@ -178,6 +178,7 @@
             txtCodigo.Name = "txtCodigo";
             txtCodigo.Size = new Size(678, 49);
             txtCodigo.TabIndex = 1;
+            txtCodigo.KeyPress += txtCodigo_KeyPress;
             // 
             // lblHoraDes
             // 

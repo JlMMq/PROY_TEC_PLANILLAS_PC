@@ -25,7 +25,7 @@ namespace ProyBROL_BE
         public int? codCargo { get; set; }
         public int? codArea { get; set; }
         public int? codSede { get; set; }
-        public int? codHorario { get; set; }
+        public int codHorario { get; set; }
 
         public byte[]? foto { get; set; }
         public int? estado { get; set; }
@@ -35,5 +35,11 @@ namespace ProyBROL_BE
     public class EmpleadoConsInBE
     {
         public int codigo { get; set; }
+    }
+
+    public class EmpleadoConsCodDocInBE
+    {
+        public int codigo { get; set; }
+        public string numroDoc { get; set; }
     }
 }

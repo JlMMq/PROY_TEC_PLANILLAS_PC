@@ -73,6 +73,26 @@ namespace ProyBROL_GUI.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calendW2 {
+            get {
+                object obj = ResourceManager.GetObject("calendW2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap emplW1 {
+            get {
+                object obj = ResourceManager.GetObject("emplW1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logoBROL {
             get {
                 object obj = ResourceManager.GetObject("logoBROL", resourceCulture);
@@ -83,9 +103,29 @@ namespace ProyBROL_GUI.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logoBROL_W {
+            get {
+                object obj = ResourceManager.GetObject("logoBROL_W", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap noimage {
             get {
                 object obj = ResourceManager.GetObject("noimage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap relojW1 {
+            get {
+                object obj = ResourceManager.GetObject("relojW1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

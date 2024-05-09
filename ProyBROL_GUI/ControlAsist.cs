@@ -346,7 +346,7 @@ namespace ProyBROL_GUI
         private void DeterminarSituacion(EmpleadoBE empleado, DateTime tmrReg, int tipo)
         {
             DayOfWeek diaSemana = tmrReg.DayOfWeek;
-            
+
             int dia = (int)diaSemana;
             objHorarioBE = objHorarioBL.ConsultarHorario(empleado.codHorario);
             if (tipo == 1)
@@ -410,6 +410,7 @@ namespace ProyBROL_GUI
 
         private void procesarMarca(DateTime tmrReg)
         {
+            LimpiarLblsControlAsis();
             ImprimirInfEmpleado();
             objMarcasBE.empleado = objEmpleadoBE.codEmpleado;
             objMarcasBE.usu_Reg = nomUser;
@@ -431,5 +432,14 @@ namespace ProyBROL_GUI
             }
         }
 
+        private void ControlAsist_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtClean_Tick(object sender, EventArgs e)
+        {
+          
+        }
     }
 }

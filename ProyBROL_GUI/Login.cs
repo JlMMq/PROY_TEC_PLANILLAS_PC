@@ -16,6 +16,7 @@ namespace ProyBROL_GUI
     public partial class Login : Form
     {
         int intentos = 0;
+        frmMenu menu;
         LoginADO _login = new LoginADO();
         LoginOuBE res = new LoginOuBE();
         public Login()
@@ -41,7 +42,18 @@ namespace ProyBROL_GUI
                 }
                 else 
                 {
-                    MessageBox.Show("Se inicio sesion correctamente: " + res.permiso.ToString());
+                    txtNomUser.Text = String.Empty;
+                    txtPassUser.Text = String.Empty;
+                    if (menu == null)
+                    {
+                        menu = new frmMenu(res.permiso);
+                        menu.FormClosed += new FormClosedEventHandler(EstaCerradofrmMenu);
+                        menu.Show();
+                    }
+                    else
+                    {
+                        menu.BringToFront();
+                    }
                 }
             }
             else
@@ -51,6 +63,10 @@ namespace ProyBROL_GUI
                 intentos += 1;
                 LimiteIntentos();
             }
+        }
+        void EstaCerradofrmMenu(object sender, EventArgs e)
+        {
+            menu = null;
         }
 
         private void imgExit_Click(object sender, EventArgs e)

@@ -62,6 +62,7 @@
             dtTimer = new System.Windows.Forms.Timer(components);
             imgbtnLogin = new PictureBox();
             label12 = new Label();
+            dtClean = new System.Windows.Forms.Timer(components);
             gpControl.SuspendLayout();
             gpInfor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)imgEmpl).BeginInit();
@@ -438,6 +439,11 @@
             label12.TabIndex = 7;
             label12.Text = "Ingresar";
             // 
+            // dtClean
+            // 
+            dtClean.Interval = 3000;
+            dtClean.Tick += dtClean_Tick;
+            // 
             // ControlAsist
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -454,6 +460,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Control de marcas";
             WindowState = FormWindowState.Maximized;
+            Load += ControlAsist_Load;
             gpControl.ResumeLayout(false);
             gpControl.PerformLayout();
             gpInfor.ResumeLayout(false);
@@ -498,5 +505,6 @@
         private System.Windows.Forms.Timer dtTimer;
         private PictureBox imgbtnLogin;
         private Label label12;
+        private System.Windows.Forms.Timer dtClean;
     }
 }

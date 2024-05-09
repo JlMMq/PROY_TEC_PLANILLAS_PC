@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyBROL_GUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c82c435cc4e76fdf6615196ea001da365578101")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c997928e629658c01a49a5e293514671d395a249")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyBROL_GUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyBROL_GUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

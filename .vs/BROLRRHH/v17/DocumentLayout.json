@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_gui\\controlasist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_gui\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\controlasist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\controlasist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,19 +15,15 @@
       "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\controlasist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_gui\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,8 +86,7 @@
               "RelativeToolTip": "ProyBROL_GUI\\Login.cs",
               "ViewState": "AQIAAC0AAAAAAAAAAAAowC0AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T04:08:13.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T04:08:13.078Z"
             },
             {
               "$type": "Document",
@@ -111,12 +110,11 @@
               "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\Login.cs [Dise\u00F1o]",
               "RelativeToolTip": "ProyBROL_GUI\\Login.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T03:55:01.045Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-09T03:55:01.045Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "frmMenu.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\frmMenu.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\frmMenu.cs",
@@ -128,15 +126,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ControlAsist.cs [Dise\u00F1o]",
+              "DocumentIndex": 2,
+              "Title": "ControlAsist.cs [Design]",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ControlAsist.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\ControlAsist.cs",
-              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ControlAsist.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "ProyBROL_GUI\\ControlAsist.cs [Dise\u00F1o]*",
+              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ControlAsist.cs [Design]",
+              "RelativeToolTip": "ProyBROL_GUI\\ControlAsist.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T02:14:49.178Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -148,8 +146,7 @@
               "RelativeToolTip": "ProyBROL_BL\\DiarioBL.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T02:14:44.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T02:14:44.489Z"
             },
             {
               "$type": "Document",
@@ -161,17 +158,16 @@
               "RelativeToolTip": "ProyBROL_BE\\DiarioBE.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAiwCUAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T02:13:54.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T02:13:54.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ControlAsist.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ControlAsist.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\ControlAsist.cs",
-              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ControlAsist.cs*",
-              "RelativeToolTip": "ProyBROL_GUI\\ControlAsist.cs*",
+              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ControlAsist.cs",
+              "RelativeToolTip": "ProyBROL_GUI\\ControlAsist.cs",
               "ViewState": "AQIAAJUBAAAAAAAAAAAIwJwBAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T01:32:33.532Z",

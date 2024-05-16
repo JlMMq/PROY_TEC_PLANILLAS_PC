@@ -31,13 +31,13 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlAsist));
             gpControl = new GroupBox();
+            btnMarca = new Button();
+            label2 = new Label();
+            txtCodigo = new TextBox();
             btnSald = new Button();
             btnIngRefr = new Button();
             btnSalRefr = new Button();
-            label11 = new Label();
             btnIngr = new Button();
-            label2 = new Label();
-            txtCodigo = new TextBox();
             lblHoraDes = new Label();
             lblHora = new Label();
             gpInfor = new GroupBox();
@@ -72,91 +72,32 @@
             // gpControl
             // 
             gpControl.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            gpControl.Controls.Add(btnSald);
-            gpControl.Controls.Add(btnIngRefr);
-            gpControl.Controls.Add(btnSalRefr);
-            gpControl.Controls.Add(label11);
-            gpControl.Controls.Add(btnIngr);
+            gpControl.Controls.Add(btnMarca);
             gpControl.Controls.Add(label2);
             gpControl.Controls.Add(txtCodigo);
             gpControl.Font = new Font("Leelawadee", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            gpControl.Location = new Point(30, 26);
+            gpControl.Location = new Point(30, 71);
             gpControl.Name = "gpControl";
-            gpControl.Size = new Size(779, 285);
+            gpControl.Size = new Size(779, 234);
             gpControl.TabIndex = 2;
             gpControl.TabStop = false;
             gpControl.Text = "Control de Marcas";
             // 
-            // btnSald
+            // btnMarca
             // 
-            btnSald.BackColor = SystemColors.ActiveCaptionText;
-            btnSald.FlatAppearance.BorderSize = 0;
-            btnSald.FlatStyle = FlatStyle.Flat;
-            btnSald.Font = new Font("Leelawadee", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnSald.ForeColor = SystemColors.ControlLightLight;
-            btnSald.Location = new Point(555, 190);
-            btnSald.Name = "btnSald";
-            btnSald.Size = new Size(165, 70);
-            btnSald.TabIndex = 6;
-            btnSald.Text = "SALIDA";
-            btnSald.UseVisualStyleBackColor = false;
-            btnSald.Click += btnSald_Click;
-            // 
-            // btnIngRefr
-            // 
-            btnIngRefr.BackColor = SystemColors.ActiveCaptionText;
-            btnIngRefr.FlatAppearance.BorderSize = 0;
-            btnIngRefr.FlatStyle = FlatStyle.Flat;
-            btnIngRefr.Font = new Font("Leelawadee", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnIngRefr.ForeColor = SystemColors.ControlLightLight;
-            btnIngRefr.Location = new Point(384, 190);
-            btnIngRefr.Name = "btnIngRefr";
-            btnIngRefr.Size = new Size(165, 70);
-            btnIngRefr.TabIndex = 5;
-            btnIngRefr.Text = "INGRESO REFRIGERIO";
-            btnIngRefr.UseVisualStyleBackColor = false;
-            btnIngRefr.Click += btnIngRefr_Click;
-            // 
-            // btnSalRefr
-            // 
-            btnSalRefr.BackColor = SystemColors.ActiveCaptionText;
-            btnSalRefr.FlatAppearance.BorderSize = 0;
-            btnSalRefr.FlatStyle = FlatStyle.Flat;
-            btnSalRefr.Font = new Font("Leelawadee", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnSalRefr.ForeColor = SystemColors.ControlLightLight;
-            btnSalRefr.Location = new Point(213, 190);
-            btnSalRefr.Name = "btnSalRefr";
-            btnSalRefr.Size = new Size(165, 71);
-            btnSalRefr.TabIndex = 4;
-            btnSalRefr.Text = "SALIDA REFRIGERIO";
-            btnSalRefr.UseVisualStyleBackColor = false;
-            btnSalRefr.Click += btnSalRefr_Click;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Leelawadee", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label11.ForeColor = SystemColors.ControlDarkDark;
-            label11.Location = new Point(38, 155);
-            label11.Name = "label11";
-            label11.Size = new Size(149, 25);
-            label11.TabIndex = 3;
-            label11.Text = "Tipo de marca:";
-            // 
-            // btnIngr
-            // 
-            btnIngr.BackColor = Color.Black;
-            btnIngr.FlatAppearance.BorderSize = 0;
-            btnIngr.FlatStyle = FlatStyle.Flat;
-            btnIngr.Font = new Font("Leelawadee", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnIngr.ForeColor = SystemColors.ControlLightLight;
-            btnIngr.Location = new Point(42, 190);
-            btnIngr.Name = "btnIngr";
-            btnIngr.Size = new Size(165, 70);
-            btnIngr.TabIndex = 2;
-            btnIngr.Text = "INGRESO";
-            btnIngr.UseVisualStyleBackColor = false;
-            btnIngr.Click += btnIngr_Click;
+            btnMarca.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnMarca.BackColor = SystemColors.ActiveCaptionText;
+            btnMarca.FlatAppearance.BorderSize = 0;
+            btnMarca.FlatStyle = FlatStyle.Flat;
+            btnMarca.Font = new Font("Leelawadee", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMarca.ForeColor = SystemColors.ControlLightLight;
+            btnMarca.Location = new Point(585, 103);
+            btnMarca.Name = "btnMarca";
+            btnMarca.Size = new Size(170, 84);
+            btnMarca.TabIndex = 7;
+            btnMarca.Text = "INGRESAR";
+            btnMarca.UseVisualStyleBackColor = false;
+            btnMarca.Click += btnMarca_Click;
             // 
             // label2
             // 
@@ -173,13 +114,77 @@
             // 
             txtCodigo.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtCodigo.BorderStyle = BorderStyle.FixedSingle;
-            txtCodigo.Font = new Font("Leelawadee", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtCodigo.Font = new Font("Leelawadee", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtCodigo.Location = new Point(42, 103);
             txtCodigo.MaxLength = 15;
             txtCodigo.Name = "txtCodigo";
-            txtCodigo.Size = new Size(678, 49);
+            txtCodigo.Size = new Size(530, 84);
             txtCodigo.TabIndex = 1;
             txtCodigo.KeyPress += txtCodigo_KeyPress;
+            // 
+            // btnSald
+            // 
+            btnSald.BackColor = SystemColors.ActiveCaptionText;
+            btnSald.FlatAppearance.BorderSize = 0;
+            btnSald.FlatStyle = FlatStyle.Flat;
+            btnSald.Font = new Font("Leelawadee", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSald.ForeColor = SystemColors.ControlLightLight;
+            btnSald.Location = new Point(1328, 21);
+            btnSald.Name = "btnSald";
+            btnSald.Size = new Size(165, 70);
+            btnSald.TabIndex = 6;
+            btnSald.Text = "SALIDA";
+            btnSald.UseVisualStyleBackColor = false;
+            btnSald.Visible = false;
+            btnSald.Click += btnSald_Click;
+            // 
+            // btnIngRefr
+            // 
+            btnIngRefr.BackColor = SystemColors.ActiveCaptionText;
+            btnIngRefr.FlatAppearance.BorderSize = 0;
+            btnIngRefr.FlatStyle = FlatStyle.Flat;
+            btnIngRefr.Font = new Font("Leelawadee", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnIngRefr.ForeColor = SystemColors.ControlLightLight;
+            btnIngRefr.Location = new Point(1157, 21);
+            btnIngRefr.Name = "btnIngRefr";
+            btnIngRefr.Size = new Size(165, 70);
+            btnIngRefr.TabIndex = 5;
+            btnIngRefr.Text = "INGRESO REFRIGERIO";
+            btnIngRefr.UseVisualStyleBackColor = false;
+            btnIngRefr.Visible = false;
+            btnIngRefr.Click += btnIngRefr_Click;
+            // 
+            // btnSalRefr
+            // 
+            btnSalRefr.BackColor = SystemColors.ActiveCaptionText;
+            btnSalRefr.FlatAppearance.BorderSize = 0;
+            btnSalRefr.FlatStyle = FlatStyle.Flat;
+            btnSalRefr.Font = new Font("Leelawadee", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSalRefr.ForeColor = SystemColors.ControlLightLight;
+            btnSalRefr.Location = new Point(986, 21);
+            btnSalRefr.Name = "btnSalRefr";
+            btnSalRefr.Size = new Size(165, 71);
+            btnSalRefr.TabIndex = 4;
+            btnSalRefr.Text = "SALIDA REFRIGERIO";
+            btnSalRefr.UseVisualStyleBackColor = false;
+            btnSalRefr.Visible = false;
+            btnSalRefr.Click += btnSalRefr_Click;
+            // 
+            // btnIngr
+            // 
+            btnIngr.BackColor = Color.Black;
+            btnIngr.FlatAppearance.BorderSize = 0;
+            btnIngr.FlatStyle = FlatStyle.Flat;
+            btnIngr.Font = new Font("Leelawadee", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnIngr.ForeColor = SystemColors.ControlLightLight;
+            btnIngr.Location = new Point(815, 22);
+            btnIngr.Name = "btnIngr";
+            btnIngr.Size = new Size(165, 70);
+            btnIngr.TabIndex = 2;
+            btnIngr.Text = "INGRESO";
+            btnIngr.UseVisualStyleBackColor = false;
+            btnIngr.Visible = false;
+            btnIngr.Click += btnIngr_Click;
             // 
             // lblHoraDes
             // 
@@ -450,10 +455,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1604, 941);
             Controls.Add(label12);
+            Controls.Add(btnSald);
             Controls.Add(imgbtnLogin);
+            Controls.Add(btnIngRefr);
             Controls.Add(gpInfor);
+            Controls.Add(btnSalRefr);
             Controls.Add(lblHoraDes);
             Controls.Add(lblHora);
+            Controls.Add(btnIngr);
             Controls.Add(gpControl);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "ControlAsist";
@@ -477,7 +486,6 @@
         private Button btnSald;
         private Button btnIngRefr;
         private Button btnSalRefr;
-        private Label label11;
         private Button btnIngr;
         private Label label2;
         private TextBox txtCodigo;
@@ -506,5 +514,6 @@
         private PictureBox imgbtnLogin;
         private Label label12;
         private System.Windows.Forms.Timer dtClean;
+        private Button btnMarca;
     }
 }

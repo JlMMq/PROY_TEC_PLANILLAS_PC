@@ -439,7 +439,190 @@ namespace ProyBROL_GUI
 
         private void dtClean_Tick(object sender, EventArgs e)
         {
-          
+
+        }
+
+        private void btnMarca_Click(object sender, EventArgs e)
+        {
+            DateTime tmrReg = DateTime.Now;
+
+            if (ValidarEmpleado())
+            {
+                objDiarioBE = objDiarioBL.ConsultarDiarioFecEmpl(tmrReg, objEmpleadoBE.codEmpleado);
+
+                //INGRESO: Si es nulo es porque no existe ninguna marca hoy dia
+                if (objDiarioBE.empleado == null)
+                {
+                    objHorarioBE = objHorarioBL.ConsultarHorario(objEmpleadoBE.codHorario);
+                    DayOfWeek diaSemana = tmrReg.DayOfWeek;
+                    int dia = (int)diaSemana;
+                    switch (dia)
+                    {
+                        case 1:
+                            if (objHorarioBE.ingLUN == objHorarioBE.salLUN)
+                            {
+                                lblSituac.Text = "NO LABORABLE";
+                                lblSituac.ForeColor = Color.Black;
+                            }
+                            else
+                            {
+                                procesarMarca(tmrReg);
+                            }
+                            break;
+                        case 2:
+                            if (objHorarioBE.ingMAR == objHorarioBE.salMAR)
+                            {
+                                lblSituac.Text = "NO LABORABLE";
+                                lblSituac.ForeColor = Color.Black;
+                            }
+                            else
+                            {
+                                procesarMarca(tmrReg);
+                            }
+                            break;
+                        case 3:
+                            if (objHorarioBE.ingMIE == objHorarioBE.salMIE)
+                            {
+                                lblSituac.Text = "NO LABORABLE";
+                                lblSituac.ForeColor = Color.Black;
+                            }
+                            else
+                            {
+                                procesarMarca(tmrReg);
+                            }
+                            break;
+                        case 4:
+                            if (objHorarioBE.ingJUE == objHorarioBE.salJUE)
+                            {
+                                lblSituac.Text = "NO LABORABLE";
+                                lblSituac.ForeColor = Color.Black;
+                            }
+                            else
+                            {
+                                procesarMarca(tmrReg);
+                            }
+                            break;
+                        case 5:
+                            if (objHorarioBE.ingVIE == objHorarioBE.salVIE)
+                            {
+                                lblSituac.Text = "NO LABORABLE";
+                                lblSituac.ForeColor = Color.Black;
+                            }
+                            else
+                            {
+                                procesarMarca(tmrReg);
+                            }
+                            break;
+                        case 6:
+                            if (objHorarioBE.ingSAB == objHorarioBE.salSAB)
+                            {
+                                lblSituac.Text = "NO LABORABLE";
+                                lblSituac.ForeColor = Color.Black;
+                            }
+                            else
+                            {
+                                procesarMarca(tmrReg);
+                            }
+                            break;
+                        case 7:
+                            if (objHorarioBE.ingDOM == objHorarioBE.salDOM)
+                            {
+                                lblSituac.Text = "NO LABORABLE";
+                                lblSituac.ForeColor = Color.Black;
+                            }
+                            else
+                            {
+                                procesarMarca(tmrReg);
+                            }
+                            break;
+                    }
+
+                }
+                
+
+                //SALIDA al REFRIGERIO si cumple que hora2 es nulo y hora1 es distinto de nulo es porque es hora del almuerzo
+                if (objDiarioBE.hora2 == null && objDiarioBE.hora1 != null)
+                {
+                    ImprimirInfEmpleado();
+                    objMarcasBE.empleado = objEmpleadoBE.codEmpleado;
+                    objMarcasBE.usu_Reg = nomUser;
+                    objMarcasBE.tipo = 2;
+                    DeterminarSituacion(objEmpleadoBE, tmrReg, 2);
+
+                    if (objMarcasBL.InsertarMarca(objMarcasBE, objEmpleadoBE.codHorario, objDiarioBE.fecha))
+                    {
+                        lblMarca.Text = DateTime.Now.ToString("hh:mm:ss");
+                        lblMensaje.Text = "Se ingreso correctamente la marca.";
+                        lblMensaje.ForeColor = Color.Black;
+                        lblSituac.Text = "REFRIGERIO";
+                    }
+                    else
+                    {
+                        lblMensaje.Text = "No se pudo ingresar la marca";
+                        lblMensaje.ForeColor = Color.Black;
+                        lblSituac.Text = "";
+                        LimpiarLblsControlAsis();
+                    }
+                }
+               
+
+                //VUELTA DEL REGRIGERIO
+                if (objDiarioBE.hora3 == null && objDiarioBE.hora2 != null)
+                {
+                    ImprimirInfEmpleado();
+                    objMarcasBE.empleado = objEmpleadoBE.codEmpleado;
+                    objMarcasBE.usu_Reg = nomUser;
+                    objMarcasBE.tipo = 3;
+                    DeterminarSituacion(objEmpleadoBE, tmrReg, 3);
+
+                    if (objMarcasBL.InsertarMarca(objMarcasBE, objEmpleadoBE.codHorario, objDiarioBE.fecha))
+                    {
+                        lblMarca.Text = DateTime.Now.ToString("hh:mm:ss");
+                        lblMensaje.Text = "Se ingreso correctamente la marca.";
+                        lblSituac.Text = "REFRIGERIO";
+                        lblMensaje.ForeColor = Color.Black;
+                    }
+                    else
+                    {
+                        lblMensaje.Text = "No se pudo ingresar la marca";
+                        lblMensaje.ForeColor = Color.Black;
+                        lblSituac.Text = "";
+                        LimpiarLblsControlAsis();
+                    }
+                }
+               
+
+                //SALIDA 
+                if (objDiarioBE.hora4 == null && objDiarioBE.hora1 != null)
+                {
+                    ImprimirInfEmpleado();
+                    objMarcasBE.empleado = objEmpleadoBE.codEmpleado;
+                    objMarcasBE.usu_Reg = nomUser;
+                    objMarcasBE.tipo = 4;
+                    DeterminarSituacion(objEmpleadoBE, tmrReg, 4);
+
+                    if (objMarcasBL.InsertarMarca(objMarcasBE, objEmpleadoBE.codHorario, objDiarioBE.fecha))
+                    {
+                        lblMarca.Text = DateTime.Now.ToString("hh:mm:ss");
+                        lblMensaje.Text = "Se ingreso correctamente la marca.";
+                        lblMensaje.ForeColor = Color.Black;
+                        lblSituac.Text = "SALIDA";
+                    }
+                    else
+                    {
+                        lblMensaje.Text = "No se pudo ingresar la marca";
+                        lblMensaje.ForeColor = Color.Black;
+                        LimpiarLblsControlAsis();
+                        lblSituac.Text = "";
+                    }
+                }
+
+                if(objDiarioBE.hora1 != null && objDiarioBE.hora2 != null && objDiarioBE.hora3 != null && objDiarioBE.hora4 != null)
+                {
+                    lblMensaje.Text = "Proceso de marcas cerrado.";
+                    lblSituac.Text = "CERRADO";
+                }
+            }
         }
     }
 }

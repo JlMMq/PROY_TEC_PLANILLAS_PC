@@ -4,6 +4,15 @@
     <Compile Update="ControlAsist.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="EmpleadoModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EmpleadoNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>

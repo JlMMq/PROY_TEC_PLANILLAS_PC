@@ -69,5 +69,27 @@ namespace ProyBROL_ADO
 
             return res;
         }
+
+        public List<EmpleadoObjBE> ListarEmpleadosGrilla()
+        {
+            restService = _connect + "Empleado/ListarEmpleadosView";
+            List<EmpleadoObjBE> res = new List<EmpleadoObjBE>();
+            try
+            {
+                var client = new RestClient(restService);
+                var request = new RestRequest();
+                request.Method = Method.Get;
+                var response = client.Execute<List<EmpleadoObjBE>>(request);
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    res = JsonConvert.DeserializeObject<List<EmpleadoObjBE>>(response.Content);
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return res; 
+        }
     }
 }

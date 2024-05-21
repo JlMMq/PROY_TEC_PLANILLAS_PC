@@ -56,3 +56,6 @@ D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\bin\Debug\net8.0-windo
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\bin\Debug\net8.0-windows\RestSharp.dll
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.ControlAsist.resources
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.frmMenu.resources
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.Empleados.resources
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.EmpleadoModificar.resources
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.EmpleadoNuevo.resources

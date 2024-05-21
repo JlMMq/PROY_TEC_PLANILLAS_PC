@@ -101,6 +101,7 @@
             btnEmpleados.Text = "      Empleados";
             btnEmpleados.UseVisualStyleBackColor = false;
             btnEmpleados.Visible = false;
+            btnEmpleados.Click += btnEmpleados_Click;
             // 
             // btnHorarios
             // 
@@ -145,6 +146,7 @@
             ClientSize = new Size(1604, 941);
             Controls.Add(flowLayoutPanel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            IsMdiContainer = true;
             Name = "frmMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "BROL.S.A.C. Sistema de R.R.H.H.";

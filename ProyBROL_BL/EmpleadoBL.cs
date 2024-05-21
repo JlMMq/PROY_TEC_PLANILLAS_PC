@@ -21,5 +21,9 @@ namespace ProyBROL_BL
         {
             return objEmpleadoADO.ConsultarEmpleadoCodDoc(codigo, doc);
         }
+        public List<EmpleadoObjBE> ListarEmpleadosGrilla()
+        {
+            return objEmpleadoADO.ListarEmpleadosGrilla();
+        }
     }
 }

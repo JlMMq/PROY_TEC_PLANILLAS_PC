@@ -57,4 +57,55 @@ namespace ProyBROL_BE
         public int codigo { get; set; }
         public string numroDoc { get; set; }
     }
+
+    public class EmpleadoInsertBE
+    {
+        public string numroDoc { get; set; }
+        public string tipoDoc { get; set; }
+        public string apellidos { get; set; }
+        public string nombres { get; set; }
+        public DateTime? fecNacimiento { get; set; }
+        public string genero { get; set; }
+        public string correo { get; set; }
+        public string direccion { get; set; }
+        public int? telefono { get; set; }
+        public DateTime? fecIngreso { get; set; }
+
+        public int codCargo { get; set; }
+        public int codArea { get; set; }
+        public int codSede { get; set; }
+        public int codHorario { get; set; }
+        public byte[]? foto { get; set; }
+        public string? usu_Reg { get; set; }
+        public int? estado { get; set; }
+    }
+
+    public class EmpleadoActuBE
+    {
+        public int codEmpleado { get; set; }
+        public string numroDoc { get; set; }
+        public string tipoDoc { get; set; }
+        public string apellidos { get; set; }
+        public string nombres { get; set; }
+        public DateTime fecNacimiento { get; set; }
+        public string genero { get; set; }
+        public string correo { get; set; }
+        public string direccion { get; set; }
+        public int telefono { get; set; }
+        public DateTime fecIngreso { get; set; }
+
+        public int codCargo { get; set; }
+        public int codArea { get; set; }
+        public int codSede { get; set; }
+        public int codHorario { get; set; }
+
+        public byte[] foto { get; set; }
+        public string usu_UltMod { get; set; }
+        public int estado { get; set; }
+    }
+
+    public class EmpleadoElimBE
+    {
+        public int codEmpleado { get; set; }
+    }
 }

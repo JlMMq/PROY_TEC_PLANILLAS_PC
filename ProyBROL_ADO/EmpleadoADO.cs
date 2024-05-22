@@ -4,6 +4,7 @@ using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -90,6 +91,79 @@ namespace ProyBROL_ADO
 
             }
             return res; 
+        }
+
+        public bool InsertarEmpleado(EmpleadoInsertBE obj)
+        {
+            restService = _connect + "Empleado/InsertarEmpleado";
+            bool res = false;
+            try
+            {
+                var client = new RestClient(restService);
+                var request = new RestRequest();
+                request.Method = Method.Post;
+                request.AddJsonBody(obj);
+                var response = client.Execute<EmpleadoInsertBE>(request);
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    res = JsonConvert.DeserializeObject<bool>(response.Content);
+                }
+            }
+            catch (Exception ex)
+            {
+                res = false;
+            }
+            return res;
+        }
+
+        public bool ActualizarEmpleado(EmpleadoActuBE obj)
+        {
+            restService = _connect + "Empleado/ActualizarEmpleado";
+            bool res = false;
+            try
+            {
+                var client = new RestClient(restService);
+                var request = new RestRequest();
+                request.Method = Method.Post;
+                request.AddJsonBody(obj);
+                var response = client.Execute<EmpleadoActuBE>(request);
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    res = JsonConvert.DeserializeObject<bool>(response.Content);
+                }
+            }
+            catch (Exception ex)
+            {
+                res = false;
+            }
+            return res;
+        }
+
+        public bool EliminarEmpleado(int _codEmpleado)
+        {
+            EmpleadoElimBE obj = new EmpleadoElimBE
+            {
+                codEmpleado = _codEmpleado
+            };
+            restService = _connect + "Empleado/EliminarEmpleado";
+            bool res = false;
+            try
+            {
+                var client = new RestClient(restService);
+                var request = new RestRequest();
+                request.Method = Method.Post;
+                request.AddJsonBody(obj);
+                var response = client.Execute<EmpleadoElimBE>(request);
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    res = JsonConvert.DeserializeObject<bool>(response.Content);
+                }
+            }
+            catch (Exception ex)
+            {
+                res = false;
+            }
+            return res;
         }
     }
 }

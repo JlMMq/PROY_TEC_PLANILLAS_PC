@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -24,6 +25,18 @@ namespace ProyBROL_BL
         public List<EmpleadoObjBE> ListarEmpleadosGrilla()
         {
             return objEmpleadoADO.ListarEmpleadosGrilla();
+        }
+        public bool InsertarEmpleado(EmpleadoInsertBE obj)
+        {
+            return objEmpleadoADO.InsertarEmpleado(obj);
+        }
+        public bool ActualizarEmpleado(EmpleadoActuBE obj)
+        {
+            return objEmpleadoADO.ActualizarEmpleado(obj);
+        }
+        public bool EliminarEmpleado(int codigoEmpleado)
+        {
+            return objEmpleadoADO.EliminarEmpleado(codigoEmpleado);
         }
     }
 }

@@ -9,7 +9,7 @@ namespace ProyBROL_BE
     public class HorarioBE
     {
         public int codHorario { get; set; }
-        public String? desHorario { get; set; }
+        public string? desHorario { get; set; }
         public TimeSpan? ingLUN { get; set; }
         public TimeSpan? salLUN { get; set; }
         public TimeSpan? ingMAR { get; set; }

@@ -9,24 +9,24 @@ using System.Threading.Tasks;
 
 namespace ProyBROL_ADO
 {
-    public class AreaADO
+    public  class CargoADO
     {
         public string restService;
         static string _connect = ConexionADO.conexString;
 
-        public List<AreaBE> ListarArea()
+        public List<CargoBE> ListarCargo()
         {
-            restService = _connect + "Area/ListarArea";
-            List<AreaBE> res = new List<AreaBE>();
+            restService = _connect + "Cargo/ListarCargo";
+            List<CargoBE> res = new List<CargoBE>();
             try
             {
                 var client = new RestClient(restService);
                 var request = new RestRequest();
                 request.Method = Method.Get;
-                var response = client.Execute<List<AreaBE>>(request);
+                var response = client.Execute<List<CargoBE>>(request);
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    res = JsonConvert.DeserializeObject<List<AreaBE>>(response.Content);
+                    res = JsonConvert.DeserializeObject<List<CargoBE>>(response.Content);
                 }
             }
             catch (Exception ex)
@@ -34,6 +34,6 @@ namespace ProyBROL_ADO
 
             }
             return res;
-        }   
+        }
     }
 }

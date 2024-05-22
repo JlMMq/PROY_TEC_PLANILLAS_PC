@@ -19,14 +19,14 @@ namespace ProyBROL_GUI
         EmpleadoBE objEmpleadoBE;
         EmpleadoBL objEmpleadoBL = new EmpleadoBL();
 
-        //CargoBE objCargoBE = new CargoBE();
-        //CargoBL objCargoBL = new CargoBL();
+        CargoBE objCargoBE = new CargoBE();
+        CargoBL objCargoBL = new CargoBL();
 
         //SedeBE objSedeBE = new SedeBE();
         //SedeBL objSedeBL = new SedeBL();
 
-        //AreaBE objAreaBE = new AreaBE();
-        //AreaBL objAreaBL = new AreaBL();
+        AreaBE objAreaBE = new AreaBE();
+        AreaBL objAreaBL = new AreaBL();
 
         DocumentoBE objDocumentoBE = new DocumentoBE();
         DocumentoBL objDocumentoBL = new DocumentoBL();
@@ -41,14 +41,14 @@ namespace ProyBROL_GUI
 
         private void EmpleadoNuevo_Load(object sender, EventArgs e)
         {
-           // cmbArea.DataSource = objAreaBL.ListarArea();
-            //cmbArea.SelectedIndex = 0;
+            cmbArea.DataSource = objAreaBL.ListarArea();
+            cmbArea.SelectedIndex = 0;
             cmbArea.DisplayMember = "nomArea";
             cmbArea.ValueMember = "codArea";
 
 
-           // cmbCargo.DataSource = objCargoBL.ListarCargo();
-            //cmbCargo.SelectedIndex = 0;
+            cmbCargo.DataSource = objCargoBL.ListarCargo();
+            cmbCargo.SelectedIndex = 0;
             cmbCargo.DisplayMember = "nomCargo";
             cmbCargo.ValueMember = "codCargo";
 

@@ -59,3 +59,8 @@ D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\obj\Debug\net8.0-windo
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.Empleados.resources
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.EmpleadoModificar.resources
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.EmpleadoNuevo.resources
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.ControlAsist.resources
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.EmpleadoModificar.resources
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.EmpleadoNuevo.resources
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.Empleados.resources
+C:\JlMMq\ProyectosISIL\PROY_TEC_PLANILLAS_PC\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.frmMenu.resources

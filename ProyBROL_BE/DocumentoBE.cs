@@ -8,9 +8,9 @@ namespace ProyBROL_BE
 {
     public class DocumentoBE
     {
-        public String? codDoc { get; set; }
-        public String? descrCorta { get; set; }
-        public String? descrLarga { get; set; }
+        public string? codDoc { get; set; }
+        public string? descrCorta { get; set; }
+        public string? descrLarga { get; set; }
         public int? longitud { get; set; }
     }
 

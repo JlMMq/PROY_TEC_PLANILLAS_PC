@@ -15,5 +15,9 @@ namespace ProyBROL_BL
         {
             return objHorarioADO.ConsultarHorario(codHorario);
         }
+        public List<HorarioBE> listarHorarios()
+        {
+            return objHorarioADO.listarHorarios();
+        }
     }
 }

@@ -15,5 +15,9 @@ namespace ProyBROL_BL
         {
             return objDocumentoADO.ConsultarDocumento(codDoc);
         }
+        public List<DocumentoBE> listarDocumentos()
+        {
+            return objDocumentoADO.listarDocumentos();
+        }
     }
 }

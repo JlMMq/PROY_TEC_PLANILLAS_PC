@@ -40,5 +40,27 @@ namespace ProyBROL_ADO
 
             return res;
         }
+
+        public List<DocumentoBE> listarDocumentos()
+        {
+            restService = _connect + "Documento/ListarDocumentos";
+            List<DocumentoBE> res = new List<DocumentoBE>();
+            try
+            {
+                var client = new RestClient(restService);
+                var request = new RestRequest();
+                request.Method = Method.Get;
+                var response = client.Execute<List<DocumentoBE>>(request);
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    res = JsonConvert.DeserializeObject<List<DocumentoBE>>(response.Content);
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return res;
+        }
     }
 }

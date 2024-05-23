@@ -22,8 +22,8 @@ namespace ProyBROL_GUI
         CargoBE objCargoBE = new CargoBE();
         CargoBL objCargoBL = new CargoBL();
 
-        //SedeBE objSedeBE = new SedeBE();
-        //SedeBL objSedeBL = new SedeBL();
+        SedeBE objSedeBE = new SedeBE();
+        SedeBL objSedeBL = new SedeBL();
 
         AreaBE objAreaBE = new AreaBE();
         AreaBL objAreaBL = new AreaBL();
@@ -52,18 +52,18 @@ namespace ProyBROL_GUI
             cmbCargo.DisplayMember = "nomCargo";
             cmbCargo.ValueMember = "codCargo";
 
-           // cmbSede.DataSource = objSedeBL.ListarSede();
-            //cmbSede.SelectedIndex = 0;
+            cmbSede.DataSource = objSedeBL.ListarSede();
+            cmbSede.SelectedIndex = 0;
             cmbSede.DisplayMember = "nomSede";
             cmbSede.ValueMember = "codSede";
 
-           // cmbTipoDoc.DataSource = objDocumentoBL.listarDocumentos();
-            //cmbTipoDoc.SelectedIndex = 0;
+            cmbTipoDoc.DataSource = objDocumentoBL.listarDocumentos();
+            cmbTipoDoc.SelectedIndex = 0;
             cmbTipoDoc.DisplayMember = "descrLarga";
             cmbTipoDoc.ValueMember = "codDoc";
 
-           // cmbHorar.DataSource = objHorarioBL.ListarHorarios();
-            //cmbHorar.SelectedIndex = 0;
+            cmbHorar.DataSource = objHorarioBL.listarHorarios();
+            cmbHorar.SelectedIndex = 0;
             cmbHorar.DisplayMember = "desHorario";
             cmbHorar.ValueMember = "codHorario";
         }
@@ -82,28 +82,28 @@ namespace ProyBROL_GUI
             }
             else
             {
-                objEmpleadoBE = new EmpleadoBE();
-                objEmpleadoBE.tipoDoc = cmbTipoDoc.SelectedValue.ToString();
-                objEmpleadoBE.numroDoc = txtNumDoc.Text;
-                objEmpleadoBE.apellidos = txtApelld.Text;
-                objEmpleadoBE.nombres = txtNom.Text;
-                objEmpleadoBE.fecNacimiento = dtpFecNac.Value;
-                objEmpleadoBE.genero = rdbMasculino.Checked ? "M" : "F";
-                objEmpleadoBE.correo = txtCorr.Text;
-                objEmpleadoBE.direccion = txtDirec.Text;
+                EmpleadoInsertBE objEmpleadoInsertBE = new EmpleadoInsertBE();
+                objEmpleadoInsertBE.tipoDoc = cmbTipoDoc.SelectedValue.ToString();
+                objEmpleadoInsertBE.numroDoc = txtNumDoc.Text;
+                objEmpleadoInsertBE.apellidos = txtApelld.Text;
+                objEmpleadoInsertBE.nombres = txtNom.Text;
+                objEmpleadoInsertBE.fecNacimiento = dtpFecNac.Value;
+                objEmpleadoInsertBE.genero = rdbMasculino.Checked ? "M" : "F";
+                objEmpleadoInsertBE.correo = txtCorr.Text;
+                objEmpleadoInsertBE.direccion = txtDirec.Text;
                 if (txtTelf.Text == "")
                 {
-                    objEmpleadoBE.telefono = 0;
+                    objEmpleadoInsertBE.telefono = 0;
                 }
                 else
                 {
-                   // objEmpleadoBE.telefono = Convert.ToInt64(txtTelf.Text);
+                   objEmpleadoInsertBE.telefono = Convert.ToInt32(txtTelf.Text);
                 }
-                objEmpleadoBE.fecIngreso = dtpFecIngreso.Value;
-                objEmpleadoBE.codCargo = Convert.ToInt16(cmbCargo.SelectedValue);
-                objEmpleadoBE.codArea = Convert.ToInt16(cmbArea.SelectedValue);
-                objEmpleadoBE.codSede = Convert.ToInt16(cmbSede.SelectedValue);
-                objEmpleadoBE.codHorario = Convert.ToInt16(cmbHorar.SelectedValue);
+                objEmpleadoInsertBE.fecIngreso = dtpFecIngreso.Value;
+                objEmpleadoInsertBE.codCargo = Convert.ToInt32(cmbCargo.SelectedValue);
+                objEmpleadoInsertBE.codArea = Convert.ToInt32(cmbArea.SelectedValue);
+                objEmpleadoInsertBE.codSede = Convert.ToInt32(cmbSede.SelectedValue);
+                objEmpleadoInsertBE.codHorario = Convert.ToInt32(cmbHorar.SelectedValue);
 
 
                 if (imgFoto.Image == null)
@@ -114,28 +114,28 @@ namespace ProyBROL_GUI
 
                     System.IO.MemoryStream memoryStream = new System.IO.MemoryStream();
                     imgFoto.Image.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Jpeg);
-                    objEmpleadoBE.foto = memoryStream.GetBuffer();
+                    objEmpleadoInsertBE.foto = memoryStream.GetBuffer();
                 }
                 else
                 {
                     System.IO.MemoryStream memoryStream = new System.IO.MemoryStream();
                     imgFoto.Image.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Jpeg);
-                    objEmpleadoBE.foto = memoryStream.GetBuffer();
+                    objEmpleadoInsertBE.foto = memoryStream.GetBuffer();
                 }
 
-               // objEmpleadoBE.usu_Reg = nomUser;
-                objEmpleadoBE.estado = 1;
+                objEmpleadoInsertBE.usu_Reg = nomUser;
+                objEmpleadoInsertBE.estado = 1;
 
-                //if (objEmpleadoBL.InsertarEmpleado(objEmpleadoBE))
-                //{
-                //    MessageBox.Show("Se ingreso correctamente el empleado.",
-                //        "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //}
-                //else
-                //{
-                //    MessageBox.Show("No se pudo ingresar el empleado.",
-                //        "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //}
+                if (objEmpleadoBL.InsertarEmpleado(objEmpleadoInsertBE))
+                {
+                    MessageBox.Show("Se ingreso correctamente el empleado.",
+                        "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo ingresar el empleado.",
+                        "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
                 this.Close();
             }
         }

@@ -17,14 +17,14 @@ namespace ProyBROL_GUI
         EmpleadoBE objEmpleadoBE;
         EmpleadoBL objEmpleadoBL = new EmpleadoBL();
 
-        //CargoBE objCargoBE = new CargoBE();
-        //CargoBL objCargoBL = new CargoBL();
+        CargoBE objCargoBE = new CargoBE();
+        CargoBL objCargoBL = new CargoBL();
 
-        //SedeBE objSedeBE = new SedeBE();
-        //SedeBL objSedeBL = new SedeBL();
+        SedeBE objSedeBE = new SedeBE();
+        SedeBL objSedeBL = new SedeBL();
 
-        //AreaBE objAreaBE = new AreaBE();
-        //AreaBL objAreaBL = new AreaBL();
+        AreaBE objAreaBE = new AreaBE();
+        AreaBL objAreaBL = new AreaBL();
 
         DocumentoBE objDocumentoBE = new DocumentoBE();
         DocumentoBL objDocumentoBL = new DocumentoBL();
@@ -59,29 +59,29 @@ namespace ProyBROL_GUI
             }
             else
             {
-                objEmpleadoBE = new EmpleadoBE();
-                objEmpleadoBE.codEmpleado = Convert.ToInt32(codEmpleado);
-                objEmpleadoBE.tipoDoc = cmbTipoDoc.SelectedValue.ToString();
-                objEmpleadoBE.numroDoc = txtNumDoc.Text;
-                objEmpleadoBE.apellidos = txtApelld.Text;
-                objEmpleadoBE.nombres = txtNom.Text;
-                objEmpleadoBE.fecNacimiento = dtpFecNac.Value;
-                objEmpleadoBE.genero = rdbMasculino.Checked ? "M" : "F";
-                objEmpleadoBE.correo = txtCorr.Text;
-                objEmpleadoBE.direccion = txtDirec.Text;
+                EmpleadoActuBE objEmpleadoActuBE = new EmpleadoActuBE();
+                objEmpleadoActuBE.codEmpleado = Convert.ToInt32(codEmpleado);
+                objEmpleadoActuBE.tipoDoc = cmbTipoDoc.SelectedValue.ToString();
+                objEmpleadoActuBE.numroDoc = txtNumDoc.Text;
+                objEmpleadoActuBE.apellidos = txtApelld.Text;
+                objEmpleadoActuBE.nombres = txtNom.Text;
+                objEmpleadoActuBE.fecNacimiento = dtpFecNac.Value;
+                objEmpleadoActuBE.genero = rdbMasculino.Checked ? "M" : "F";
+                objEmpleadoActuBE.correo = txtCorr.Text;
+                objEmpleadoActuBE.direccion = txtDirec.Text;
                 if (txtTelf.Text == "")
                 {
-                    objEmpleadoBE.telefono = 0;
+                    objEmpleadoActuBE.telefono = 0;
                 }
                 else
                 {
-                   // objEmpleadoBE.telefono = Convert.ToInt64(txtTelf.Text);
+                    objEmpleadoActuBE.telefono = Convert.ToInt32(txtTelf.Text);
                 }
-                objEmpleadoBE.fecIngreso = dtpFecIngreso.Value;
-                objEmpleadoBE.codCargo = Convert.ToInt16(cmbCargo.SelectedValue);
-                objEmpleadoBE.codArea = Convert.ToInt16(cmbArea.SelectedValue);
-                objEmpleadoBE.codSede = Convert.ToInt16(cmbSede.SelectedValue);
-                objEmpleadoBE.codHorario = Convert.ToInt16(cmbHorar.SelectedValue);
+                objEmpleadoActuBE.fecIngreso = dtpFecIngreso.Value;
+                objEmpleadoActuBE.codCargo = Convert.ToInt16(cmbCargo.SelectedValue);
+                objEmpleadoActuBE.codArea = Convert.ToInt16(cmbArea.SelectedValue);
+                objEmpleadoActuBE.codSede = Convert.ToInt16(cmbSede.SelectedValue);
+                objEmpleadoActuBE.codHorario = Convert.ToInt16(cmbHorar.SelectedValue);
 
 
                 if (imgFoto.Image == null)
@@ -92,28 +92,28 @@ namespace ProyBROL_GUI
 
                     System.IO.MemoryStream memoryStream = new System.IO.MemoryStream();
                     imgFoto.Image.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Jpeg);
-                    objEmpleadoBE.foto = memoryStream.GetBuffer();
+                    objEmpleadoActuBE.foto = memoryStream.GetBuffer();
                 }
                 else
                 {
                     System.IO.MemoryStream memoryStream = new System.IO.MemoryStream();
                     imgFoto.Image.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Jpeg);
-                    objEmpleadoBE.foto = memoryStream.GetBuffer();
+                    objEmpleadoActuBE.foto = memoryStream.GetBuffer();
                 }
 
-                //objEmpleadoBE.usu_UltMod = nomUser;
-                objEmpleadoBE.estado = 1;
+                objEmpleadoActuBE.usu_UltMod = nomUser;
+                objEmpleadoActuBE.estado = 1;
 
-                //if (objEmpleadoBL.ActualizarEmpleado(objEmpleadoBE))
-                //{
-                //    MessageBox.Show("Se ingreso correctamente el empleado.",
-                //        "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //}
-                //else
-                //{
-                //    MessageBox.Show("No se pudo ingresar el empleado.",
-                //        "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //}
+                if (objEmpleadoBL.ActualizarEmpleado(objEmpleadoActuBE))
+                {
+                    MessageBox.Show("Se ingreso correctamente el empleado.",
+                        "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo ingresar el empleado.",
+                        "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
                 this.Close();
             }
         }
@@ -130,116 +130,73 @@ namespace ProyBROL_GUI
 
         private void EmpleadoModificar_Load(object sender, EventArgs e)
         {
-            //objEmpleadoBE = new EmpleadoBE();
-            //objEmpleadoBE = objEmpleadoBL.ConsultarEmpleado(Convert.ToInt32(codEmpleado));
+            objEmpleadoBE = new EmpleadoBE();
+            objEmpleadoBE = objEmpleadoBL.ConsultarEmpleado(Convert.ToInt32(codEmpleado));
 
-            //DataTable areas = new DataTable();
-            ////areas = objAreaBL.ListarArea();
-            //cmbArea.DataSource = areas;
-            ////DataRow[] filasAreas = areas.Select($"codArea = '{objEmpleadoBE.codArea}'");
-            ////if (filasAreas.Length > 0)
-            ////{
-            ////    cmbArea.SelectedIndex = areas.Rows.IndexOf(filasAreas[0]);
-            ////}
-            ////else
-            ////{
-            ////    cmbArea.SelectedIndex = 0;
-            ////}
-            //cmbArea.DisplayMember = "nomArea";
-            //cmbArea.ValueMember = "codArea";
+            List<AreaBE> areas = objAreaBL.ListarArea();
+            cmbArea.DataSource = areas;
+            cmbArea.DisplayMember = "nomArea";
+            cmbArea.ValueMember = "codArea";
+            cmbArea.SelectedValue = objEmpleadoBE.codArea;
+           
+            List<CargoBE> cargos = objCargoBL.ListarCargo();
+            cmbCargo.DataSource = cargos;
+            cmbCargo.DisplayMember = "nomCargo";
+            cmbCargo.ValueMember = "codCargo";
+            cmbCargo.SelectedValue = objEmpleadoBE.codCargo;
 
-            //DataTable cargos = new DataTable();
-            ////cargos = objCargoBL.ListarCargo();
-            //cmbCargo.DataSource = cargos;
-            //DataRow[] filasCargos = cargos.Select($"codCargo = '{objEmpleadoBE.codCargo}'");
-            //if (filasCargos.Length > 0)
-            //{
-            //    cmbCargo.SelectedIndex = cargos.Rows.IndexOf(filasCargos[0]);
-            //}
-            //else
-            //{
-            //    cmbCargo.SelectedIndex = 0;
-            //}
-            //cmbCargo.DisplayMember = "nomCargo";
-            //cmbCargo.ValueMember = "codCargo";
+           
+            List<SedeBE> sedes = objSedeBL.ListarSede();
+            cmbSede.DataSource = sedes;
+            cmbSede.DisplayMember = "nomSede";
+            cmbSede.ValueMember = "codSede";
+            cmbSede.SelectedValue = objEmpleadoBE.codSede;
 
-            //DataTable sedes = new DataTable();
-            ////sedes = objSedeBL.ListarSede();
-            //cmbSede.DataSource = sedes;
-            //DataRow[] filasSedes = sedes.Select($"codSede = '{objEmpleadoBE.codSede}'");
-            //if(filasSedes.Length > 0){
-            //    cmbSede.SelectedIndex = sedes.Rows.IndexOf(filasSedes[0]);
-            //}
-            //else
-            //{
-            //    cmbSede.SelectedIndex = 0;
-            //}
-            //cmbSede.DisplayMember = "nomSede";
-            //cmbSede.ValueMember = "codSede";
+            List<DocumentoBE> documentos = objDocumentoBL.listarDocumentos();
+            cmbTipoDoc.DataSource = documentos;
+       
+            cmbTipoDoc.DisplayMember = "descrLarga";
+            cmbTipoDoc.ValueMember = "codDoc";
+            cmbTipoDoc.SelectedValue = objEmpleadoBE.tipoDoc;
 
-            //DataTable documentos = new DataTable();
-            ////documentos = objDocumentoBL.listarDocumentos();
-            //cmbTipoDoc.DataSource = documentos;
-            //DataRow[] filasEncontradas = documentos.Select($"codDoc = '{objEmpleadoBE.tipoDoc}'");
-            //if (filasEncontradas.Length > 0)
-            //{
-            //    cmbTipoDoc.SelectedIndex = documentos.Rows.IndexOf(filasEncontradas[0]);
-            //}
-            //else
-            //{
-            //    cmbTipoDoc.SelectedIndex = 0;
-            //}
-            //cmbTipoDoc.DisplayMember = "descrLarga";
-            //cmbTipoDoc.ValueMember = "codDoc";
+            if (objEmpleadoBE.genero == "F")
+            {
+                rdbFemenino.Checked = true;
+                rdbMasculino.Checked = false;
+            }
+            else
+            {
+                rdbMasculino.Checked = true;
+                rdbFemenino.Checked = false;
+            }
+            List<HorarioBE> horarios = objHorarioBL.listarHorarios();
+            cmbHorar.DataSource = horarios;
+          
+            cmbHorar.DisplayMember = "desHorario";
+            cmbHorar.ValueMember = "codHorario";
+            cmbHorar.SelectedValue = objEmpleadoBE.codHorario;
 
+            txtNumDoc.Text = objEmpleadoBE.numroDoc.ToString();
+            txtApelld.Text = objEmpleadoBE.apellidos.ToString();
+            txtNom.Text = objEmpleadoBE.nombres.ToString();
+            txtCorr.Text = objEmpleadoBE.correo.ToString();
+            txtDirec.Text = objEmpleadoBE.direccion.ToString();
+            txtTelf.Text = objEmpleadoBE.telefono.ToString();
 
-            //if(objEmpleadoBE.genero == "F")
-            //{
-            //    rdbFemenino.Checked = true;
-            //    rdbMasculino.Checked = false;
-            //}
-            //else
-            //{
-            //    rdbMasculino.Checked = true;
-            //    rdbFemenino.Checked = false;
-            //}
-
-
-            //DataTable horarios = new DataTable();
-            ////horarios = objHorarioBL.ListarHorarios();
-            //cmbHorar.DataSource = horarios;
-            //DataRow[] filasHor = horarios.Select($"codHorario = '{objEmpleadoBE.codHorario}'");
-            //if(filasHor.Length > 0)
-            //{
-            //    cmbHorar.SelectedIndex = horarios.Rows.IndexOf(filasHor[0]);    
-            //}
-            //else
-            //{
-            //    cmbHorar.SelectedIndex = 0;
-            //}
-            //cmbHorar.DisplayMember = "desHorario";
-            //cmbHorar.ValueMember = "codHorario";
-
-            //txtNumDoc.Text = objEmpleadoBE.numroDoc.ToString();
-            //txtApelld.Text = objEmpleadoBE.apellidos.ToString();
-            //txtNom.Text = objEmpleadoBE.nombres.ToString();
-            //txtCorr.Text = objEmpleadoBE.correo.ToString();
-            //txtDirec.Text = objEmpleadoBE.direccion.ToString();
-            //txtTelf.Text = objEmpleadoBE.telefono.ToString();
-            ////dtpFecNac.Value = objEmpleadoBE.fecNacimiento;
-            ////dtpFecIngreso.Value = objEmpleadoBE.fecIngreso;
-            //byte[] img = objEmpleadoBE.foto;
-            //if (img != null && img.Length > 0)
-            //{
-            //    System.IO.MemoryStream memoryStream = new System.IO.MemoryStream(img);
-            //    imgFoto.Image = Image.FromStream(memoryStream);
-            //}
-            //else
-            //{
-            //    string basePath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
-            //    string fotosTempPath = Path.Combine(basePath, "FotosTemp\\");
-            //    imgFoto.Image = Image.FromFile(fotosTempPath + "noimage.jpg");
-            //}
+            dtpFecNac.Value = objEmpleadoBE.fecNacimiento;
+            dtpFecIngreso.Value = objEmpleadoBE.fecIngreso;
+            byte[] img = objEmpleadoBE.foto;
+            if (img != null && img.Length > 0)
+            {
+                System.IO.MemoryStream memoryStream = new System.IO.MemoryStream(img);
+                imgFoto.Image = Image.FromStream(memoryStream);
+            }
+            else
+            {
+                string basePath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+                string fotosTempPath = Path.Combine(basePath, "FotosTemp\\");
+                imgFoto.Image = Image.FromFile(fotosTempPath + "noimage.jpg");
+            }
         }
 
         private void txtNumDoc_KeyPress(object sender, KeyPressEventArgs e)

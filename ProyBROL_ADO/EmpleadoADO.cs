@@ -44,7 +44,7 @@ namespace ProyBROL_ADO
 
         public EmpleadoBE ConsultarEmpleadoCodDoc(int codigo, string numroDoc)
         {
-            restService = _connect + "Empleado/ConsultarEmpleado";
+            restService = _connect + "Empleado/ConsultarEmpleadoCodDoc";
             EmpleadoBE res = new EmpleadoBE();
             EmpleadoConsCodDocInBE obj = new EmpleadoConsCodDocInBE
             {

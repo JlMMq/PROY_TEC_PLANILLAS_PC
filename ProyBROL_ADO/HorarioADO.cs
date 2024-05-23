@@ -40,5 +40,27 @@ namespace ProyBROL_ADO
 
             return res;
         }
+
+        public List<HorarioBE> listarHorarios()
+        {
+            restService = _connect + "Horario/ListarHorarios";
+            List<HorarioBE> res = new List<HorarioBE>();
+            try
+            {
+                var client = new RestClient(restService);
+                var request = new RestRequest();
+                request.Method = Method.Get;
+                var response = client.Execute<List<HorarioBE>>(request);
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    res = JsonConvert.DeserializeObject<List<HorarioBE>>(response.Content);
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return res;
+        }
     }
 }

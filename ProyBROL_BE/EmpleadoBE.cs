@@ -15,12 +15,12 @@ namespace ProyBROL_BE
         public String tipoDoc { get; set; }
         public String apellidos { get; set; }
         public String? nombres { get; set; }
-        public DateTime? fecNacimiento { get; set; }
+        public DateTime fecNacimiento { get; set; }
         public String? genero { get; set; }
         public String? correo { get; set; }
         public String? direccion { get; set; }
         public int? telefono { get; set; }
-        public DateTime? fecIngreso { get; set; }
+        public DateTime fecIngreso { get; set; }
 
         public int? codCargo { get; set; }
         public int? codArea { get; set; }

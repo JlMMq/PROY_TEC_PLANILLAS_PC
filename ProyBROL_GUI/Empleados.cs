@@ -41,22 +41,29 @@ namespace ProyBROL_GUI
         {
             //dtv = new DataView(objEmpleadoBL.ListarEmpleados());
             //dtv.RowFilter = "nombres like '%" + strFilter + "%'";
-            dtgEmpleados.DataSource = dtv;
+            //dtgEmpleados.DataSource = dtv;
+            //txtNumReg.Text = dtgEmpleados.Rows.Count.ToString();
+            List<EmpleadoObjBE> empleados = objEmpleadoBL.ListarEmpleadosGrilla();
+            var empleadosFiltrados = empleados.Where(e => e.nombres.ToString().Contains(strFilter)).ToList();
+            dtgEmpleados.DataSource = empleadosFiltrados;
             txtNumReg.Text = dtgEmpleados.Rows.Count.ToString();
         }
         private void filtrarDatosCodigo(String strFilter)
         {
-
-            //dtv = new DataView(objEmpleadoBL.ListarEmpleados());
-            //dtv.RowFilter = $"CONVERT(codEmpleado, 'System.String') LIKE '%{strFilter}%'";
-            dtgEmpleados.DataSource = dtv;
+            List<EmpleadoObjBE> empleados = objEmpleadoBL.ListarEmpleadosGrilla();
+            var empleadosFiltrados = empleados.Where(e => e.codEmpleado.ToString().Contains(strFilter)).ToList();
+            dtgEmpleados.DataSource = empleadosFiltrados;
             txtNumReg.Text = dtgEmpleados.Rows.Count.ToString();
         }
         private void filtrarDatosApellido(String strFilter)
         {
             //dtv = new DataView(objEmpleadoBL.ListarEmpleados());
             //dtv.RowFilter = "apellidos like '%" + strFilter + "%'";
-            dtgEmpleados.DataSource = dtv;
+            //dtgEmpleados.DataSource = dtv;
+            //txtNumReg.Text = dtgEmpleados.Rows.Count.ToString();
+            List<EmpleadoObjBE> empleados = objEmpleadoBL.ListarEmpleadosGrilla();
+            var empleadosFiltrados = empleados.Where(e => e.apellidos.ToString().Contains(strFilter)).ToList();
+            dtgEmpleados.DataSource = empleadosFiltrados;
             txtNumReg.Text = dtgEmpleados.Rows.Count.ToString();
         }
 

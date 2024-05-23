@@ -593,7 +593,7 @@ namespace ProyBROL_GUI
                
 
                 //SALIDA 
-                if (objDiarioBE.hora4 == null && objDiarioBE.hora1 != null)
+                if (objDiarioBE.hora4 == null && objDiarioBE.hora1 != null && objDiarioBE.hora3 != null)
                 {
                     ImprimirInfEmpleado();
                     objMarcasBE.empleado = objEmpleadoBE.codEmpleado;

@@ -241,7 +241,6 @@
             dtgEmpleados.AllowUserToDeleteRows = false;
             dtgEmpleados.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dtgEmpleados.AutoGenerateColumns = false;
-            dtgEmpleados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgEmpleados.Columns.AddRange(new DataGridViewColumn[] { codEmpleadoDataGridViewTextBoxColumn, numroDocDataGridViewTextBoxColumn, nombreDocumento, apellidosDataGridViewTextBoxColumn, nombresDataGridViewTextBoxColumn, nombreHorario, nombreArea, nombreCargo, direccion, telefono, estadoDataGridViewTextBoxColumn });
             dtgEmpleados.DataSource = empleadoObjBEBindingSource;
             dtgEmpleados.Location = new Point(26, 103);
@@ -254,79 +253,98 @@
             // 
             // codEmpleadoDataGridViewTextBoxColumn
             // 
+            codEmpleadoDataGridViewTextBoxColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             codEmpleadoDataGridViewTextBoxColumn.DataPropertyName = "codEmpleado";
             codEmpleadoDataGridViewTextBoxColumn.HeaderText = "Codigo";
             codEmpleadoDataGridViewTextBoxColumn.Name = "codEmpleadoDataGridViewTextBoxColumn";
             codEmpleadoDataGridViewTextBoxColumn.ReadOnly = true;
+            codEmpleadoDataGridViewTextBoxColumn.Width = 71;
             // 
             // numroDocDataGridViewTextBoxColumn
             // 
+            numroDocDataGridViewTextBoxColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             numroDocDataGridViewTextBoxColumn.DataPropertyName = "numroDoc";
             numroDocDataGridViewTextBoxColumn.HeaderText = "Documento Identidad";
             numroDocDataGridViewTextBoxColumn.Name = "numroDocDataGridViewTextBoxColumn";
             numroDocDataGridViewTextBoxColumn.ReadOnly = true;
+            numroDocDataGridViewTextBoxColumn.Width = 148;
             // 
             // nombreDocumento
             // 
+            nombreDocumento.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             nombreDocumento.DataPropertyName = "nombreDocumento";
             nombreDocumento.HeaderText = "Tipo";
             nombreDocumento.Name = "nombreDocumento";
             nombreDocumento.ReadOnly = true;
-            nombreDocumento.Width = 50;
+            nombreDocumento.Width = 55;
             // 
             // apellidosDataGridViewTextBoxColumn
             // 
+            apellidosDataGridViewTextBoxColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
             apellidosDataGridViewTextBoxColumn.DataPropertyName = "apellidos";
             apellidosDataGridViewTextBoxColumn.HeaderText = "Apellidos";
             apellidosDataGridViewTextBoxColumn.Name = "apellidosDataGridViewTextBoxColumn";
             apellidosDataGridViewTextBoxColumn.ReadOnly = true;
+            apellidosDataGridViewTextBoxColumn.Width = 5;
             // 
             // nombresDataGridViewTextBoxColumn
             // 
+            nombresDataGridViewTextBoxColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             nombresDataGridViewTextBoxColumn.DataPropertyName = "nombres";
             nombresDataGridViewTextBoxColumn.HeaderText = "Nombres";
             nombresDataGridViewTextBoxColumn.Name = "nombresDataGridViewTextBoxColumn";
             nombresDataGridViewTextBoxColumn.ReadOnly = true;
+            nombresDataGridViewTextBoxColumn.Width = 81;
             // 
             // nombreHorario
             // 
+            nombreHorario.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             nombreHorario.DataPropertyName = "nombreHorario";
             nombreHorario.HeaderText = "Horario";
             nombreHorario.Name = "nombreHorario";
             nombreHorario.ReadOnly = true;
+            nombreHorario.Width = 72;
             // 
             // nombreArea
             // 
+            nombreArea.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             nombreArea.DataPropertyName = "nombreArea";
             nombreArea.HeaderText = "Area";
             nombreArea.Name = "nombreArea";
             nombreArea.ReadOnly = true;
+            nombreArea.Width = 56;
             // 
             // nombreCargo
             // 
+            nombreCargo.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             nombreCargo.DataPropertyName = "nombreCargo";
             nombreCargo.HeaderText = "Cargo";
             nombreCargo.Name = "nombreCargo";
             nombreCargo.ReadOnly = true;
+            nombreCargo.Width = 64;
             // 
             // direccion
             // 
+            direccion.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             direccion.DataPropertyName = "direccion";
             direccion.FillWeight = 200F;
             direccion.HeaderText = "Direccion";
             direccion.Name = "direccion";
             direccion.ReadOnly = true;
+            direccion.Width = 82;
             // 
             // telefono
             // 
+            telefono.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             telefono.DataPropertyName = "telefono";
             telefono.HeaderText = "Telefono";
             telefono.Name = "telefono";
             telefono.ReadOnly = true;
-            telefono.Width = 120;
+            telefono.Width = 77;
             // 
             // estadoDataGridViewTextBoxColumn
             // 
+            estadoDataGridViewTextBoxColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             estadoDataGridViewTextBoxColumn.DataPropertyName = "estado";
             estadoDataGridViewTextBoxColumn.HeaderText = "Estado";
             estadoDataGridViewTextBoxColumn.Name = "estadoDataGridViewTextBoxColumn";

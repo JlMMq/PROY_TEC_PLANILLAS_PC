@@ -120,15 +120,18 @@ namespace ProyBROL_GUI
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (objEmpleadoBL.EliminarEmpleado(codEmpleado))
+            if (MessageBox.Show("¿Deseas elimnar el empleado?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                cargardtgEmpleados("");
-                lblMensaje.Text = "Se elimino el empleado correctamente.";
-            }
-            else
-            {
-                cargardtgEmpleados("");
-                lblMensaje.Text = "No se pudo eliminar el empleado. Puede ser que el empleado ya tenga una marca asignada.";
+                if (objEmpleadoBL.EliminarEmpleado(codEmpleado))
+                {
+                    cargardtgEmpleados("");
+                    lblMensaje.Text = "Se elimino el empleado correctamente.";
+                }
+                else
+                {
+                    cargardtgEmpleados("");
+                    lblMensaje.Text = "No se pudo eliminar el empleado. Puede ser que el empleado ya tenga una marca asignada.";
+                }
             }
         }
 

@@ -3,16 +3,68 @@
   "WorkspaceRootPath": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\controlasist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\controlasist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\controlasist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\controlasist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_gui\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1906DD3-164C-4BE3-91B4-A8425C18BD66}|ProyBROL_BE\\ProyBROL_BE.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_be\\empleadobe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1906DD3-164C-4BE3-91B4-A8425C18BD66}|ProyBROL_BE\\ProyBROL_BE.csproj|solutionrelative:proybrol_be\\empleadobe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_ado\\empleadoado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|solutionrelative:proybrol_ado\\empleadoado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_gui\\empleadomodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\empleadomodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_gui\\empleadonuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\empleadonuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_ado\\areaado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|solutionrelative:proybrol_ado\\areaado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_ado\\sedeado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|solutionrelative:proybrol_ado\\sedeado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B048F7-D5BD-47F0-82EC-746543DFF5B7}|ProyBROL_BL\\ProyBROL_BL.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_bl\\sedebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B048F7-D5BD-47F0-82EC-746543DFF5B7}|ProyBROL_BL\\ProyBROL_BL.csproj|solutionrelative:proybrol_bl\\sedebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_ado\\documentoado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|solutionrelative:proybrol_ado\\documentoado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B048F7-D5BD-47F0-82EC-746543DFF5B7}|ProyBROL_BL\\ProyBROL_BL.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_bl\\documentobl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B048F7-D5BD-47F0-82EC-746543DFF5B7}|ProyBROL_BL\\ProyBROL_BL.csproj|solutionrelative:proybrol_bl\\documentobl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65B048F7-D5BD-47F0-82EC-746543DFF5B7}|ProyBROL_BL\\ProyBROL_BL.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_bl\\horariobl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65B048F7-D5BD-47F0-82EC-746543DFF5B7}|ProyBROL_BL\\ProyBROL_BL.csproj|solutionrelative:proybrol_bl\\horariobl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_ado\\horarioado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|solutionrelative:proybrol_ado\\horarioado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\controlasist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\controlasist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_gui\\controlasist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\controlasist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_gui\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -27,52 +79,8 @@
       "RelativeMoniker": "D:0:0:{65B048F7-D5BD-47F0-82EC-746543DFF5B7}|ProyBROL_BL\\ProyBROL_BL.csproj|solutionrelative:proybrol_bl\\empleadobl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_ado\\empleadoado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|solutionrelative:proybrol_ado\\empleadoado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_gui\\empleadomodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\empleadomodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1906DD3-164C-4BE3-91B4-A8425C18BD66}|ProyBROL_BE\\ProyBROL_BE.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_be\\empleadobe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1906DD3-164C-4BE3-91B4-A8425C18BD66}|ProyBROL_BE\\ProyBROL_BE.csproj|solutionrelative:proybrol_be\\empleadobe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_gui\\empleadonuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\empleadonuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_gui\\empleadomodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\empleadomodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65B048F7-D5BD-47F0-82EC-746543DFF5B7}|ProyBROL_BL\\ProyBROL_BL.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_bl\\documentobl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65B048F7-D5BD-47F0-82EC-746543DFF5B7}|ProyBROL_BL\\ProyBROL_BL.csproj|solutionrelative:proybrol_bl\\documentobl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65B048F7-D5BD-47F0-82EC-746543DFF5B7}|ProyBROL_BL\\ProyBROL_BL.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_bl\\horariobl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65B048F7-D5BD-47F0-82EC-746543DFF5B7}|ProyBROL_BL\\ProyBROL_BL.csproj|solutionrelative:proybrol_bl\\horariobl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_ado\\horarioado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|solutionrelative:proybrol_ado\\horarioado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_ado\\documentoado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|solutionrelative:proybrol_ado\\documentoado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_ado\\areaado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|solutionrelative:proybrol_ado\\areaado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65B048F7-D5BD-47F0-82EC-746543DFF5B7}|ProyBROL_BL\\ProyBROL_BL.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_bl\\sedebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65B048F7-D5BD-47F0-82EC-746543DFF5B7}|ProyBROL_BL\\ProyBROL_BL.csproj|solutionrelative:proybrol_bl\\sedebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_ado\\sedeado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|solutionrelative:proybrol_ado\\sedeado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -115,31 +123,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "frmMenu.cs",
+              "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\frmMenu.cs",
+              "RelativeDocumentMoniker": "ProyBROL_GUI\\frmMenu.cs",
+              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\frmMenu.cs",
+              "RelativeToolTip": "ProyBROL_GUI\\frmMenu.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T02:29:52.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmMenu.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\frmMenu.cs",
+              "RelativeDocumentMoniker": "ProyBROL_GUI\\frmMenu.cs",
+              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\frmMenu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyBROL_GUI\\frmMenu.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T02:29:48.64Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "ControlAsist.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ControlAsist.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\ControlAsist.cs",
               "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ControlAsist.cs",
               "RelativeToolTip": "ProyBROL_GUI\\ControlAsist.cs",
-              "ViewState": "AQIAABACAAAAAAAAAAAkwMUBAAAQAAAA",
+              "ViewState": "AQIAALoBAAAAAAAAAAAYwCwCAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-23T03:01:07.009Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ControlAsist.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ControlAsist.cs",
-              "RelativeDocumentMoniker": "ProyBROL_GUI\\ControlAsist.cs",
-              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ControlAsist.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyBROL_GUI\\ControlAsist.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T04:58:03.131Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "EmpleadoBE.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_BE\\EmpleadoBE.cs",
               "RelativeDocumentMoniker": "ProyBROL_BE\\EmpleadoBE.cs",
@@ -191,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 10,
               "Title": "DocumentoADO.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_ADO\\DocumentoADO.cs",
               "RelativeDocumentMoniker": "ProyBROL_ADO\\DocumentoADO.cs",
@@ -204,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 9,
               "Title": "SedeBL.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_BL\\SedeBL.cs",
               "RelativeDocumentMoniker": "ProyBROL_BL\\SedeBL.cs",
@@ -217,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 8,
               "Title": "SedeADO.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_ADO\\SedeADO.cs",
               "RelativeDocumentMoniker": "ProyBROL_ADO\\SedeADO.cs",
@@ -230,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 7,
               "Title": "AreaADO.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_ADO\\AreaADO.cs",
               "RelativeDocumentMoniker": "ProyBROL_ADO\\AreaADO.cs",
@@ -243,33 +264,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "EmpleadoNuevo.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\EmpleadoNuevo.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\EmpleadoNuevo.cs",
               "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\EmpleadoNuevo.cs",
               "RelativeToolTip": "ProyBROL_GUI\\EmpleadoNuevo.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAcwIAAAAAQAAAA",
+              "ViewState": "AQIAADQAAAAAAAAAAAAIwIAAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-22T03:42:59.492Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
+              "Title": "Empleados.cs",
+              "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\Empleados.cs",
+              "RelativeDocumentMoniker": "ProyBROL_GUI\\Empleados.cs",
+              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\Empleados.cs",
+              "RelativeToolTip": "ProyBROL_GUI\\Empleados.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAqwHoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T01:33:18.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ControlAsist.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ControlAsist.cs",
+              "RelativeDocumentMoniker": "ProyBROL_GUI\\ControlAsist.cs",
+              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ControlAsist.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyBROL_GUI\\ControlAsist.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T04:58:03.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "EmpleadoModificar.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\EmpleadoModificar.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\EmpleadoModificar.cs",
               "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\EmpleadoModificar.cs",
               "RelativeToolTip": "ProyBROL_GUI\\EmpleadoModificar.cs",
-              "ViewState": "AQIAAJoAAAAAAAAAAADwv0cAAAAQAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAkwCIAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T02:24:24.175Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "EmpleadoADO.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_ADO\\EmpleadoADO.cs",
               "RelativeDocumentMoniker": "ProyBROL_ADO\\EmpleadoADO.cs",
@@ -282,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 18,
               "Title": "EmpleadoBL.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_BL\\EmpleadoBL.cs",
               "RelativeDocumentMoniker": "ProyBROL_BL\\EmpleadoBL.cs",
@@ -290,25 +335,11 @@
               "RelativeToolTip": "ProyBROL_BL\\EmpleadoBL.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAAiwBsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T01:34:56.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T01:34:56.122Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Empleados.cs",
-              "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\Empleados.cs",
-              "RelativeDocumentMoniker": "ProyBROL_GUI\\Empleados.cs",
-              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\Empleados.cs",
-              "RelativeToolTip": "ProyBROL_GUI\\Empleados.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAqwEAAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T01:33:18.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "EmpleadoModificar.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\EmpleadoModificar.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\EmpleadoModificar.cs",
@@ -320,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 17,
               "Title": "EmpleadoNuevo.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\EmpleadoNuevo.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\EmpleadoNuevo.cs",
@@ -332,15 +363,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Empleados.cs [Dise\u00F1o]",
+              "DocumentIndex": 16,
+              "Title": "Empleados.cs [Design]",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\Empleados.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\Empleados.cs",
-              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\Empleados.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyBROL_GUI\\Empleados.cs [Dise\u00F1o]",
+              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\Empleados.cs [Design]",
+              "RelativeToolTip": "ProyBROL_GUI\\Empleados.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T01:29:17.084Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "EditorCaption": " [Design]"
             }
           ]
         },

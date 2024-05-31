@@ -161,6 +161,7 @@
             // dtpFecIngreso
             // 
             dtpFecIngreso.CustomFormat = "";
+            dtpFecIngreso.Enabled = false;
             dtpFecIngreso.Format = DateTimePickerFormat.Short;
             dtpFecIngreso.Location = new Point(125, 32);
             dtpFecIngreso.Name = "dtpFecIngreso";
@@ -292,6 +293,7 @@
             // dtpFecNac
             // 
             dtpFecNac.CustomFormat = "";
+            dtpFecNac.Enabled = false;
             dtpFecNac.Format = DateTimePickerFormat.Short;
             dtpFecNac.Location = new Point(143, 110);
             dtpFecNac.Name = "dtpFecNac";
@@ -359,6 +361,7 @@
             // txtNom
             // 
             txtNom.BorderStyle = BorderStyle.FixedSingle;
+            txtNom.Enabled = false;
             txtNom.Location = new Point(143, 79);
             txtNom.Name = "txtNom";
             txtNom.Size = new Size(186, 25);
@@ -367,6 +370,7 @@
             // txtApelld
             // 
             txtApelld.BorderStyle = BorderStyle.FixedSingle;
+            txtApelld.Enabled = false;
             txtApelld.Location = new Point(143, 48);
             txtApelld.Name = "txtApelld";
             txtApelld.Size = new Size(186, 25);
@@ -375,6 +379,7 @@
             // txtNumDoc
             // 
             txtNumDoc.BorderStyle = BorderStyle.FixedSingle;
+            txtNumDoc.Enabled = false;
             txtNumDoc.Location = new Point(143, 18);
             txtNumDoc.MaxLength = 15;
             txtNumDoc.Name = "txtNumDoc";
@@ -384,6 +389,7 @@
             // 
             // cmbTipoDoc
             // 
+            cmbTipoDoc.Enabled = false;
             cmbTipoDoc.FormattingEnabled = true;
             cmbTipoDoc.Location = new Point(468, 18);
             cmbTipoDoc.Name = "cmbTipoDoc";

@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_gui\\empleadomodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\empleadomodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_gui\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_gui\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,7 +63,7 @@
       "RelativeMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|solutionrelative:proybrol_ado\\horarioado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\controlasist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_gui\\controlasist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\controlasist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -77,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{65B048F7-D5BD-47F0-82EC-746543DFF5B7}|ProyBROL_BL\\ProyBROL_BL.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_bl\\empleadobl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{65B048F7-D5BD-47F0-82EC-746543DFF5B7}|ProyBROL_BL\\ProyBROL_BL.csproj|solutionrelative:proybrol_bl\\empleadobl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\proybrol_gui\\empleadomodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\empleadomodificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -122,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "frmMenu.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\frmMenu.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\frmMenu.cs",
@@ -147,33 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ControlAsist.cs",
-              "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ControlAsist.cs",
-              "RelativeDocumentMoniker": "ProyBROL_GUI\\ControlAsist.cs",
-              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ControlAsist.cs",
-              "RelativeToolTip": "ProyBROL_GUI\\ControlAsist.cs",
-              "ViewState": "AQIAALoBAAAAAAAAAAAYwCwCAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T03:01:07.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EmpleadoBE.cs",
-              "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_BE\\EmpleadoBE.cs",
-              "RelativeDocumentMoniker": "ProyBROL_BE\\EmpleadoBE.cs",
-              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_BE\\EmpleadoBE.cs",
-              "RelativeToolTip": "ProyBROL_BE\\EmpleadoBE.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T02:39:38.199Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "HorarioBL.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_BL\\HorarioBL.cs",
               "RelativeDocumentMoniker": "ProyBROL_BL\\HorarioBL.cs",
@@ -181,12 +155,11 @@
               "RelativeToolTip": "ProyBROL_BL\\HorarioBL.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T02:02:53.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T02:02:53.16Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "HorarioADO.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_ADO\\HorarioADO.cs",
               "RelativeDocumentMoniker": "ProyBROL_ADO\\HorarioADO.cs",
@@ -194,12 +167,11 @@
               "RelativeToolTip": "ProyBROL_ADO\\HorarioADO.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAwwCsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T02:01:56.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T02:01:56.556Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "DocumentoBL.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_BL\\DocumentoBL.cs",
               "RelativeDocumentMoniker": "ProyBROL_BL\\DocumentoBL.cs",
@@ -207,12 +179,11 @@
               "RelativeToolTip": "ProyBROL_BL\\DocumentoBL.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T01:59:19.58Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T01:59:19.58Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "DocumentoADO.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_ADO\\DocumentoADO.cs",
               "RelativeDocumentMoniker": "ProyBROL_ADO\\DocumentoADO.cs",
@@ -220,12 +191,11 @@
               "RelativeToolTip": "ProyBROL_ADO\\DocumentoADO.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAQwCsAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T01:57:37.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T01:57:37.546Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "SedeBL.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_BL\\SedeBL.cs",
               "RelativeDocumentMoniker": "ProyBROL_BL\\SedeBL.cs",
@@ -233,12 +203,11 @@
               "RelativeToolTip": "ProyBROL_BL\\SedeBL.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T01:55:26.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T01:55:26.643Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "SedeADO.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_ADO\\SedeADO.cs",
               "RelativeDocumentMoniker": "ProyBROL_ADO\\SedeADO.cs",
@@ -246,12 +215,11 @@
               "RelativeToolTip": "ProyBROL_ADO\\SedeADO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T01:53:47.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T01:53:47.7Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AreaADO.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_ADO\\AreaADO.cs",
               "RelativeDocumentMoniker": "ProyBROL_ADO\\AreaADO.cs",
@@ -259,12 +227,47 @@
               "RelativeToolTip": "ProyBROL_ADO\\AreaADO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T03:44:20.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T03:44:20.438Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "EmpleadoModificar.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\EmpleadoModificar.cs",
+              "RelativeDocumentMoniker": "ProyBROL_GUI\\EmpleadoModificar.cs",
+              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\EmpleadoModificar.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyBROL_GUI\\EmpleadoModificar.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T01:29:27.778Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmpleadoBE.cs",
+              "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_BE\\EmpleadoBE.cs",
+              "RelativeDocumentMoniker": "ProyBROL_BE\\EmpleadoBE.cs",
+              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_BE\\EmpleadoBE.cs",
+              "RelativeToolTip": "ProyBROL_BE\\EmpleadoBE.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T02:39:38.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ControlAsist.cs",
+              "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ControlAsist.cs",
+              "RelativeDocumentMoniker": "ProyBROL_GUI\\ControlAsist.cs",
+              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ControlAsist.cs",
+              "RelativeToolTip": "ProyBROL_GUI\\ControlAsist.cs",
+              "ViewState": "AQIAALoBAAAAAAAAAAAYwCwCAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T03:01:07.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "EmpleadoNuevo.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\EmpleadoNuevo.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\EmpleadoNuevo.cs",
@@ -272,12 +275,11 @@
               "RelativeToolTip": "ProyBROL_GUI\\EmpleadoNuevo.cs",
               "ViewState": "AQIAADQAAAAAAAAAAAAIwIAAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T03:42:59.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T03:42:59.492Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Empleados.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\Empleados.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\Empleados.cs",
@@ -285,12 +287,11 @@
               "RelativeToolTip": "ProyBROL_GUI\\Empleados.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAqwHoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T01:33:18.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T01:33:18.376Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ControlAsist.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ControlAsist.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\ControlAsist.cs",
@@ -301,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "EmpleadoModificar.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\EmpleadoModificar.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\EmpleadoModificar.cs",
@@ -314,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "EmpleadoADO.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_ADO\\EmpleadoADO.cs",
               "RelativeDocumentMoniker": "ProyBROL_ADO\\EmpleadoADO.cs",
@@ -322,12 +323,11 @@
               "RelativeToolTip": "ProyBROL_ADO\\EmpleadoADO.cs",
               "ViewState": "AQIAADAAAAAAAAAAAAAYwF0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T01:46:13.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T01:46:13.877Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "EmpleadoBL.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_BL\\EmpleadoBL.cs",
               "RelativeDocumentMoniker": "ProyBROL_BL\\EmpleadoBL.cs",
@@ -339,39 +339,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "EmpleadoModificar.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\EmpleadoModificar.cs",
-              "RelativeDocumentMoniker": "ProyBROL_GUI\\EmpleadoModificar.cs",
-              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\EmpleadoModificar.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyBROL_GUI\\EmpleadoModificar.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T01:29:27.778Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "EmpleadoNuevo.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\EmpleadoNuevo.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\EmpleadoNuevo.cs",
               "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\EmpleadoNuevo.cs [Dise\u00F1o]",
               "RelativeToolTip": "ProyBROL_GUI\\EmpleadoNuevo.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T01:29:20.634Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-17T01:29:20.634Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Empleados.cs [Design]",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\Empleados.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\Empleados.cs",
               "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\Empleados.cs [Design]",
               "RelativeToolTip": "ProyBROL_GUI\\Empleados.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T01:29:17.084Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-17T01:29:17.084Z"
             }
           ]
         },

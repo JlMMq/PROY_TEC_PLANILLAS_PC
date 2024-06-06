@@ -14,6 +14,9 @@ namespace ProyBROL_GUI
     {
         private int permiso;
         Empleados formEmpleado;
+        Usuarios formUsuarios;
+        UsuariosEmp formUsuariosEmp;
+
         public frmMenu(int permiso)
         {
             InitializeComponent();
@@ -27,15 +30,21 @@ namespace ProyBROL_GUI
                 btnEmpleados.Visible = true;
                 btnHorarios.Visible = true;
                 btnRegAsist.Visible = true;
+                btnUsers.Visible = true;
+                btnSolicitudes.Visible = true;  
             }
             else if (permiso == 2)
             {
                 btnHorarios.Visible = true;
                 btnRegAsist.Visible = true;
+                btnUsers.Visible = true;
+                btnSolicitudes.Visible = true;
             }
             else if (permiso == 1)
             {
                 btnRegAsist.Visible = true;
+                btnUsers.Visible = true;
+                btnSolicitudes.Visible = true;
             }
         }
 
@@ -56,6 +65,46 @@ namespace ProyBROL_GUI
         void EstaCerradoEmpleado(object sender, EventArgs e)
         {
             formEmpleado = null;
+        }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            if (permiso == 3)
+            {
+                if (formUsuarios == null)
+                {
+                    formUsuarios = new Usuarios(permiso);
+                    formUsuarios.MdiParent = this;
+                    formUsuarios.FormClosed += new FormClosedEventHandler(EstaCerradoUsuario);
+                    formUsuarios.Show();
+                }
+                else
+                {
+                    formUsuarios.BringToFront();
+                }
+            }
+            else
+            {
+                if (formUsuariosEmp == null)
+                {
+                    formUsuariosEmp = new UsuariosEmp();
+                    formUsuariosEmp.MdiParent = this;
+                    formUsuariosEmp.FormClosed += new FormClosedEventHandler(EstaCerradoUsuarioEmp);
+                    formUsuariosEmp.Show();
+                }
+                else
+                {
+                    formUsuariosEmp.BringToFront();
+                }
+            }
+        }
+        void EstaCerradoUsuario(object sender, EventArgs e)
+        {
+            formUsuarios = null;
+        }
+        void EstaCerradoUsuarioEmp(object sender, EventArgs e)
+        {
+            formUsuariosEmp = null;
         }
     }
 }

@@ -34,8 +34,10 @@
             label1 = new Label();
             imgLogo = new PictureBox();
             btnEmpleados = new Button();
+            btnUsers = new Button();
             btnHorarios = new Button();
             btnRegAsist = new Button();
+            btnSolicitudes = new Button();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)imgLogo).BeginInit();
@@ -46,8 +48,10 @@
             flowLayoutPanel1.BackColor = Color.FromArgb(38, 68, 57);
             flowLayoutPanel1.Controls.Add(panel1);
             flowLayoutPanel1.Controls.Add(btnEmpleados);
+            flowLayoutPanel1.Controls.Add(btnUsers);
             flowLayoutPanel1.Controls.Add(btnHorarios);
             flowLayoutPanel1.Controls.Add(btnRegAsist);
+            flowLayoutPanel1.Controls.Add(btnSolicitudes);
             flowLayoutPanel1.Dock = DockStyle.Left;
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -103,6 +107,25 @@
             btnEmpleados.Visible = false;
             btnEmpleados.Click += btnEmpleados_Click;
             // 
+            // btnUsers
+            // 
+            btnUsers.BackColor = Color.FromArgb(38, 68, 57);
+            btnUsers.FlatAppearance.BorderSize = 0;
+            btnUsers.FlatStyle = FlatStyle.Flat;
+            btnUsers.Font = new Font("Leelawadee", 12F);
+            btnUsers.ForeColor = SystemColors.ControlLightLight;
+            btnUsers.Image = Properties.Resources.usersW;
+            btnUsers.ImageAlign = ContentAlignment.MiddleLeft;
+            btnUsers.Location = new Point(3, 228);
+            btnUsers.Name = "btnUsers";
+            btnUsers.Padding = new Padding(20, 0, 0, 0);
+            btnUsers.Size = new Size(183, 68);
+            btnUsers.TabIndex = 8;
+            btnUsers.Text = "      Usuarios";
+            btnUsers.UseVisualStyleBackColor = false;
+            btnUsers.Visible = false;
+            btnUsers.Click += btnUsers_Click;
+            // 
             // btnHorarios
             // 
             btnHorarios.BackColor = Color.FromArgb(38, 68, 57);
@@ -112,7 +135,7 @@
             btnHorarios.ForeColor = SystemColors.ControlLightLight;
             btnHorarios.Image = Properties.Resources.relojW1;
             btnHorarios.ImageAlign = ContentAlignment.MiddleLeft;
-            btnHorarios.Location = new Point(3, 228);
+            btnHorarios.Location = new Point(3, 302);
             btnHorarios.Name = "btnHorarios";
             btnHorarios.Padding = new Padding(20, 0, 0, 0);
             btnHorarios.Size = new Size(183, 68);
@@ -130,7 +153,7 @@
             btnRegAsist.ForeColor = SystemColors.ControlLightLight;
             btnRegAsist.Image = Properties.Resources.calendW2;
             btnRegAsist.ImageAlign = ContentAlignment.MiddleLeft;
-            btnRegAsist.Location = new Point(3, 302);
+            btnRegAsist.Location = new Point(3, 376);
             btnRegAsist.Name = "btnRegAsist";
             btnRegAsist.Padding = new Padding(20, 0, 0, 0);
             btnRegAsist.Size = new Size(183, 68);
@@ -139,10 +162,29 @@
             btnRegAsist.UseVisualStyleBackColor = false;
             btnRegAsist.Visible = false;
             // 
+            // btnSolicitudes
+            // 
+            btnSolicitudes.BackColor = Color.FromArgb(38, 68, 57);
+            btnSolicitudes.FlatAppearance.BorderSize = 0;
+            btnSolicitudes.FlatStyle = FlatStyle.Flat;
+            btnSolicitudes.Font = new Font("Leelawadee", 12F);
+            btnSolicitudes.ForeColor = SystemColors.ControlLightLight;
+            btnSolicitudes.Image = Properties.Resources.solicitudW;
+            btnSolicitudes.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSolicitudes.Location = new Point(3, 450);
+            btnSolicitudes.Name = "btnSolicitudes";
+            btnSolicitudes.Padding = new Padding(20, 0, 0, 0);
+            btnSolicitudes.Size = new Size(183, 68);
+            btnSolicitudes.TabIndex = 9;
+            btnSolicitudes.Text = "      Solicitudes";
+            btnSolicitudes.UseVisualStyleBackColor = false;
+            btnSolicitudes.Visible = false;
+            // 
             // frmMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(1604, 941);
             Controls.Add(flowLayoutPanel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -168,5 +210,7 @@
         private Button btnEmpleados;
         private Button btnHorarios;
         private Button btnRegAsist;
+        private Button btnUsers;
+        private Button btnSolicitudes;
     }
 }

@@ -32,11 +32,13 @@ namespace ProyBROL_GUI
         DocumentoBL objDocumentoBL = new DocumentoBL();
 
         HorarioBL objHorarioBL = new HorarioBL();
-        public String nomUser;
-        public EmpleadoNuevo(String nomUser)
+        LoginOuBE _currentUser; 
+
+
+        public EmpleadoNuevo(LoginOuBE currentUser)
         {
             InitializeComponent();
-            this.nomUser = nomUser;
+            _currentUser = currentUser;
         }
 
         private void EmpleadoNuevo_Load(object sender, EventArgs e)
@@ -123,7 +125,7 @@ namespace ProyBROL_GUI
                     objEmpleadoInsertBE.foto = memoryStream.GetBuffer();
                 }
 
-                objEmpleadoInsertBE.usu_Reg = nomUser;
+                objEmpleadoInsertBE.usu_Reg = _currentUser.nomUser;
                 objEmpleadoInsertBE.estado = 1;
 
                 if (objEmpleadoBL.InsertarEmpleado(objEmpleadoInsertBE))

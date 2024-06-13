@@ -19,16 +19,17 @@ namespace ProyBROL_GUI
         EmpleadoBL objEmpleadoBL = new EmpleadoBL();
         EmpleadoBE objEmpleadoBE = new EmpleadoBE();
 
+        LoginOuBE _currentUser;
+
         int codEmpleado;
-        public String nomUser;
 
         EmpleadoNuevo formEmpleadoNuevo;
         EmpleadoModificar formEmpleadoModificar;
         DataView dtv;
-        public Empleados(String nomUser)
+        public Empleados(LoginOuBE currentUser)
         {
             InitializeComponent();
-            this.nomUser = nomUser;
+            this._currentUser = currentUser;
         }
 
         private void cargardtgEmpleados(String strFilter)
@@ -140,7 +141,7 @@ namespace ProyBROL_GUI
 
             if (formEmpleadoNuevo == null)
             {
-                formEmpleadoNuevo = new EmpleadoNuevo(nomUser);
+                formEmpleadoNuevo = new EmpleadoNuevo(_currentUser);
                 formEmpleadoNuevo.FormClosed += new FormClosedEventHandler(EstaCerradoEmpleadoNuevo);
                 formEmpleadoNuevo.BringToFront();
                 formEmpleadoNuevo.ShowDialog();
@@ -164,7 +165,7 @@ namespace ProyBROL_GUI
         {
             if (formEmpleadoNuevo == null && codEmpleado != 0)
             {
-                formEmpleadoModificar = new EmpleadoModificar(nomUser, codEmpleado);
+                formEmpleadoModificar = new EmpleadoModificar(_currentUser, codEmpleado);
                 formEmpleadoModificar.FormClosed += new FormClosedEventHandler(EstaCerradoEmpleadoModificar);
                 formEmpleadoModificar.BringToFront();
                 formEmpleadoModificar.ShowDialog();

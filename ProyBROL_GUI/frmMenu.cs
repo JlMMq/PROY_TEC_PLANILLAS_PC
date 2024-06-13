@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyBROL_BE;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,20 +13,21 @@ namespace ProyBROL_GUI
 {
     public partial class frmMenu : Form
     {
-        private int permiso;
         Empleados formEmpleado;
         Usuarios formUsuarios;
         UsuariosEmp formUsuariosEmp;
 
-        public frmMenu(int permiso)
+        private LoginOuBE _currentUser;
+
+        public frmMenu(LoginOuBE userLogin)
         {
             InitializeComponent();
-            this.permiso = permiso;
+            this._currentUser = userLogin;
         }
 
         private void frmMenu_Load(object sender, EventArgs e)
         {
-            if (permiso == 3)
+            if (_currentUser.permiso == 3)
             {
                 btnEmpleados.Visible = true;
                 btnHorarios.Visible = true;
@@ -33,14 +35,14 @@ namespace ProyBROL_GUI
                 btnUsers.Visible = true;
                 btnSolicitudes.Visible = true;  
             }
-            else if (permiso == 2)
+            else if (_currentUser.permiso == 2)
             {
                 btnHorarios.Visible = true;
                 btnRegAsist.Visible = true;
                 btnUsers.Visible = true;
                 btnSolicitudes.Visible = true;
             }
-            else if (permiso == 1)
+            else if (_currentUser.permiso == 1)
             {
                 btnRegAsist.Visible = true;
                 btnUsers.Visible = true;
@@ -52,7 +54,7 @@ namespace ProyBROL_GUI
         {
             if (formEmpleado == null)
             {
-                formEmpleado = new Empleados("admin");
+                formEmpleado = new Empleados(_currentUser);
                 formEmpleado.MdiParent = this;
                 formEmpleado.FormClosed += new FormClosedEventHandler(EstaCerradoEmpleado);
                 formEmpleado.Show();
@@ -69,11 +71,11 @@ namespace ProyBROL_GUI
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
-            if (permiso == 3)
+            if (_currentUser.permiso == 3)
             {
                 if (formUsuarios == null)
                 {
-                    formUsuarios = new Usuarios(permiso);
+                    formUsuarios = new Usuarios(_currentUser);
                     formUsuarios.MdiParent = this;
                     formUsuarios.FormClosed += new FormClosedEventHandler(EstaCerradoUsuario);
                     formUsuarios.Show();
@@ -87,7 +89,7 @@ namespace ProyBROL_GUI
             {
                 if (formUsuariosEmp == null)
                 {
-                    formUsuariosEmp = new UsuariosEmp();
+                    formUsuariosEmp = new UsuariosEmp(_currentUser);
                     formUsuariosEmp.MdiParent = this;
                     formUsuariosEmp.FormClosed += new FormClosedEventHandler(EstaCerradoUsuarioEmp);
                     formUsuariosEmp.Show();

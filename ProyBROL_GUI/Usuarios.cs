@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyBROL_BE;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,12 +13,12 @@ namespace ProyBROL_GUI
 {
     public partial class Usuarios : Form
     {
-        int _permiso;
+        LoginOuBE _currentUser;
         UsuariosEmp formUsuariosEmp;
         LoginCredentials loginCredentials;
-        public Usuarios(int permiso)
+        public Usuarios(LoginOuBE currentUser)
         {
-            _permiso = permiso;
+            _currentUser= currentUser;
             InitializeComponent();
         }
 
@@ -30,7 +31,7 @@ namespace ProyBROL_GUI
         {
             if (formUsuariosEmp == null)
             {
-                formUsuariosEmp = new UsuariosEmp();
+                formUsuariosEmp = new UsuariosEmp(_currentUser);
                 formUsuariosEmp.FormClosed += new FormClosedEventHandler(EstaCerradoUsuarioEmp);
                 formUsuariosEmp.Show();
             }

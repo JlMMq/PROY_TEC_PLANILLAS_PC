@@ -1,5 +1,6 @@
 ﻿using ProyBROL_ADO;
 using ProyBROL_BE;
+using ProyBROL_BL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,7 +18,7 @@ namespace ProyBROL_GUI
     {
         int intentos = 0;
         frmMenu menu;
-        LoginADO _login = new LoginADO();
+        LoginBL _login = new LoginBL();
         LoginOuBE res = new LoginOuBE();
         public Login()
         {
@@ -40,13 +41,13 @@ namespace ProyBROL_GUI
                     LimiteIntentos();
                     MessageBox.Show("Usuario o contraseña incorrectos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                else 
+                else
                 {
                     txtNomUser.Text = String.Empty;
                     txtPassUser.Text = String.Empty;
                     if (menu == null)
                     {
-                        menu = new frmMenu(res.permiso);
+                        menu = new frmMenu(res);
                         menu.FormClosed += new FormClosedEventHandler(EstaCerradofrmMenu);
                         menu.Show();
                     }

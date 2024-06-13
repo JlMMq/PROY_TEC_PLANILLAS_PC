@@ -30,12 +30,12 @@ namespace ProyBROL_GUI
         DocumentoBL objDocumentoBL = new DocumentoBL();
 
         HorarioBL objHorarioBL = new HorarioBL();
-        public String nomUser;
+        LoginOuBE _currentUser;
         public int codEmpleado;
-        public EmpleadoModificar(String nomUser, int codEmpleado)
+        public EmpleadoModificar(LoginOuBE currentUser, int codEmpleado)
         {
             InitializeComponent();
-            this.nomUser = nomUser;
+            _currentUser = currentUser;
             this.codEmpleado = codEmpleado;
             lblCodigo.Text = codEmpleado.ToString();
         }
@@ -103,7 +103,7 @@ namespace ProyBROL_GUI
                         objEmpleadoActuBE.foto = memoryStream.GetBuffer();
                     }
 
-                    objEmpleadoActuBE.usu_UltMod = nomUser;
+                    objEmpleadoActuBE.usu_UltMod = _currentUser.nomUser;
                     objEmpleadoActuBE.estado = 1;
 
                     if (objEmpleadoBL.ActualizarEmpleado(objEmpleadoActuBE))

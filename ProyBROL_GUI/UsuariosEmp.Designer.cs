@@ -31,17 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsuariosEmp));
             label1 = new Label();
             groupBox2 = new GroupBox();
-            textBox4 = new TextBox();
+            lblPassStatus = new Label();
+            txtNewPass2 = new TextBox();
             label6 = new Label();
-            textBox3 = new TextBox();
+            txtNewPass1 = new TextBox();
             label5 = new Label();
-            textBox2 = new TextBox();
+            txtOldPassword = new TextBox();
             label4 = new Label();
-            label2 = new Label();
+            lblBienven = new Label();
             groupBox1 = new GroupBox();
-            textBox1 = new TextBox();
+            lblCorreoStatus = new Label();
+            txtCorreoNew = new TextBox();
             label3 = new Label();
-            txtCorreo = new TextBox();
+            txtCorreoIn = new TextBox();
             label7 = new Label();
             btnModificar = new Button();
             groupBox2.SuspendLayout();
@@ -61,13 +63,14 @@
             // groupBox2
             // 
             groupBox2.Anchor = AnchorStyles.Top;
-            groupBox2.Controls.Add(textBox4);
+            groupBox2.Controls.Add(lblPassStatus);
+            groupBox2.Controls.Add(txtNewPass2);
             groupBox2.Controls.Add(label6);
-            groupBox2.Controls.Add(textBox3);
+            groupBox2.Controls.Add(txtNewPass1);
             groupBox2.Controls.Add(label5);
-            groupBox2.Controls.Add(textBox2);
+            groupBox2.Controls.Add(txtOldPassword);
             groupBox2.Controls.Add(label4);
-            groupBox2.Location = new Point(367, 263);
+            groupBox2.Location = new Point(367, 287);
             groupBox2.MaximumSize = new Size(370, 239);
             groupBox2.MinimumSize = new Size(370, 239);
             groupBox2.Name = "groupBox2";
@@ -76,14 +79,22 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Cambiar contraseña";
             // 
-            // textBox4
+            // lblPassStatus
             // 
-            textBox4.BorderStyle = BorderStyle.FixedSingle;
-            textBox4.Location = new Point(27, 175);
-            textBox4.Name = "textBox4";
-            textBox4.PasswordChar = '*';
-            textBox4.Size = new Size(317, 23);
-            textBox4.TabIndex = 17;
+            lblPassStatus.AutoSize = true;
+            lblPassStatus.Location = new Point(17, 212);
+            lblPassStatus.Name = "lblPassStatus";
+            lblPassStatus.Size = new Size(0, 15);
+            lblPassStatus.TabIndex = 18;
+            // 
+            // txtNewPass2
+            // 
+            txtNewPass2.BorderStyle = BorderStyle.FixedSingle;
+            txtNewPass2.Location = new Point(27, 175);
+            txtNewPass2.Name = "txtNewPass2";
+            txtNewPass2.PasswordChar = '*';
+            txtNewPass2.Size = new Size(317, 23);
+            txtNewPass2.TabIndex = 17;
             // 
             // label6
             // 
@@ -94,14 +105,14 @@
             label6.TabIndex = 16;
             label6.Text = "Repita la nueva contraseña:";
             // 
-            // textBox3
+            // txtNewPass1
             // 
-            textBox3.BorderStyle = BorderStyle.FixedSingle;
-            textBox3.Location = new Point(27, 120);
-            textBox3.Name = "textBox3";
-            textBox3.PasswordChar = '*';
-            textBox3.Size = new Size(317, 23);
-            textBox3.TabIndex = 15;
+            txtNewPass1.BorderStyle = BorderStyle.FixedSingle;
+            txtNewPass1.Location = new Point(27, 120);
+            txtNewPass1.Name = "txtNewPass1";
+            txtNewPass1.PasswordChar = '*';
+            txtNewPass1.Size = new Size(317, 23);
+            txtNewPass1.TabIndex = 15;
             // 
             // label5
             // 
@@ -112,15 +123,14 @@
             label5.TabIndex = 14;
             label5.Text = "Nueva contraseña:";
             // 
-            // textBox2
+            // txtOldPassword
             // 
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Location = new Point(27, 63);
-            textBox2.Name = "textBox2";
-            textBox2.PasswordChar = '*';
-            textBox2.Size = new Size(317, 23);
-            textBox2.TabIndex = 13;
-            textBox2.TextChanged += textBox2_TextChanged;
+            txtOldPassword.BorderStyle = BorderStyle.FixedSingle;
+            txtOldPassword.Location = new Point(27, 63);
+            txtOldPassword.Name = "txtOldPassword";
+            txtOldPassword.PasswordChar = '*';
+            txtOldPassword.Size = new Size(317, 23);
+            txtOldPassword.TabIndex = 13;
             // 
             // label4
             // 
@@ -131,40 +141,50 @@
             label4.TabIndex = 0;
             label4.Text = "Ingrese contraseña actual:";
             // 
-            // label2
+            // lblBienven
             // 
-            label2.Anchor = AnchorStyles.Top;
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(367, 75);
-            label2.Name = "label2";
-            label2.Size = new Size(242, 21);
-            label2.TabIndex = 14;
-            label2.Text = "Bienvenido Nombres Apellidos!";
+            lblBienven.Anchor = AnchorStyles.Top;
+            lblBienven.AutoEllipsis = true;
+            lblBienven.AutoSize = true;
+            lblBienven.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblBienven.Location = new Point(367, 75);
+            lblBienven.Name = "lblBienven";
+            lblBienven.Size = new Size(242, 21);
+            lblBienven.TabIndex = 14;
+            lblBienven.Text = "Bienvenido Nombres Apellidos!";
             // 
             // groupBox1
             // 
             groupBox1.Anchor = AnchorStyles.Top;
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(lblCorreoStatus);
+            groupBox1.Controls.Add(txtCorreoNew);
             groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(txtCorreo);
+            groupBox1.Controls.Add(txtCorreoIn);
             groupBox1.Controls.Add(label7);
             groupBox1.Location = new Point(367, 109);
-            groupBox1.MaximumSize = new Size(370, 132);
-            groupBox1.MinimumSize = new Size(370, 132);
+            groupBox1.MaximumSize = new Size(370, 150);
+            groupBox1.MinimumSize = new Size(370, 150);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(370, 132);
+            groupBox1.Size = new Size(370, 150);
             groupBox1.TabIndex = 15;
             groupBox1.TabStop = false;
             groupBox1.Text = "Cambiar correo electronico";
             // 
-            // textBox1
+            // lblCorreoStatus
             // 
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Location = new Point(27, 94);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(317, 23);
-            textBox1.TabIndex = 12;
+            lblCorreoStatus.AutoSize = true;
+            lblCorreoStatus.Location = new Point(15, 126);
+            lblCorreoStatus.Name = "lblCorreoStatus";
+            lblCorreoStatus.Size = new Size(0, 15);
+            lblCorreoStatus.TabIndex = 13;
+            // 
+            // txtCorreoNew
+            // 
+            txtCorreoNew.BorderStyle = BorderStyle.FixedSingle;
+            txtCorreoNew.Location = new Point(27, 94);
+            txtCorreoNew.Name = "txtCorreoNew";
+            txtCorreoNew.Size = new Size(317, 23);
+            txtCorreoNew.TabIndex = 12;
             // 
             // label3
             // 
@@ -175,15 +195,15 @@
             label3.TabIndex = 11;
             label3.Text = "Nuevo correo: ";
             // 
-            // txtCorreo
+            // txtCorreoIn
             // 
-            txtCorreo.BorderStyle = BorderStyle.FixedSingle;
-            txtCorreo.Enabled = false;
-            txtCorreo.Location = new Point(27, 43);
-            txtCorreo.Name = "txtCorreo";
-            txtCorreo.Size = new Size(317, 23);
-            txtCorreo.TabIndex = 10;
-            txtCorreo.Text = "correoprueba@gmail.com";
+            txtCorreoIn.BorderStyle = BorderStyle.FixedSingle;
+            txtCorreoIn.Enabled = false;
+            txtCorreoIn.Location = new Point(27, 43);
+            txtCorreoIn.Name = "txtCorreoIn";
+            txtCorreoIn.Size = new Size(317, 23);
+            txtCorreoIn.TabIndex = 10;
+            txtCorreoIn.Text = "correoprueba@gmail.com";
             // 
             // label7
             // 
@@ -202,12 +222,13 @@
             btnModificar.FlatStyle = FlatStyle.Flat;
             btnModificar.Font = new Font("Leelawadee", 9.75F);
             btnModificar.ForeColor = SystemColors.ControlLightLight;
-            btnModificar.Location = new Point(564, 518);
+            btnModificar.Location = new Point(564, 541);
             btnModificar.Name = "btnModificar";
             btnModificar.Size = new Size(173, 48);
             btnModificar.TabIndex = 19;
             btnModificar.Text = "GUARDAR CAMBIOS";
             btnModificar.UseVisualStyleBackColor = false;
+            btnModificar.Click += btnModificar_Click;
             // 
             // UsuariosEmp
             // 
@@ -216,13 +237,14 @@
             ClientSize = new Size(1157, 670);
             Controls.Add(btnModificar);
             Controls.Add(groupBox1);
-            Controls.Add(label2);
+            Controls.Add(lblBienven);
             Controls.Add(groupBox2);
             Controls.Add(label1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "UsuariosEmp";
             Text = "Usuarios";
             WindowState = FormWindowState.Maximized;
+            Load += UsuariosEmp_Load;
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             groupBox1.ResumeLayout(false);
@@ -235,18 +257,20 @@
 
         private Label label1;
         private GroupBox groupBox2;
-        private Label label2;
+        private Label lblBienven;
         private GroupBox groupBox1;
-        private TextBox textBox2;
+        private TextBox txtOldPassword;
         private Label label4;
-        private TextBox textBox1;
+        private TextBox txtCorreoNew;
         private Label label3;
-        private TextBox txtCorreo;
+        private TextBox txtCorreoIn;
         private Label label7;
-        private TextBox textBox4;
+        private TextBox txtNewPass2;
         private Label label6;
-        private TextBox textBox3;
+        private TextBox txtNewPass1;
         private Label label5;
         private Button btnModificar;
+        private Label lblPassStatus;
+        private Label lblCorreoStatus;
     }
 }

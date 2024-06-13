@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyBROL_BE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d15382bff70a69dbcfcd9424710ebab06087f83")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be57b0ce2b59f70b678d30b2bd55559c71ebca8c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyBROL_BE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyBROL_BE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -30,36 +30,36 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsuarioModificar));
             groupBox2 = new GroupBox();
-            btnModificar = new Button();
+            cboPermisos = new ComboBox();
             label10 = new Label();
             dtpFecIngreso = new DateTimePicker();
             label9 = new Label();
-            textBox2 = new TextBox();
             label8 = new Label();
             txtCorreo = new TextBox();
             label7 = new Label();
-            textBox1 = new TextBox();
+            txtapenom = new TextBox();
             txtCodUser = new TextBox();
             label6 = new Label();
             label3 = new Label();
+            btnModificar = new Button();
             label1 = new Label();
-            textBox3 = new TextBox();
             button1 = new Button();
+            chcActivo = new CheckBox();
             groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox2
             // 
             groupBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            groupBox2.Controls.Add(textBox3);
+            groupBox2.Controls.Add(chcActivo);
+            groupBox2.Controls.Add(cboPermisos);
             groupBox2.Controls.Add(label10);
             groupBox2.Controls.Add(dtpFecIngreso);
             groupBox2.Controls.Add(label9);
-            groupBox2.Controls.Add(textBox2);
             groupBox2.Controls.Add(label8);
             groupBox2.Controls.Add(txtCorreo);
             groupBox2.Controls.Add(label7);
-            groupBox2.Controls.Add(textBox1);
+            groupBox2.Controls.Add(txtapenom);
             groupBox2.Controls.Add(txtCodUser);
             groupBox2.Controls.Add(label6);
             groupBox2.Controls.Add(label3);
@@ -70,20 +70,13 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Usuario:";
             // 
-            // btnModificar
+            // cboPermisos
             // 
-            btnModificar.BackColor = Color.Black;
-            btnModificar.FlatAppearance.BorderSize = 0;
-            btnModificar.FlatStyle = FlatStyle.Flat;
-            btnModificar.Font = new Font("Leelawadee", 9.75F);
-            btnModificar.ForeColor = SystemColors.ControlLightLight;
-            btnModificar.Location = new Point(184, 350);
-            btnModificar.Name = "btnModificar";
-            btnModificar.Size = new Size(96, 48);
-            btnModificar.TabIndex = 18;
-            btnModificar.Text = "ACEPTAR";
-            btnModificar.UseVisualStyleBackColor = false;
-            btnModificar.Click += btnModificar_Click;
+            cboPermisos.FormattingEnabled = true;
+            cboPermisos.Location = new Point(138, 173);
+            cboPermisos.Name = "cboPermisos";
+            cboPermisos.Size = new Size(206, 23);
+            cboPermisos.TabIndex = 18;
             // 
             // label10
             // 
@@ -113,15 +106,6 @@
             label9.TabIndex = 11;
             label9.Text = "Fecha de registro:";
             // 
-            // textBox2
-            // 
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Location = new Point(137, 174);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(207, 23);
-            textBox2.TabIndex = 10;
-            textBox2.Text = "ADMINISTRADOR";
-            // 
             // label8
             // 
             label8.AutoSize = true;
@@ -150,15 +134,15 @@
             label7.TabIndex = 7;
             label7.Text = "Correo: ";
             // 
-            // textBox1
+            // txtapenom
             // 
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Enabled = false;
-            textBox1.Location = new Point(27, 88);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(317, 23);
-            textBox1.TabIndex = 6;
-            textBox1.Text = "Apellidos, Nombres";
+            txtapenom.BorderStyle = BorderStyle.FixedSingle;
+            txtapenom.Enabled = false;
+            txtapenom.Location = new Point(27, 88);
+            txtapenom.Name = "txtapenom";
+            txtapenom.Size = new Size(317, 23);
+            txtapenom.TabIndex = 6;
+            txtapenom.Text = "Apellidos, Nombres";
             // 
             // txtCodUser
             // 
@@ -188,6 +172,21 @@
             label3.TabIndex = 0;
             label3.Text = "Usuario:";
             // 
+            // btnModificar
+            // 
+            btnModificar.BackColor = Color.Black;
+            btnModificar.FlatAppearance.BorderSize = 0;
+            btnModificar.FlatStyle = FlatStyle.Flat;
+            btnModificar.Font = new Font("Leelawadee", 9.75F);
+            btnModificar.ForeColor = SystemColors.ControlLightLight;
+            btnModificar.Location = new Point(184, 350);
+            btnModificar.Name = "btnModificar";
+            btnModificar.Size = new Size(96, 48);
+            btnModificar.TabIndex = 18;
+            btnModificar.Text = "ACEPTAR";
+            btnModificar.UseVisualStyleBackColor = false;
+            btnModificar.Click += btnModificar_Click;
+            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -197,15 +196,6 @@
             label1.Size = new Size(174, 25);
             label1.TabIndex = 19;
             label1.Text = "Modificar Usuario";
-            // 
-            // textBox3
-            // 
-            textBox3.BorderStyle = BorderStyle.FixedSingle;
-            textBox3.Location = new Point(83, 241);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(207, 23);
-            textBox3.TabIndex = 17;
-            textBox3.Text = "ACTIVO";
             // 
             // button1
             // 
@@ -223,6 +213,16 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // chcActivo
+            // 
+            chcActivo.AutoSize = true;
+            chcActivo.Location = new Point(83, 242);
+            chcActivo.Name = "chcActivo";
+            chcActivo.Size = new Size(60, 19);
+            chcActivo.TabIndex = 20;
+            chcActivo.Text = "Activo";
+            chcActivo.UseVisualStyleBackColor = true;
+            // 
             // UsuarioModificar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -238,6 +238,7 @@
             Name = "UsuarioModificar";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Modificar Usuario";
+            Load += UsuarioModificar_Load;
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ResumeLayout(false);
@@ -250,17 +251,17 @@
         private Label label10;
         private DateTimePicker dtpFecIngreso;
         private Label label9;
-        private TextBox textBox2;
         private Label label8;
         private TextBox txtCorreo;
         private Label label7;
-        private TextBox textBox1;
+        private TextBox txtapenom;
         private TextBox txtCodUser;
         private Label label6;
         private Label label3;
         private Button btnModificar;
         private Label label1;
-        private TextBox textBox3;
         private Button button1;
+        private ComboBox cboPermisos;
+        private CheckBox chcActivo;
     }
 }

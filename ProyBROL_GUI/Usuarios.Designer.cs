@@ -29,76 +29,125 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Usuarios));
-            dataGridView1 = new DataGridView();
-            Usuario = new DataGridViewTextBoxColumn();
-            Correo = new DataGridViewTextBoxColumn();
-            apellidos = new DataGridViewTextBoxColumn();
-            nombres = new DataGridViewTextBoxColumn();
-            Estado = new DataGridViewTextBoxColumn();
+            dtgUsers = new DataGridView();
+            codUser = new DataGridViewTextBoxColumn();
+            nomUser = new DataGridViewTextBoxColumn();
+            correoUser = new DataGridViewTextBoxColumn();
+            str_apellidos = new DataGridViewTextBoxColumn();
+            str_nombres = new DataGridViewTextBoxColumn();
+            fec_Reg = new DataGridViewTextBoxColumn();
+            permisoUser = new DataGridViewTextBoxColumn();
+            estdUserView = new DataGridViewTextBoxColumn();
             label1 = new Label();
             groupBox1 = new GroupBox();
             label4 = new Label();
             txtFiltApellido = new TextBox();
             txtFiltNombre = new TextBox();
             label5 = new Label();
-            txtFiltCodigo = new TextBox();
+            txtFiltUser = new TextBox();
             label2 = new Label();
             groupBox2 = new GroupBox();
             btnModificar = new Button();
-            label11 = new Label();
+            lblEstado = new Label();
             label10 = new Label();
             dtpFecIngreso = new DateTimePicker();
             label9 = new Label();
-            textBox2 = new TextBox();
+            txtperm = new TextBox();
             label8 = new Label();
             txtCorreo = new TextBox();
             label7 = new Label();
-            textBox1 = new TextBox();
+            txtnomap = new TextBox();
             txtCodUser = new TextBox();
             label6 = new Label();
             label3 = new Label();
             groupBox3 = new GroupBox();
             btnGestionPers = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtgUsers).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dtgUsers
             // 
-            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Usuario, Correo, apellidos, nombres, Estado });
-            dataGridView1.Location = new Point(21, 125);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(637, 601);
-            dataGridView1.TabIndex = 0;
+            dtgUsers.AllowUserToAddRows = false;
+            dtgUsers.AllowUserToDeleteRows = false;
+            dtgUsers.AllowUserToOrderColumns = true;
+            dtgUsers.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dtgUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgUsers.Columns.AddRange(new DataGridViewColumn[] { codUser, nomUser, correoUser, str_apellidos, str_nombres, fec_Reg, permisoUser, estdUserView });
+            dtgUsers.Location = new Point(21, 114);
+            dtgUsers.Name = "dtgUsers";
+            dtgUsers.ReadOnly = true;
+            dtgUsers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dtgUsers.Size = new Size(637, 601);
+            dtgUsers.TabIndex = 0;
+            dtgUsers.CellClick += dtgUsers_CellClick;
             // 
-            // Usuario
+            // codUser
             // 
-            Usuario.HeaderText = "Usuario";
-            Usuario.Name = "Usuario";
+            codUser.DataPropertyName = "codUser";
+            codUser.HeaderText = "Codigo";
+            codUser.Name = "codUser";
+            codUser.ReadOnly = true;
+            codUser.Visible = false;
             // 
-            // Correo
+            // nomUser
             // 
-            Correo.HeaderText = "Correo";
-            Correo.Name = "Correo";
+            nomUser.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
+            nomUser.DataPropertyName = "nomUser";
+            nomUser.HeaderText = "Usuario";
+            nomUser.Name = "nomUser";
+            nomUser.ReadOnly = true;
+            nomUser.Width = 72;
             // 
-            // apellidos
+            // correoUser
             // 
-            apellidos.HeaderText = "Apellidos";
-            apellidos.Name = "apellidos";
+            correoUser.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            correoUser.DataPropertyName = "correoUser";
+            correoUser.HeaderText = "Correo";
+            correoUser.Name = "correoUser";
+            correoUser.ReadOnly = true;
             // 
-            // nombres
+            // str_apellidos
             // 
-            nombres.HeaderText = "Nombres";
-            nombres.Name = "nombres";
+            str_apellidos.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            str_apellidos.DataPropertyName = "str_apellidos";
+            str_apellidos.HeaderText = "Apellidos";
+            str_apellidos.Name = "str_apellidos";
+            str_apellidos.ReadOnly = true;
             // 
-            // Estado
+            // str_nombres
             // 
-            Estado.HeaderText = "Estado";
-            Estado.Name = "Estado";
+            str_nombres.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            str_nombres.DataPropertyName = "str_nombres";
+            str_nombres.HeaderText = "Nombres";
+            str_nombres.Name = "str_nombres";
+            str_nombres.ReadOnly = true;
+            // 
+            // fec_Reg
+            // 
+            fec_Reg.DataPropertyName = "fec_Reg";
+            fec_Reg.HeaderText = "Fecha Registro";
+            fec_Reg.Name = "fec_Reg";
+            fec_Reg.ReadOnly = true;
+            fec_Reg.Visible = false;
+            // 
+            // permisoUser
+            // 
+            permisoUser.DataPropertyName = "permisoUser";
+            permisoUser.HeaderText = "Permiso";
+            permisoUser.Name = "permisoUser";
+            permisoUser.ReadOnly = true;
+            permisoUser.Visible = false;
+            // 
+            // estdUserView
+            // 
+            estdUserView.DataPropertyName = "estdUserView";
+            estdUserView.HeaderText = "Estado";
+            estdUserView.Name = "estdUserView";
+            estdUserView.ReadOnly = true;
+            estdUserView.Width = 119;
             // 
             // label1
             // 
@@ -117,7 +166,7 @@
             groupBox1.Controls.Add(txtFiltApellido);
             groupBox1.Controls.Add(txtFiltNombre);
             groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(txtFiltCodigo);
+            groupBox1.Controls.Add(txtFiltUser);
             groupBox1.Controls.Add(label2);
             groupBox1.Location = new Point(21, 58);
             groupBox1.Name = "groupBox1";
@@ -131,9 +180,9 @@
             label4.AutoSize = true;
             label4.Location = new Point(6, 19);
             label4.Name = "label4";
-            label4.Size = new Size(49, 15);
+            label4.Size = new Size(50, 15);
             label4.TabIndex = 5;
-            label4.Text = "Codigo:";
+            label4.Text = "Usuario:";
             // 
             // txtFiltApellido
             // 
@@ -142,6 +191,7 @@
             txtFiltApellido.Name = "txtFiltApellido";
             txtFiltApellido.Size = new Size(156, 23);
             txtFiltApellido.TabIndex = 9;
+            txtFiltApellido.TextChanged += txtFiltApellido_TextChanged;
             // 
             // txtFiltNombre
             // 
@@ -150,6 +200,7 @@
             txtFiltNombre.Name = "txtFiltNombre";
             txtFiltNombre.Size = new Size(156, 23);
             txtFiltNombre.TabIndex = 4;
+            txtFiltNombre.TextChanged += txtFiltNombre_TextChanged;
             // 
             // label5
             // 
@@ -160,13 +211,14 @@
             label5.TabIndex = 8;
             label5.Text = "Nombre:";
             // 
-            // txtFiltCodigo
+            // txtFiltUser
             // 
-            txtFiltCodigo.BorderStyle = BorderStyle.FixedSingle;
-            txtFiltCodigo.Location = new Point(61, 16);
-            txtFiltCodigo.Name = "txtFiltCodigo";
-            txtFiltCodigo.Size = new Size(105, 23);
-            txtFiltCodigo.TabIndex = 6;
+            txtFiltUser.BorderStyle = BorderStyle.FixedSingle;
+            txtFiltUser.Location = new Point(61, 16);
+            txtFiltUser.Name = "txtFiltUser";
+            txtFiltUser.Size = new Size(105, 23);
+            txtFiltUser.TabIndex = 6;
+            txtFiltUser.TextChanged += txtFiltUser_TextChanged;
             // 
             // label2
             // 
@@ -181,15 +233,15 @@
             // 
             groupBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             groupBox2.Controls.Add(btnModificar);
-            groupBox2.Controls.Add(label11);
+            groupBox2.Controls.Add(lblEstado);
             groupBox2.Controls.Add(label10);
             groupBox2.Controls.Add(dtpFecIngreso);
             groupBox2.Controls.Add(label9);
-            groupBox2.Controls.Add(textBox2);
+            groupBox2.Controls.Add(txtperm);
             groupBox2.Controls.Add(label8);
             groupBox2.Controls.Add(txtCorreo);
             groupBox2.Controls.Add(label7);
-            groupBox2.Controls.Add(textBox1);
+            groupBox2.Controls.Add(txtnomap);
             groupBox2.Controls.Add(txtCodUser);
             groupBox2.Controls.Add(label6);
             groupBox2.Controls.Add(label3);
@@ -199,7 +251,6 @@
             groupBox2.TabIndex = 12;
             groupBox2.TabStop = false;
             groupBox2.Text = "Usuario seleccionado:";
-            groupBox2.Enter += groupBox2_Enter;
             // 
             // btnModificar
             // 
@@ -216,16 +267,15 @@
             btnModificar.UseVisualStyleBackColor = false;
             btnModificar.Click += btnModificar_Click;
             // 
-            // label11
+            // lblEstado
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.FromArgb(0, 192, 0);
-            label11.Location = new Point(78, 235);
-            label11.Name = "label11";
-            label11.Size = new Size(79, 25);
-            label11.TabIndex = 17;
-            label11.Text = "ACTIVO";
+            lblEstado.AutoSize = true;
+            lblEstado.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblEstado.ForeColor = SystemColors.ActiveCaptionText;
+            lblEstado.Location = new Point(78, 235);
+            lblEstado.Name = "lblEstado";
+            lblEstado.Size = new Size(0, 25);
+            lblEstado.TabIndex = 17;
             // 
             // label10
             // 
@@ -255,15 +305,14 @@
             label9.TabIndex = 11;
             label9.Text = "Fecha de registro:";
             // 
-            // textBox2
+            // txtperm
             // 
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Enabled = false;
-            textBox2.Location = new Point(137, 174);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(207, 23);
-            textBox2.TabIndex = 10;
-            textBox2.Text = "ADMINISTRADOR";
+            txtperm.BorderStyle = BorderStyle.FixedSingle;
+            txtperm.Enabled = false;
+            txtperm.Location = new Point(137, 174);
+            txtperm.Name = "txtperm";
+            txtperm.Size = new Size(207, 23);
+            txtperm.TabIndex = 10;
             // 
             // label8
             // 
@@ -282,7 +331,6 @@
             txtCorreo.Name = "txtCorreo";
             txtCorreo.Size = new Size(317, 23);
             txtCorreo.TabIndex = 8;
-            txtCorreo.Text = "correoprueba@gmail.com";
             // 
             // label7
             // 
@@ -293,15 +341,14 @@
             label7.TabIndex = 7;
             label7.Text = "Correo: ";
             // 
-            // textBox1
+            // txtnomap
             // 
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Enabled = false;
-            textBox1.Location = new Point(27, 88);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(317, 23);
-            textBox1.TabIndex = 6;
-            textBox1.Text = "Apellidos, Nombres";
+            txtnomap.BorderStyle = BorderStyle.FixedSingle;
+            txtnomap.Enabled = false;
+            txtnomap.Location = new Point(27, 88);
+            txtnomap.Name = "txtnomap";
+            txtnomap.Size = new Size(317, 23);
+            txtnomap.TabIndex = 6;
             // 
             // txtCodUser
             // 
@@ -311,7 +358,6 @@
             txtCodUser.Name = "txtCodUser";
             txtCodUser.Size = new Size(150, 23);
             txtCodUser.TabIndex = 5;
-            txtCodUser.Text = "20240001";
             // 
             // label6
             // 
@@ -366,12 +412,13 @@
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(label1);
-            Controls.Add(dataGridView1);
+            Controls.Add(dtgUsers);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Usuarios";
             Text = "Usuarios";
             WindowState = FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += Usuarios_Load;
+            ((System.ComponentModel.ISupportInitialize)dtgUsers).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
@@ -383,19 +430,14 @@
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dtgUsers;
         private Label label1;
-        private DataGridViewTextBoxColumn Usuario;
-        private DataGridViewTextBoxColumn Correo;
-        private DataGridViewTextBoxColumn apellidos;
-        private DataGridViewTextBoxColumn nombres;
-        private DataGridViewTextBoxColumn Estado;
         private GroupBox groupBox1;
         private Label label4;
         private TextBox txtFiltApellido;
         private TextBox txtFiltNombre;
         private Label label5;
-        private TextBox txtFiltCodigo;
+        private TextBox txtFiltUser;
         private Label label2;
         private GroupBox groupBox2;
         private Label label6;
@@ -403,15 +445,23 @@
         private Label label8;
         private TextBox txtCorreo;
         private Label label7;
-        private TextBox textBox1;
+        private TextBox txtnomap;
         private TextBox txtCodUser;
         private Label label9;
-        private TextBox textBox2;
-        private Label label11;
+        private TextBox txtperm;
+        private Label lblEstado;
         private Label label10;
         private DateTimePicker dtpFecIngreso;
         private Button btnModificar;
         private GroupBox groupBox3;
         private Button btnGestionPers;
+        private DataGridViewTextBoxColumn codUser;
+        private DataGridViewTextBoxColumn nomUser;
+        private DataGridViewTextBoxColumn correoUser;
+        private DataGridViewTextBoxColumn str_apellidos;
+        private DataGridViewTextBoxColumn str_nombres;
+        private DataGridViewTextBoxColumn fec_Reg;
+        private DataGridViewTextBoxColumn permisoUser;
+        private DataGridViewTextBoxColumn estdUserView;
     }
 }

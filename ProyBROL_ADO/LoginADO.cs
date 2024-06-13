@@ -95,5 +95,54 @@ namespace ProyBROL_ADO
                 return false;
             }
         }
+
+        //A CAMBIO
+        public List<UserSystemBE> ListarUserSystem()
+        {
+            restService = _connect + "Login/ListarUsuarios";
+         
+            List<UserSystemBE> res = new List<UserSystemBE>();
+            try
+            {
+                var client = new RestClient(restService);
+                var request = new RestRequest();
+                request.Method = Method.Get;
+                var response = client.Execute<List<UserSystemBE>>(request);
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    res = JsonConvert.DeserializeObject<List<UserSystemBE>>(response.Content);
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return res;
+        }
+
+        public bool ActualizarEstadoUser(UpdateUserStatePerm obj)
+        {
+            restService = _connect + "Login/ActualizarPermiso";
+            bool res = false;
+            try
+            {
+                var client = new RestClient(restService);
+                var request = new RestRequest();
+                request.Method = Method.Post;
+                request.AddJsonBody(obj);
+                var response = client.Execute<bool>(request);
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    res = JsonConvert.DeserializeObject<bool>(response.Content);
+                }
+
+                return res;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
     }
 }

@@ -40,4 +40,12 @@ namespace ProyBROL_BE
         public int codUser { get; set; }
         public string passUser { get; set; }
     }
+
+    public class UpdateUserStatePerm
+    {
+        public int codUser { get; set;}
+        public int permiso { get; set;}
+        public int estado { get; set;}
+
+    }
 }

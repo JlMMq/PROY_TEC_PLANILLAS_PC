@@ -152,6 +152,7 @@
             lblBienven.Size = new Size(242, 21);
             lblBienven.TabIndex = 14;
             lblBienven.Text = "Bienvenido Nombres Apellidos!";
+            lblBienven.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // groupBox1
             // 

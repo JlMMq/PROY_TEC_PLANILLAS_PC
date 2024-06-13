@@ -30,9 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginCredentials));
             label1 = new Label();
-            textBox2 = new TextBox();
+            txtPass = new TextBox();
             btnAceptar = new Button();
             button1 = new Button();
+            lblResponse = new Label();
             SuspendLayout();
             // 
             // label1
@@ -44,14 +45,14 @@
             label1.TabIndex = 0;
             label1.Text = "Contraseña:";
             // 
-            // textBox2
+            // txtPass
             // 
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Location = new Point(28, 36);
-            textBox2.Name = "textBox2";
-            textBox2.PasswordChar = '*';
-            textBox2.Size = new Size(317, 23);
-            textBox2.TabIndex = 14;
+            txtPass.BorderStyle = BorderStyle.FixedSingle;
+            txtPass.Location = new Point(28, 36);
+            txtPass.Name = "txtPass";
+            txtPass.PasswordChar = '*';
+            txtPass.Size = new Size(317, 23);
+            txtPass.TabIndex = 14;
             // 
             // btnAceptar
             // 
@@ -61,7 +62,7 @@
             btnAceptar.FlatStyle = FlatStyle.Flat;
             btnAceptar.Font = new Font("Leelawadee", 9.75F);
             btnAceptar.ForeColor = SystemColors.ControlLightLight;
-            btnAceptar.Location = new Point(139, 71);
+            btnAceptar.Location = new Point(139, 89);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(100, 48);
             btnAceptar.TabIndex = 20;
@@ -77,7 +78,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Leelawadee", 9.75F);
             button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(245, 71);
+            button1.Location = new Point(245, 89);
             button1.Name = "button1";
             button1.Size = new Size(100, 48);
             button1.TabIndex = 21;
@@ -85,21 +86,31 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // lblResponse
+            // 
+            lblResponse.AutoSize = true;
+            lblResponse.Location = new Point(29, 67);
+            lblResponse.Name = "lblResponse";
+            lblResponse.Size = new Size(0, 15);
+            lblResponse.TabIndex = 22;
+            // 
             // LoginCredentials
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(384, 131);
+            ClientSize = new Size(384, 151);
+            Controls.Add(lblResponse);
             Controls.Add(button1);
             Controls.Add(btnAceptar);
-            Controls.Add(textBox2);
+            Controls.Add(txtPass);
             Controls.Add(label1);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            MaximumSize = new Size(400, 170);
-            MinimumSize = new Size(400, 170);
+            MaximumSize = new Size(400, 190);
+            MinimumSize = new Size(400, 190);
             Name = "LoginCredentials";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Credenciales";
+            Load += LoginCredentials_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -107,8 +118,9 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox2;
+        private TextBox txtPass;
         private Button btnAceptar;
         private Button button1;
+        private Label lblResponse;
     }
 }

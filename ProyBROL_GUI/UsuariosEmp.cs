@@ -18,6 +18,8 @@ namespace ProyBROL_GUI
     {
         LoginOuBE _currentUser;
         LoginBL _login = new LoginBL();
+
+      
         public UsuariosEmp(LoginOuBE currentUser)
         {
             InitializeComponent();

@@ -26,5 +26,14 @@ namespace ProyBROL_BL
             return _login.ActualizarPassword(obj);
         }
 
+        public List<UserSystemBE> ListarUserSystem()
+        {
+            return _login.ListarUserSystem();
+        }
+
+        public bool ActualizarEstadoUser(UpdateUserStatePerm obj)
+        {
+            return _login.ActualizarEstadoUser(obj);
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Usuarios));
             dtgUsers = new DataGridView();
             codUser = new DataGridViewTextBoxColumn();
@@ -62,6 +63,7 @@
             label3 = new Label();
             groupBox3 = new GroupBox();
             btnGestionPers = new Button();
+            timerDtgUpdate = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)dtgUsers).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -403,6 +405,11 @@
             btnGestionPers.UseVisualStyleBackColor = false;
             btnGestionPers.Click += btnGestionPers_Click;
             // 
+            // timerDtgUpdate
+            // 
+            timerDtgUpdate.Interval = 5000;
+            timerDtgUpdate.Tick += timerDtgUpdate_Tick;
+            // 
             // Usuarios
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -463,5 +470,6 @@
         private DataGridViewTextBoxColumn fec_Reg;
         private DataGridViewTextBoxColumn permisoUser;
         private DataGridViewTextBoxColumn estdUserView;
+        private System.Windows.Forms.Timer timerDtgUpdate;
     }
 }

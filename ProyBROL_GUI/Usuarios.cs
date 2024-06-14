@@ -167,7 +167,7 @@ namespace ProyBROL_GUI
 
         private void dtgUsers_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(dtgUsers.Rows.Count > 0)
+            if (dtgUsers.Rows.Count > 0)
             {
                 userSend.codUser = int.Parse(dtgUsers.SelectedCells[0].Value.ToString());
                 var selectUser = lstUser.FirstOrDefault(u => u.codUser == userSend.codUser);
@@ -182,19 +182,19 @@ namespace ProyBROL_GUI
 
                 txtCodUser.Text = userSend.nomUser.ToString();
                 txtCorreo.Text = userSend.correoUser == null ? String.Empty : userSend.correoUser.ToString();
-                txtnomap.Text =  (userSend.str_apellidos == null ? String.Empty : userSend.str_apellidos.ToString())
-                                    + (userSend.str_nombres == null ? String.Empty : ", " + userSend.str_nombres.ToString()) ;
+                txtnomap.Text = (userSend.str_apellidos == null ? String.Empty : userSend.str_apellidos.ToString())
+                                    + (userSend.str_nombres == null ? String.Empty : ", " + userSend.str_nombres.ToString());
                 string permText = String.Empty;
-                
-                if(userSend.permisoUser == 3)
+
+                if (userSend.permisoUser == 3)
                 {
                     permText = "ADMINISTRADOR";
                 }
-                else if(userSend.permisoUser == 2)
+                else if (userSend.permisoUser == 2)
                 {
                     permText = "SUPERVISOR";
                 }
-                else if(userSend.permisoUser == 1)
+                else if (userSend.permisoUser == 1)
                 {
                     permText = "EMPLEADO";
                 }
@@ -213,9 +213,9 @@ namespace ProyBROL_GUI
                     dtpFecIngreso.Visible = true;
                 }
                 txtperm.Text = permText;
-                
-             
-                if(userSend.estdUser == 1)
+
+
+                if (userSend.estdUser == 1)
                 {
                     lblEstado.Text = "ACTIVO";
                     lblEstado.ForeColor = Color.YellowGreen;
@@ -225,8 +225,13 @@ namespace ProyBROL_GUI
                     lblEstado.Text = "INACTIVO";
                     lblEstado.ForeColor = Color.Red;
                 }
-                
+
             }
+        }
+
+        private void timerDtgUpdate_Tick(object sender, EventArgs e)
+        {
+            cargarVista();
         }
     }
 }

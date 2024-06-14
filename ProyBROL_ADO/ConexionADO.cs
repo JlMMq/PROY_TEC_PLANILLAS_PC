@@ -9,7 +9,5 @@ namespace ProyBROL_ADO
     public class ConexionADO
     {
         public static string conexString = "http://localhost:7130/api/";
-
-
     }
 }

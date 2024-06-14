@@ -52,17 +52,24 @@ namespace ProyBROL_GUI
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            if (loginCredentials == null)
+            if (userSend.codUser != 0)
             {
-                loginCredentials = new LoginCredentials(_currentUser,userSend);
-                loginCredentials.FormClosed += new FormClosedEventHandler(EstaCerradoCredentials);
-                loginCredentials.FormClosed += CloseEventLoginCredentials;
-                loginCredentials.ShowDialog();
-                
+                if (loginCredentials == null)
+                {
+                    loginCredentials = new LoginCredentials(_currentUser, userSend);
+                    loginCredentials.FormClosed += new FormClosedEventHandler(EstaCerradoCredentials);
+                    loginCredentials.FormClosed += CloseEventLoginCredentials;
+                    loginCredentials.ShowDialog();
+
+                }
+                else
+                {
+                    loginCredentials.BringToFront();
+                }
             }
             else
             {
-                loginCredentials.BringToFront();
+                MessageBox.Show("Tiene que elegir un usuario.");
             }
         }
 

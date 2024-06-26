@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_ado\\conexionado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|solutionrelative:proybrol_ado\\conexionado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,44 +38,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Usuarios.cs",
-              "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\Usuarios.cs",
-              "RelativeDocumentMoniker": "ProyBROL_GUI\\Usuarios.cs",
-              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\Usuarios.cs",
-              "RelativeToolTip": "ProyBROL_GUI\\Usuarios.cs",
-              "ViewState": "AQIAAMcAAAAAAAAAAAD4v+oAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T03:14:37.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Usuarios.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\Usuarios.cs",
-              "RelativeDocumentMoniker": "ProyBROL_GUI\\Usuarios.cs",
-              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\Usuarios.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyBROL_GUI\\Usuarios.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T03:13:42.787Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ConexionADO.cs",
-              "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_ADO\\ConexionADO.cs",
-              "RelativeDocumentMoniker": "ProyBROL_ADO\\ConexionADO.cs",
-              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_ADO\\ConexionADO.cs",
-              "RelativeToolTip": "ProyBROL_ADO\\ConexionADO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T02:45:12.166Z",
-              "EditorCaption": ""
             }
           ]
         },

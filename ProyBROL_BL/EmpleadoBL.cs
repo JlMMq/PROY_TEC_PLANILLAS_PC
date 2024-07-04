@@ -38,5 +38,10 @@ namespace ProyBROL_BL
         {
             return objEmpleadoADO.EliminarEmpleado(codigoEmpleado);
         }
+
+        public List<EmpleadoLiteBE> ListarEmpleadosLite()
+        {
+            return objEmpleadoADO.ListarEmpleadosLite();
+        }
     }
 }

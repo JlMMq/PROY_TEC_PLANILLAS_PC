@@ -121,6 +121,32 @@ namespace ProyBROL_GUI.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a &lt;!DOCTYPE html&gt;
+        ///&lt;html&gt;
+        ///&lt;head&gt;
+        ///    
+        ///    &lt;style&gt;
+        ///        body {
+        ///            font-family: Cambria, Cochin, Georgia, Times, &apos;Times New Roman&apos;, serif;
+        ///            margin: 50px;
+        ///            padding: 20px;
+        ///        }
+        ///    &lt;/style&gt;
+        ///&lt;/head&gt;
+        ///&lt;body&gt;
+        ///    &lt;h3 style=&quot;margin-bottom: 10px; text-align: center;&quot;&gt;AREA DE TALENTO HUMANO Y&lt;/h3&gt;
+        ///    &lt;h3 style=&quot;margin-top: 0px; text-align: center;&quot;&gt;RECURSOS HUMANOS RRHH&lt;/h3&gt;
+        ///    &lt;h2 style=&quot;text-align: center;&quot;&gt;SOLICITUD DE LICENCIAS Y PERMISOS&lt;/h2&gt;
+        ///    &lt;hr /&gt;
+        ///    &lt; [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string plantsoli {
+            get {
+                return ResourceManager.GetString("plantsoli", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap relojW1 {

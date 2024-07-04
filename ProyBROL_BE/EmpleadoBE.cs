@@ -46,6 +46,14 @@ namespace ProyBROL_BE
         public string nombreArea { get; set; }
         public string nombreHorario { get; set; }
     }
+    public class EmpleadoLiteBE
+    {
+        public int codEmpleado { get; set; }
+        public string apenom { get; set; }
+        public string nomCargo { get; set; }
+        public string nomArea { get; set; }
+        public byte[]? foto { get; set; }
+    }
 
     public class EmpleadoConsInBE
     {

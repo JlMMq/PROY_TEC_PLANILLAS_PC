@@ -179,6 +179,7 @@
             btnSolicitudes.Text = "      Solicitudes";
             btnSolicitudes.UseVisualStyleBackColor = false;
             btnSolicitudes.Visible = false;
+            btnSolicitudes.Click += btnSolicitudes_Click;
             // 
             // frmMenu
             // 

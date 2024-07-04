@@ -165,5 +165,27 @@ namespace ProyBROL_ADO
             }
             return res;
         }
+
+        public List<EmpleadoLiteBE> ListarEmpleadosLite()
+        {
+            restService = _connect + "Empleado/ListarEmpleadoLite";
+            List<EmpleadoLiteBE> res = new List<EmpleadoLiteBE>();
+            try
+            {
+                var client = new RestClient(restService);
+                var request = new RestRequest();
+                request.Method = Method.Get;
+                var response = client.Execute<List<EmpleadoLiteBE>>(request);
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    res = JsonConvert.DeserializeObject<List<EmpleadoLiteBE>>(response.Content);
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return res;
+        }
     }
 }

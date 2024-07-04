@@ -68,3 +68,7 @@ D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\obj\Debug\net8.0-windo
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.UsuariosEmp.resources
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.LoginCredentials.resources
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.UsuarioModificar.resources
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.SolicitudEmp.resources
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\bin\Debug\net8.0-windows\itextsharp.dll
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\bin\Debug\net8.0-windows\itextsharp.xmlworker.dll

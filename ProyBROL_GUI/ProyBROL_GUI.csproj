@@ -9,6 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="iTextSharp" Version="5.5.13.4" />
+    <PackageReference Include="itextsharp.xmlworker" Version="5.5.13.4" />
+    <PackageReference Include="System.Text.Encoding" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ProyBROL_ADO\ProyBROL_ADO.csproj" />
     <ProjectReference Include="..\ProyBROL_BE\ProyBROL_BE.csproj" />
     <ProjectReference Include="..\ProyBROL_BL\ProyBROL_BL.csproj" />

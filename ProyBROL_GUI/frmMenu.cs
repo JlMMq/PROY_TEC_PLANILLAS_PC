@@ -16,6 +16,7 @@ namespace ProyBROL_GUI
         Empleados formEmpleado;
         Usuarios formUsuarios;
         UsuariosEmp formUsuariosEmp;
+        SolicitudEmp formSolicitudEmp;
 
         private LoginOuBE _currentUser;
 
@@ -33,7 +34,7 @@ namespace ProyBROL_GUI
                 btnHorarios.Visible = true;
                 btnRegAsist.Visible = true;
                 btnUsers.Visible = true;
-                btnSolicitudes.Visible = true;  
+                btnSolicitudes.Visible = true;
             }
             else if (_currentUser.permiso == 2)
             {
@@ -107,6 +108,25 @@ namespace ProyBROL_GUI
         void EstaCerradoUsuarioEmp(object sender, EventArgs e)
         {
             formUsuariosEmp = null;
+        }
+
+        private void btnSolicitudes_Click(object sender, EventArgs e)
+        {
+            if (formSolicitudEmp == null)
+            {
+                formSolicitudEmp = new SolicitudEmp(_currentUser);
+                formSolicitudEmp.MdiParent = this;
+                formSolicitudEmp.FormClosed += new FormClosedEventHandler(EstaCerradoSolicitudEmp);
+                formSolicitudEmp.Show();
+            }
+            else
+            {
+                formSolicitudEmp.BringToFront();
+            }
+        }
+        void EstaCerradoSolicitudEmp(object sender, EventArgs e)
+        {
+            formSolicitudEmp = null;
         }
     }
 }

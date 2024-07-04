@@ -31,7 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SolicitudArchivo));
             pnlPdf = new Panel();
             gbAcciones = new GroupBox();
+            btnRechazar = new Button();
+            btnAceptar = new Button();
             gbControles = new GroupBox();
+            btnSalir = new Button();
             gbInfo = new GroupBox();
             label19 = new Label();
             txtCodFind = new TextBox();
@@ -48,9 +51,7 @@
             label4 = new Label();
             label3 = new Label();
             lblPersona = new Label();
-            btnAceptar = new Button();
-            btnRechazar = new Button();
-            btnSalir = new Button();
+            lblMensaje = new Label();
             gbAcciones.SuspendLayout();
             gbControles.SuspendLayout();
             gbInfo.SuspendLayout();
@@ -68,25 +69,74 @@
             // gbAcciones
             // 
             gbAcciones.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            gbAcciones.Controls.Add(lblMensaje);
             gbAcciones.Controls.Add(btnRechazar);
             gbAcciones.Controls.Add(btnAceptar);
-            gbAcciones.Location = new Point(857, 570);
+            gbAcciones.Location = new Point(857, 680);
             gbAcciones.Name = "gbAcciones";
             gbAcciones.Size = new Size(329, 99);
             gbAcciones.TabIndex = 1;
             gbAcciones.TabStop = false;
             gbAcciones.Text = "Acciones";
             // 
+            // btnRechazar
+            // 
+            btnRechazar.Anchor = AnchorStyles.Top;
+            btnRechazar.BackColor = Color.Black;
+            btnRechazar.FlatAppearance.BorderSize = 0;
+            btnRechazar.FlatStyle = FlatStyle.Flat;
+            btnRechazar.Font = new Font("Leelawadee", 9.75F);
+            btnRechazar.ForeColor = SystemColors.ControlLightLight;
+            btnRechazar.Location = new Point(173, 31);
+            btnRechazar.Name = "btnRechazar";
+            btnRechazar.Size = new Size(103, 48);
+            btnRechazar.TabIndex = 40;
+            btnRechazar.Text = "RECHAZAR";
+            btnRechazar.UseVisualStyleBackColor = false;
+            btnRechazar.Click += btnRechazar_Click;
+            // 
+            // btnAceptar
+            // 
+            btnAceptar.Anchor = AnchorStyles.Top;
+            btnAceptar.BackColor = Color.Black;
+            btnAceptar.FlatAppearance.BorderSize = 0;
+            btnAceptar.FlatStyle = FlatStyle.Flat;
+            btnAceptar.Font = new Font("Leelawadee", 9.75F);
+            btnAceptar.ForeColor = SystemColors.ControlLightLight;
+            btnAceptar.Location = new Point(64, 31);
+            btnAceptar.Name = "btnAceptar";
+            btnAceptar.Size = new Size(103, 48);
+            btnAceptar.TabIndex = 39;
+            btnAceptar.Text = "ACEPTAR";
+            btnAceptar.UseVisualStyleBackColor = false;
+            btnAceptar.Click += btnAceptar_Click;
+            // 
             // gbControles
             // 
             gbControles.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             gbControles.Controls.Add(btnSalir);
-            gbControles.Location = new Point(857, 675);
+            gbControles.Location = new Point(857, 570);
             gbControles.Name = "gbControles";
             gbControles.Size = new Size(329, 104);
             gbControles.TabIndex = 2;
             gbControles.TabStop = false;
             gbControles.Text = "Controles";
+            // 
+            // btnSalir
+            // 
+            btnSalir.Anchor = AnchorStyles.Top;
+            btnSalir.BackColor = Color.Black;
+            btnSalir.FlatAppearance.BorderSize = 0;
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.Font = new Font("Leelawadee", 9.75F);
+            btnSalir.ForeColor = SystemColors.ControlLightLight;
+            btnSalir.Location = new Point(113, 28);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(103, 48);
+            btnSalir.TabIndex = 39;
+            btnSalir.Text = "SALIR";
+            btnSalir.UseVisualStyleBackColor = false;
+            btnSalir.Click += btnSalir_Click;
             // 
             // gbInfo
             // 
@@ -253,50 +303,16 @@
             lblPersona.TabIndex = 0;
             lblPersona.Text = "Solicitante:";
             // 
-            // btnAceptar
+            // lblMensaje
             // 
-            btnAceptar.Anchor = AnchorStyles.Top;
-            btnAceptar.BackColor = Color.Black;
-            btnAceptar.FlatAppearance.BorderSize = 0;
-            btnAceptar.FlatStyle = FlatStyle.Flat;
-            btnAceptar.Font = new Font("Leelawadee", 9.75F);
-            btnAceptar.ForeColor = SystemColors.ControlLightLight;
-            btnAceptar.Location = new Point(64, 31);
-            btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(103, 48);
-            btnAceptar.TabIndex = 39;
-            btnAceptar.Text = "ACEPTAR";
-            btnAceptar.UseVisualStyleBackColor = false;
-            // 
-            // btnRechazar
-            // 
-            btnRechazar.Anchor = AnchorStyles.Top;
-            btnRechazar.BackColor = Color.Black;
-            btnRechazar.FlatAppearance.BorderSize = 0;
-            btnRechazar.FlatStyle = FlatStyle.Flat;
-            btnRechazar.Font = new Font("Leelawadee", 9.75F);
-            btnRechazar.ForeColor = SystemColors.ControlLightLight;
-            btnRechazar.Location = new Point(173, 31);
-            btnRechazar.Name = "btnRechazar";
-            btnRechazar.Size = new Size(103, 48);
-            btnRechazar.TabIndex = 40;
-            btnRechazar.Text = "RECHAZAR";
-            btnRechazar.UseVisualStyleBackColor = false;
-            // 
-            // btnSalir
-            // 
-            btnSalir.Anchor = AnchorStyles.Top;
-            btnSalir.BackColor = Color.Black;
-            btnSalir.FlatAppearance.BorderSize = 0;
-            btnSalir.FlatStyle = FlatStyle.Flat;
-            btnSalir.Font = new Font("Leelawadee", 9.75F);
-            btnSalir.ForeColor = SystemColors.ControlLightLight;
-            btnSalir.Location = new Point(113, 28);
-            btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(103, 48);
-            btnSalir.TabIndex = 39;
-            btnSalir.Text = "SALIR";
-            btnSalir.UseVisualStyleBackColor = false;
+            lblMensaje.BackColor = Color.Transparent;
+            lblMensaje.Location = new Point(16, 40);
+            lblMensaje.Name = "lblMensaje";
+            lblMensaje.Size = new Size(302, 31);
+            lblMensaje.TabIndex = 41;
+            lblMensaje.Text = "NO SE PUEDE PROCESAR LA SOLICITUD PORQUE YA SE ENCUENTRA ";
+            lblMensaje.TextAlign = ContentAlignment.MiddleCenter;
+            lblMensaje.Visible = false;
             // 
             // SolicitudArchivo
             // 
@@ -345,5 +361,6 @@
         private Button btnRechazar;
         private Button btnAceptar;
         private Button btnSalir;
+        private Label lblMensaje;
     }
 }

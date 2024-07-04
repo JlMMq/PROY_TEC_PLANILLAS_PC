@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\solicitudarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\solicitudarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\solicitudarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\solicitudarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\solicitudadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\solicitudadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\solicitudemp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\solicitudemp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\solicitudarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\solicitudarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\solicitudadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\solicitudadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -23,12 +27,12 @@
       "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\solicitudemp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\solicitudadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\solicitudadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\solicitudadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\solicitudadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_gui\\solicitudemp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{90D6AA39-E237-41C3-9DE4-51743FDB1232}|ProyBROL_GUI\\ProyBROL_GUI.csproj|solutionrelative:proybrol_gui\\solicitudemp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F1906DD3-164C-4BE3-91B4-A8425C18BD66}|ProyBROL_BE\\ProyBROL_BE.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_be\\solicitudbe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1906DD3-164C-4BE3-91B4-A8425C18BD66}|ProyBROL_BE\\ProyBROL_BE.csproj|solutionrelative:proybrol_be\\solicitudbe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{65B048F7-D5BD-47F0-82EC-746543DFF5B7}|ProyBROL_BL\\ProyBROL_BL.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_bl\\solicitudbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_ado\\solicitudado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43C17F73-7B66-4314-8D1D-01E949D47EF5}|ProyBROL_ADO\\ProyBROL_ADO.csproj|solutionrelative:proybrol_ado\\solicitudado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1906DD3-164C-4BE3-91B4-A8425C18BD66}|ProyBROL_BE\\ProyBROL_BE.csproj|d:\\isil\\2024-1\\proyecto tecnologico\\brolrrhh\\proybrol_be\\solicitudbe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1906DD3-164C-4BE3-91B4-A8425C18BD66}|ProyBROL_BE\\ProyBROL_BE.csproj|solutionrelative:proybrol_be\\solicitudbe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,32 +86,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "SolicitudArchivo.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\SolicitudArchivo.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\SolicitudArchivo.cs",
-              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\SolicitudArchivo.cs*",
-              "RelativeToolTip": "ProyBROL_GUI\\SolicitudArchivo.cs*",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAABsAAABeAAAA",
+              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\SolicitudArchivo.cs",
+              "RelativeToolTip": "ProyBROL_GUI\\SolicitudArchivo.cs",
+              "ViewState": "AQIAAJcAAAAAAAAAAAAUwK8AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-04T14:46:14.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SolicitudArchivo.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\SolicitudArchivo.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\SolicitudArchivo.cs",
-              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\SolicitudArchivo.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "ProyBROL_GUI\\SolicitudArchivo.cs [Dise\u00F1o]*",
+              "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\SolicitudArchivo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyBROL_GUI\\SolicitudArchivo.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-04T14:32:48.663Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Usuarios.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\Usuarios.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\Usuarios.cs",
@@ -123,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "SolicitudEmp.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\SolicitudEmp.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\SolicitudEmp.cs",
@@ -136,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "SolicitudAdmin.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\SolicitudAdmin.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\SolicitudAdmin.cs",
@@ -148,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "SolicitudEmp.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\SolicitudEmp.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\SolicitudEmp.cs",
@@ -160,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "SolicitudBL.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_BL\\SolicitudBL.cs",
               "RelativeDocumentMoniker": "ProyBROL_BL\\SolicitudBL.cs",
@@ -173,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "SolicitudADO.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_ADO\\SolicitudADO.cs",
               "RelativeDocumentMoniker": "ProyBROL_ADO\\SolicitudADO.cs",
@@ -213,24 +213,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "SolicitudBE.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_BE\\SolicitudBE.cs",
               "RelativeDocumentMoniker": "ProyBROL_BE\\SolicitudBE.cs",
               "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_BE\\SolicitudBE.cs",
               "RelativeToolTip": "ProyBROL_BE\\SolicitudBE.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAA1wAAAAAAAAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAhwB4AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-04T13:38:40.932Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Usuarios.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\Usuarios.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\Usuarios.cs",
@@ -264,13 +264,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "SolicitudAdmin.cs",
               "DocumentMoniker": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\SolicitudAdmin.cs",
               "RelativeDocumentMoniker": "ProyBROL_GUI\\SolicitudAdmin.cs",
               "ToolTip": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\SolicitudAdmin.cs",
               "RelativeToolTip": "ProyBROL_GUI\\SolicitudAdmin.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAwwEEAAAAAAAAA",
+              "ViewState": "AQIAALoAAAAAAAAAAAAqwMcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-04T13:19:25.431Z",
               "EditorCaption": ""

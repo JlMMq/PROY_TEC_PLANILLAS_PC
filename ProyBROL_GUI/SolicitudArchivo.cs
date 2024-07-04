@@ -25,13 +25,15 @@ namespace ProyBROL_GUI
         byte[] archivo;
         private PdfViewer pdfViewer;
         private MemoryStream pdfStream;
+
+        GenericResponse msm = new GenericResponse();
         public SolicitudArchivo(LoginOuBE currentUser, int tipoSolSelect, SolicitudViewBE select)
         {
             InitializeComponent();
             this._tipoSolSelect = tipoSolSelect;
             this._currentUser = currentUser;
-            this._select = select;  
-            
+            this._select = select;
+
             pdfViewer = new PdfViewer();
             pdfViewer.Dock = DockStyle.Fill;
             pnlPdf.Controls.Add(pdfViewer);
@@ -44,7 +46,7 @@ namespace ProyBROL_GUI
 
             if (archivo != null && archivo.Length > 0)
             {
-                
+
                 pdfStream = new MemoryStream(archivo);
                 pdfViewer.Document = PdfDocument.Load(pdfStream);
             }
@@ -54,7 +56,7 @@ namespace ProyBROL_GUI
             }
 
             //ENVIADO
-            if(_tipoSolSelect == 1)
+            if (_tipoSolSelect == 1)
             {
                 lblCodigo.Text = _select.codSolicitud.ToString();
                 lblSolicitud.Text = _select.desc_solic;
@@ -67,18 +69,45 @@ namespace ProyBROL_GUI
                 else if (_select.estado == 1)
                 {
                     lblEstado.ForeColor = Color.Green;
+                    btnAceptar.Enabled = false;
+                    btnRechazar.Enabled = false;
+                    btnAceptar.Visible = false;
+                    btnRechazar.Visible = false;
+
+                    lblMensaje.Visible = true;
+                    lblMensaje.Text += " ACEPTADA"; 
+
                 }
                 else if (_select.estado == 2)
                 {
                     lblEstado.ForeColor = Color.Brown;
+                    btnAceptar.Enabled = false;
+                    btnRechazar.Enabled = false;
+                    btnAceptar.Visible = false;
+                    btnRechazar.Visible = false;
+
+                    lblMensaje.Visible = true;
+                    lblMensaje.Text += " CADUCADA";
                 }
                 else if (_select.estado == 3)
                 {
                     lblEstado.ForeColor = Color.Red;
+                    btnAceptar.Enabled = false;
+                    btnRechazar.Enabled = false;
+                    btnAceptar.Visible = false;
+                    btnRechazar.Visible = false;
+
+                    lblMensaje.Visible = true;
+                    lblMensaje.Text += " RECHAZADA";
                 }
                 else
                 {
                     lblEstado.ForeColor = Color.Black;
+                    btnAceptar.Enabled = false;
+                    btnRechazar.Enabled = false;
+                    btnAceptar.Visible = false;
+                    btnRechazar.Visible = false;
+
                 }
 
 
@@ -98,8 +127,11 @@ namespace ProyBROL_GUI
                     string fotosTempPath = Path.Combine(basePath, "FotosTemp\\");
                     imgFoto.Image = System.Drawing.Image.FromFile(fotosTempPath + "noimage.jpg");
                 }
-            }   
-            else if(_tipoSolSelect == 2)
+
+                gbAcciones.Visible = false;
+                gbAcciones.Enabled = false; 
+            }
+            else if (_tipoSolSelect == 2)
             {
                 lblCodigo.Text = _select.codSolicitud.ToString();
                 lblSolicitud.Text = _select.desc_solic;
@@ -112,18 +144,42 @@ namespace ProyBROL_GUI
                 else if (_select.estado == 1)
                 {
                     lblEstado.ForeColor = Color.Green;
+                    btnAceptar.Enabled = false;
+                    btnRechazar.Enabled = false;
+                    btnAceptar.Visible = false;
+                    btnRechazar.Visible = false;
+
+                    lblMensaje.Visible = true;
+                    lblMensaje.Text += " ACEPTADA";
+
                 }
                 else if (_select.estado == 2)
                 {
                     lblEstado.ForeColor = Color.Brown;
+                    btnAceptar.Enabled = false;
+                    btnRechazar.Enabled = false;
+                    btnAceptar.Visible = false;
+                    btnRechazar.Visible = false;
+
+                    lblMensaje.Visible = true;
+                    lblMensaje.Text += " CADUCADA";
                 }
                 else if (_select.estado == 3)
                 {
                     lblEstado.ForeColor = Color.Red;
+                    btnAceptar.Enabled = false;
+                    btnRechazar.Enabled = false;
+                    btnAceptar.Visible = false;
+                    btnRechazar.Visible = false;
+
+                    lblMensaje.Visible = true;
+                    lblMensaje.Text += " RECHAZADA";
                 }
                 else
                 {
                     lblEstado.ForeColor = Color.Black;
+                    btnAceptar.Visible = false;
+                    btnRechazar.Visible = false;
                 }
                 lblPersona.Text = "Solicitante";
 
@@ -152,6 +208,39 @@ namespace ProyBROL_GUI
         {
             pdfStream?.Dispose();
             base.OnFormClosed(e);
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            SolicitudProcessBE soli = new SolicitudProcessBE
+            {
+                codSolicitud = _select.codSolicitud,
+                estado = 1,
+                usuario = _currentUser.nomUser
+            };
+
+            msm = _soliBL.ProcesarSolicitud(soli);
+
+            MessageBox.Show(msm.MENSAJE, "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
+        }
+
+        private void btnRechazar_Click(object sender, EventArgs e)
+        {
+            SolicitudProcessBE soli = new SolicitudProcessBE
+            {
+                codSolicitud = _select.codSolicitud,
+                estado = 3,
+                usuario = _currentUser.nomUser
+            };
+            msm = _soliBL.ProcesarSolicitud(soli);
+            MessageBox.Show(msm.MENSAJE, "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

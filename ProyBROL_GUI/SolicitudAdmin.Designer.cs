@@ -319,6 +319,7 @@
             btnActualizar.TabIndex = 39;
             btnActualizar.Text = "ACTUALIZAR";
             btnActualizar.UseVisualStyleBackColor = false;
+            btnActualizar.Click += btnActualizar_Click;
             // 
             // dtgSolicEnviadas
             // 

@@ -118,7 +118,7 @@ namespace ProyBROL_GUI
             {
                 codDocSelect = int.Parse(dtgSolicRecibidas.SelectedCells[0].Value.ToString());
                 var selectRow = listViewRecibidos.FirstOrDefault(e => e.codSolicitud == codDocSelect);
- 
+
                 SolSelect = selectRow;
 
                 lblCodigo.Text = codDocSelect.ToString();
@@ -167,9 +167,9 @@ namespace ProyBROL_GUI
 
         private void btnVisualizar_Click(object sender, EventArgs e)
         {
-            if (codDocSelect!= 0 && codDocSelect != null)
+            if (codDocSelect != 0 && codDocSelect != null)
             {
-                
+
                 if (frm == null)
                 {
                     frm = new SolicitudArchivo(_currentUser, tipoSolSelect, SolSelect);
@@ -190,6 +190,41 @@ namespace ProyBROL_GUI
         void EstaCerradoSolicitudArchivo(object sender, EventArgs e)
         {
             frm = null;
+
+            SolicitudViewRequestBE soli = new SolicitudViewRequestBE
+            {
+                codSolicitante = _currentEmpleado,
+                codSupervisor = 0
+            };
+            listViewEnviados = _soliBL.ListarSolicitudView(soli);
+            
+            dtgSolicEnviadas.DataSource = listViewEnviados;
+
+            soli.codSolicitante = 0;
+            soli.codSupervisor = _currentEmpleado;
+
+            listViewRecibidos = _soliBL.ListarSolicitudView(soli);
+            
+            dtgSolicRecibidas.DataSource = listViewRecibidos;
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            SolicitudViewRequestBE soli = new SolicitudViewRequestBE
+            {
+                codSolicitante = _currentEmpleado,
+                codSupervisor = 0
+            };
+            listViewEnviados = _soliBL.ListarSolicitudView(soli);
+            
+            dtgSolicEnviadas.DataSource = listViewEnviados;
+
+            soli.codSolicitante = 0;
+            soli.codSupervisor = _currentEmpleado;
+
+            listViewRecibidos = _soliBL.ListarSolicitudView(soli);
+            
+            dtgSolicRecibidas.DataSource = listViewRecibidos;
         }
     }
 }

@@ -12,6 +12,16 @@ namespace ProyBROL_BL
     {
         SolicitudADO objSolicitudADO = new SolicitudADO();
 
+        public List<SolicitudViewBE> ListarSolicitudView (SolicitudViewRequestBE request)
+        {
+            return objSolicitudADO.ListarSolicitudView(request);
+        }
+
+        public SolicitudArchivoBE ConsultarArchivoSolicitud (SolicitudArchivoRequestBE request)
+        {
+            return objSolicitudADO.ConsultarArchivoSolicitud(request);
+        }
+
         public GenericResponse InsertarSolicitud(SolicitudInsertBE obj)
         {
             return objSolicitudADO.InsertarSolicitud(obj);

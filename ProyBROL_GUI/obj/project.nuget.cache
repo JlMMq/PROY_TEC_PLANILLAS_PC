@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aU2H9J0uAYkJa8NTFcF4p+ocH89cL3TCG5F/AlFuGZf4FMqIcclgtgRr4NC66jOeIpc6eSiBmj4umnbxIQiZ/w==",
+  "dgSpecHash": "hdoGZdr4W5oKReiSlgqQbnu9dyPIMKUwwFXBZjpiQweQRrSR+8+HykL1VjWy5Q4WL7QAZEIuSC3ElUmkIz5a9w==",
   "success": true,
   "projectFilePath": "D:\\ISIL\\2024-1\\Proyecto Tecnologico\\BROLRRHH\\ProyBROL_GUI\\ProyBROL_GUI.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\jlmal\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\jlmal\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\jlmal\\.nuget\\packages\\pdfiumviewer\\2.13.0\\pdfiumviewer.2.13.0.nupkg.sha512",
+    "C:\\Users\\jlmal\\.nuget\\packages\\pdfiumviewer.native.x86_64.v8-xfa\\2018.4.8.256\\pdfiumviewer.native.x86_64.v8-xfa.2018.4.8.256.nupkg.sha512",
     "C:\\Users\\jlmal\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
     "C:\\Users\\jlmal\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\jlmal\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",

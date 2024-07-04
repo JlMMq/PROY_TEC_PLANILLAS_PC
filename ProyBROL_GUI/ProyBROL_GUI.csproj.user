@@ -25,6 +25,9 @@
     <Compile Update="SolicitudAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="SolicitudArchivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="SolicitudEmp.cs">
       <SubType>Form</SubType>
     </Compile>

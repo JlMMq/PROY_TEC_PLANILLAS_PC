@@ -15,6 +15,57 @@ namespace ProyBROL_ADO
     {
         public string restService;
         static string _connect = ConexionADO.conexString;
+        
+
+        public List<SolicitudViewBE> ListarSolicitudView (SolicitudViewRequestBE obj)
+        {
+            restService = _connect + "Solicitud/ListarSolicitudesView";
+            List<SolicitudViewBE> lst = new List<SolicitudViewBE>();
+            try
+            {
+                var client = new RestClient(restService);
+                var request = new RestRequest();
+                request.Method = Method.Post;
+                request.AddJsonBody(obj);
+                var response = client.Execute<List<SolicitudViewBE>>(request);
+                if(response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    var res = JsonConvert.DeserializeObject<List<SolicitudViewBE>>(response.Content);
+                    lst = res.ToList();
+                }
+            }
+            catch(Exception ex)
+            {
+
+            }
+            
+            return lst;
+        }
+
+        public SolicitudArchivoBE ConsultarArchivoSolicitud(SolicitudArchivoRequestBE obj)
+        {
+            restService = _connect + "Solicitud/ConsultarArchivoSolicitud";
+            SolicitudArchivoBE archivo = new SolicitudArchivoBE();
+
+            try
+            {
+                var client = new RestClient(restService);
+                var request = new RestRequest();
+                request.Method = Method.Post;
+                request.AddJsonBody(obj);
+                var response = client.Execute<SolicitudArchivoBE>(request);
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    var res = JsonConvert.DeserializeObject<SolicitudArchivoBE> (response.Content);
+                    archivo.archivo = res.archivo;
+                }
+            }
+            catch(Exception ex)
+            {
+                archivo.archivo = null;
+            }
+            return archivo;
+        }
 
         public GenericResponse InsertarSolicitud(SolicitudInsertBE soli)
         {

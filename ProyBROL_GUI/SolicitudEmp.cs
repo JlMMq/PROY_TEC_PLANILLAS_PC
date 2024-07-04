@@ -449,15 +449,22 @@ namespace ProyBROL_GUI
 
         private void btnVerificarSolicitudes_Click(object sender, EventArgs e)
         {
-            if (frmSoliAdmn == null)
+            if (objEmpleado.codEmpleado != 0 && objEmpleado.codEmpleado != null)
             {
-                frmSoliAdmn = new SolicitudAdmin(_currentUser);
-                frmSoliAdmn.FormClosed += new FormClosedEventHandler(EstaCerradoSolicitudAdmin);
-                frmSoliAdmn.Show();
+                if (frmSoliAdmn == null)
+                {
+                    frmSoliAdmn = new SolicitudAdmin(_currentUser, objEmpleado.codEmpleado);
+                    frmSoliAdmn.FormClosed += new FormClosedEventHandler(EstaCerradoSolicitudAdmin);
+                    frmSoliAdmn.Show();
+                }
+                else
+                {
+                    frmSoliAdmn.BringToFront();
+                }
             }
             else
             {
-                frmSoliAdmn.BringToFront();
+                MessageBox.Show("El usuario no posee codigo de identificacion.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         void EstaCerradoSolicitudAdmin(object sender, EventArgs e)

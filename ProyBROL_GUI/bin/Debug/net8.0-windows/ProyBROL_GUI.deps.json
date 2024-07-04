@@ -9,6 +9,7 @@
       "ProyBROL_GUI/1.0.0": {
         "dependencies": {
           "PdfiumViewer": "2.13.0",
+          "PdfiumViewer.Native.x86_64.v8-xfa": "2018.4.8.256",
           "ProyBROL_ADO": "1.0.0",
           "ProyBROL_BE": "1.0.0",
           "ProyBROL_BL": "1.0.0",
@@ -73,6 +74,7 @@
           }
         }
       },
+      "PdfiumViewer.Native.x86_64.v8-xfa/2018.4.8.256": {},
       "RestSharp/110.2.0": {
         "dependencies": {
           "System.Text.Json": "7.0.2"
@@ -183,6 +185,13 @@
       "sha512": "sha512-Nw4owBmJzDVXoMRjCnqPbET07CPOawwhcNjt+PyRaSxONN9bsFF+cm9kcMsDLEAEaxsiDJo5jls8bCQjvjidkA==",
       "path": "pdfiumviewer/2.13.0",
       "hashPath": "pdfiumviewer.2.13.0.nupkg.sha512"
+    },
+    "PdfiumViewer.Native.x86_64.v8-xfa/2018.4.8.256": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0RQwmLMPKOHBRqRK+NPMR2H5EQ4KlYO+LnT3Y2lByVUa5/JTPCMswL46JEXX+/MAfJtCpS2PzJvy6QzpH2nuIw==",
+      "path": "pdfiumviewer.native.x86_64.v8-xfa/2018.4.8.256",
+      "hashPath": "pdfiumviewer.native.x86_64.v8-xfa.2018.4.8.256.nupkg.sha512"
     },
     "RestSharp/110.2.0": {
       "type": "package",

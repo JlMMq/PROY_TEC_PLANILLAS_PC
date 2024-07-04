@@ -34,6 +34,37 @@ namespace ProyBROL_BE
         public int estado { get; set; }
         public string usuario { get; set; }
     }
+    public class SolicitudViewRequestBE
+    {
+        public int codSupervisor { get; set; }
+        public int codSolicitante { get; set; }
+    }
+
+    public class SolicitudViewBE
+    {
+        public int codSolicitud { get; set; }
+        public int codSupervisor { get; set; }
+        public int codSolicitante { get; set; }
+        public string nomape { get; set; }
+        public byte[]? foto { get; set; }
+        public int tipoSolic { get; set; }
+        public string desc_solic { get; set; }
+        public int tipoAsunto { get; set; }
+        public string desc_asunto { get; set; }
+        public string desc_content { get; set; }
+        public int estado { get; set; }
+        public string desc_estado { get; set; }
+    }
+
+    public class  SolicitudArchivoRequestBE
+    {
+        public int codSolicitud { get; set; }
+    }
+    public class SolicitudArchivoBE
+    {
+        public byte[]? archivo { get; set; }
+    }
+
 
     public class GenericResponse
     {

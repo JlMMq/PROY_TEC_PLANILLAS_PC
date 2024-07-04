@@ -75,3 +75,5 @@ D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\bin\Debug\net8.0-windo
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.SolicitudAdmin.resources
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\bin\Debug\net8.0-windows\PdfiumViewer.dll
 D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\bin\Debug\net8.0-windows\nl\PdfiumViewer.resources.dll
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\obj\Debug\net8.0-windows\ProyBROL_GUI.SolicitudArchivo.resources
+D:\ISIL\2024-1\Proyecto Tecnologico\BROLRRHH\ProyBROL_GUI\bin\Debug\net8.0-windows\x64\pdfium.dll

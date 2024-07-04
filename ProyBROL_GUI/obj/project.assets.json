@@ -88,6 +88,12 @@
           }
         }
       },
+      "PdfiumViewer.Native.x86_64.v8-xfa/2018.4.8.256": {
+        "type": "package",
+        "build": {
+          "Build/PdfiumViewer.Native.x86_64.v8-xfa.props": {}
+        }
+      },
       "RestSharp/110.2.0": {
         "type": "package",
         "dependencies": {
@@ -336,6 +342,19 @@
         "lib/net20/nl/PdfiumViewer.resources.dll",
         "pdfiumviewer.2.13.0.nupkg.sha512",
         "pdfiumviewer.nuspec"
+      ]
+    },
+    "PdfiumViewer.Native.x86_64.v8-xfa/2018.4.8.256": {
+      "sha512": "0RQwmLMPKOHBRqRK+NPMR2H5EQ4KlYO+LnT3Y2lByVUa5/JTPCMswL46JEXX+/MAfJtCpS2PzJvy6QzpH2nuIw==",
+      "type": "package",
+      "path": "pdfiumviewer.native.x86_64.v8-xfa/2018.4.8.256",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Build/PdfiumViewer.Native.x86_64.v8-xfa.props",
+        "Build/x64/pdfium.dll",
+        "pdfiumviewer.native.x86_64.v8-xfa.2018.4.8.256.nupkg.sha512",
+        "pdfiumviewer.native.x86_64.v8-xfa.nuspec"
       ]
     },
     "RestSharp/110.2.0": {
@@ -639,6 +658,7 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "PdfiumViewer >= 2.13.0",
+      "PdfiumViewer.Native.x86_64.v8-xfa >= 2018.4.8.256",
       "ProyBROL_ADO >= 1.0.0",
       "ProyBROL_BE >= 1.0.0",
       "ProyBROL_BL >= 1.0.0",
@@ -710,6 +730,10 @@
           "PdfiumViewer": {
             "target": "Package",
             "version": "[2.13.0, )"
+          },
+          "PdfiumViewer.Native.x86_64.v8-xfa": {
+            "target": "Package",
+            "version": "[2018.4.8.256, )"
           },
           "System.Text.Encoding": {
             "target": "Package",

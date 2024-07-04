@@ -91,12 +91,15 @@
             txtBuscarJefe = new TextBox();
             label15 = new Label();
             imgFoto = new PictureBox();
+            gbSolicitudes = new GroupBox();
+            btnVerificarSolicitudes = new Button();
             gbFormulario.SuspendLayout();
             gbVacaciones.SuspendLayout();
             gbLicencia.SuspendLayout();
             gbPermiso.SuspendLayout();
             gbBuscar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)imgFoto).BeginInit();
+            gbSolicitudes.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -223,6 +226,7 @@
             rbVacParticionada.TabStop = true;
             rbVacParticionada.Text = "Particionadas";
             rbVacParticionada.UseVisualStyleBackColor = true;
+            rbVacParticionada.CheckedChanged += rbVacParticionada_CheckedChanged;
             // 
             // rbVacCompleta
             // 
@@ -766,11 +770,38 @@
             imgFoto.TabIndex = 13;
             imgFoto.TabStop = false;
             // 
+            // gbSolicitudes
+            // 
+            gbSolicitudes.Controls.Add(btnVerificarSolicitudes);
+            gbSolicitudes.Location = new Point(815, 650);
+            gbSolicitudes.Name = "gbSolicitudes";
+            gbSolicitudes.Size = new Size(357, 137);
+            gbSolicitudes.TabIndex = 7;
+            gbSolicitudes.TabStop = false;
+            gbSolicitudes.Text = "Solicitudes";
+            // 
+            // btnVerificarSolicitudes
+            // 
+            btnVerificarSolicitudes.Anchor = AnchorStyles.Top;
+            btnVerificarSolicitudes.BackColor = Color.Black;
+            btnVerificarSolicitudes.FlatAppearance.BorderSize = 0;
+            btnVerificarSolicitudes.FlatStyle = FlatStyle.Flat;
+            btnVerificarSolicitudes.Font = new Font("Leelawadee", 9.75F);
+            btnVerificarSolicitudes.ForeColor = SystemColors.ControlLightLight;
+            btnVerificarSolicitudes.Location = new Point(102, 43);
+            btnVerificarSolicitudes.Name = "btnVerificarSolicitudes";
+            btnVerificarSolicitudes.Size = new Size(196, 48);
+            btnVerificarSolicitudes.TabIndex = 39;
+            btnVerificarSolicitudes.Text = "VERIFICAR SOLICITUDES";
+            btnVerificarSolicitudes.UseVisualStyleBackColor = false;
+            btnVerificarSolicitudes.Click += btnVerificarSolicitudes_Click;
+            // 
             // SolicitudEmp
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1197, 924);
+            Controls.Add(gbSolicitudes);
             Controls.Add(gbBuscar);
             Controls.Add(gbFormulario);
             Controls.Add(label1);
@@ -790,6 +821,7 @@
             gbBuscar.ResumeLayout(false);
             gbBuscar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)imgFoto).EndInit();
+            gbSolicitudes.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -866,5 +898,7 @@
         private Label label26;
         private DateTimePicker dtpHoraRetorn;
         private DateTimePicker dtpHoraSalida;
+        private GroupBox gbSolicitudes;
+        private Button btnVerificarSolicitudes;
     }
 }

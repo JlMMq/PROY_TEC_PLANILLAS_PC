@@ -276,6 +276,10 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "PdfiumViewer": {
+              "target": "Package",
+              "version": "[2.13.0, )"
+            },
             "System.Text.Encoding": {
               "target": "Package",
               "version": "[4.3.0, )"

@@ -33,6 +33,9 @@ namespace ProyBROL_GUI
 
         SolicitudInsertBE solicitud = new SolicitudInsertBE();
         SolicitudBL _solicitudBL = new SolicitudBL();
+
+        SolicitudAdmin frmSoliAdmn;
+
         public SolicitudEmp(LoginOuBE currentUser)
         {
             InitializeComponent();
@@ -258,29 +261,29 @@ namespace ProyBROL_GUI
                     text_solicitud = "VACACIONES";
                     text_asunto = "Particionadas";
                 }
-                if(solicitud.codSolicitante != null && solicitud.codSolicitante != 0)
+                if (solicitud.codSolicitante != null && solicitud.codSolicitante != 0)
                 {
                     if (solicitud.codSupervisor != null && solicitud.codSupervisor != 0)
-                    {   
+                    {
                         CrearPDF();
                         GenericResponse msm = new GenericResponse();
                         msm = _solicitudBL.InsertarSolicitud(solicitud);
-                        
+
                         MessageBox.Show(msm.MENSAJE, "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        
-                        
+
+
                     }
                     else
                     {
-                        MessageBox.Show("Debe seleccionar al encargado o jefe en la seccion de busqueda.","Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                        MessageBox.Show("Debe seleccionar al encargado o jefe en la seccion de busqueda.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
                 {
                     MessageBox.Show("No se encontro al solicitante del documento.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                
-                
+
+
             }
             else
             {
@@ -379,7 +382,15 @@ namespace ProyBROL_GUI
 
         private void rbVacCompleta_CheckedChanged(object sender, EventArgs e)
         {
-           
+            if (rbVacCompleta.Checked)
+            {
+                dtFechaFin.MinDate = dtFechaIni.Value.AddDays(30);
+            }
+            else
+            {
+                dtFechaFin.MinDate = DateTime.Now;
+                dtFechaFin.MaxDate = DateTime.Now.AddDays(365);
+            }
         }
 
         private void dtFechaFin_DataContextChanged(object sender, EventArgs e)
@@ -415,10 +426,43 @@ namespace ProyBROL_GUI
                     dtFechaFin.MinDate = DateTime.Now;
                     dtFechaFin.MaxDate = DateTime.Now.AddDays(365);
                 }
-            }catch(Exception ex) 
-            {
-            
             }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void rbVacParticionada_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbVacParticionada.Checked)
+            {
+                dtFechaFin.MinDate = dtFechaIni.Value.AddDays(7);
+                dtFechaFin.MaxDate = dtFechaIni.Value.AddDays(30);
+            }
+            else
+            {
+                dtFechaFin.MinDate = DateTime.Now;
+                dtFechaFin.MaxDate = DateTime.Now.AddDays(365);
+            }
+        }
+
+        private void btnVerificarSolicitudes_Click(object sender, EventArgs e)
+        {
+            if (frmSoliAdmn == null)
+            {
+                frmSoliAdmn = new SolicitudAdmin(_currentUser);
+                frmSoliAdmn.FormClosed += new FormClosedEventHandler(EstaCerradoSolicitudAdmin);
+                frmSoliAdmn.Show();
+            }
+            else
+            {
+                frmSoliAdmn.BringToFront();
+            }
+        }
+        void EstaCerradoSolicitudAdmin(object sender, EventArgs e)
+        {
+            frmSoliAdmn = null;
         }
     }
 }

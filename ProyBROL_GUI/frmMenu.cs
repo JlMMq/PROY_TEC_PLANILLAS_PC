@@ -17,6 +17,7 @@ namespace ProyBROL_GUI
         Usuarios formUsuarios;
         UsuariosEmp formUsuariosEmp;
         SolicitudEmp formSolicitudEmp;
+        Recibos formRecibos;
 
         private LoginOuBE _currentUser;
 
@@ -31,23 +32,26 @@ namespace ProyBROL_GUI
             if (_currentUser.permiso == 3)
             {
                 btnEmpleados.Visible = true;
-                btnHorarios.Visible = true;
-                btnRegAsist.Visible = true;
+                //btnHorarios.Visible = true;
+                //btnRegAsist.Visible = true;
                 btnUsers.Visible = true;
                 btnSolicitudes.Visible = true;
+                btnRecibos.Visible = true;
             }
             else if (_currentUser.permiso == 2)
             {
-                btnHorarios.Visible = true;
-                btnRegAsist.Visible = true;
+                //btnHorarios.Visible = true;
+                //btnRegAsist.Visible = true;
                 btnUsers.Visible = true;
                 btnSolicitudes.Visible = true;
+                btnRecibos.Visible = true;
             }
             else if (_currentUser.permiso == 1)
             {
-                btnRegAsist.Visible = true;
+                //btnRegAsist.Visible = true;
                 btnUsers.Visible = true;
                 btnSolicitudes.Visible = true;
+                btnRecibos.Visible = true;
             }
         }
 
@@ -127,6 +131,25 @@ namespace ProyBROL_GUI
         void EstaCerradoSolicitudEmp(object sender, EventArgs e)
         {
             formSolicitudEmp = null;
+        }
+
+        private void btnRecibos_Click(object sender, EventArgs e)
+        {
+            if(formRecibos == null)
+            {
+                formRecibos = new Recibos();
+                formRecibos.MdiParent = this;
+                formRecibos.FormClosed += new FormClosedEventHandler(EstaCerradoRecibos);
+                formRecibos.Show();
+            }
+            else
+            {
+                formRecibos.BringToFront();
+            }
+        }
+        void EstaCerradoRecibos(object sender, EventArgs e)
+        {
+            formRecibos = null;
         }
     }
 }

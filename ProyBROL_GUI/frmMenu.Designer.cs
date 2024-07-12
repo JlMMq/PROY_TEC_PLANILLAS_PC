@@ -38,6 +38,7 @@
             btnHorarios = new Button();
             btnRegAsist = new Button();
             btnSolicitudes = new Button();
+            btnRecibos = new Button();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)imgLogo).BeginInit();
@@ -52,6 +53,7 @@
             flowLayoutPanel1.Controls.Add(btnHorarios);
             flowLayoutPanel1.Controls.Add(btnRegAsist);
             flowLayoutPanel1.Controls.Add(btnSolicitudes);
+            flowLayoutPanel1.Controls.Add(btnRecibos);
             flowLayoutPanel1.Dock = DockStyle.Left;
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -181,6 +183,25 @@
             btnSolicitudes.Visible = false;
             btnSolicitudes.Click += btnSolicitudes_Click;
             // 
+            // btnRecibos
+            // 
+            btnRecibos.BackColor = Color.FromArgb(38, 68, 57);
+            btnRecibos.FlatAppearance.BorderSize = 0;
+            btnRecibos.FlatStyle = FlatStyle.Flat;
+            btnRecibos.Font = new Font("Leelawadee", 12F);
+            btnRecibos.ForeColor = SystemColors.ControlLightLight;
+            btnRecibos.Image = Properties.Resources.pagoW;
+            btnRecibos.ImageAlign = ContentAlignment.MiddleLeft;
+            btnRecibos.Location = new Point(3, 524);
+            btnRecibos.Name = "btnRecibos";
+            btnRecibos.Padding = new Padding(20, 0, 0, 0);
+            btnRecibos.Size = new Size(183, 68);
+            btnRecibos.TabIndex = 10;
+            btnRecibos.Text = "Recibos";
+            btnRecibos.UseVisualStyleBackColor = false;
+            btnRecibos.Visible = false;
+            btnRecibos.Click += btnRecibos_Click;
+            // 
             // frmMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -213,5 +234,6 @@
         private Button btnRegAsist;
         private Button btnUsers;
         private Button btnSolicitudes;
+        private Button btnRecibos;
     }
 }

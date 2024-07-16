@@ -107,11 +107,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(37, 47);
+            label2.Location = new Point(37, 50);
             label2.Name = "label2";
-            label2.Size = new Size(386, 15);
+            label2.Size = new Size(410, 15);
             label2.TabIndex = 7;
-            label2.Text = "Los recibos son generados automaticamente los dias 30 entre cada mes.";
+            label2.Text = "Los recibos son generados automaticamente los dias 15 y 30 entre cada mes.";
             // 
             // groupBox1
             // 

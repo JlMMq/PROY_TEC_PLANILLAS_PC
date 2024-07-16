@@ -137,7 +137,7 @@ namespace ProyBROL_GUI
         {
             if(formRecibos == null)
             {
-                formRecibos = new Recibos();
+                formRecibos = new Recibos(_currentUser);
                 formRecibos.MdiParent = this;
                 formRecibos.FormClosed += new FormClosedEventHandler(EstaCerradoRecibos);
                 formRecibos.Show();

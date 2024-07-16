@@ -31,6 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Recibos));
             label1 = new Label();
             dgRecibos = new DataGridView();
+            codRecibo = new DataGridViewTextBoxColumn();
+            fechaEmision = new DataGridViewTextBoxColumn();
+            codEmpleado = new DataGridViewTextBoxColumn();
+            apenom = new DataGridViewTextBoxColumn();
+            moneda = new DataGridViewTextBoxColumn();
+            sueldoBase = new DataGridViewTextBoxColumn();
+            descEssalud = new DataGridViewTextBoxColumn();
+            descOnp = new DataGridViewTextBoxColumn();
+            descAfp = new DataGridViewTextBoxColumn();
+            descFaltas = new DataGridViewTextBoxColumn();
+            sueldoTotal = new DataGridViewTextBoxColumn();
             label2 = new Label();
             groupBox1 = new GroupBox();
             txtCantReg = new TextBox();
@@ -40,6 +51,13 @@
             label4 = new Label();
             label3 = new Label();
             gbBuscar = new GroupBox();
+            label14 = new Label();
+            txtDescFaltas = new TextBox();
+            label13 = new Label();
+            txtDescOnp = new TextBox();
+            label12 = new Label();
+            txtDescAfp = new TextBox();
+            label11 = new Label();
             txtSueldoTotal = new TextBox();
             label10 = new Label();
             panel1 = new Panel();
@@ -55,24 +73,6 @@
             button1 = new Button();
             txtCodRecibo = new TextBox();
             label17 = new Label();
-            label11 = new Label();
-            label12 = new Label();
-            txtDescAfp = new TextBox();
-            label13 = new Label();
-            txtDescOnp = new TextBox();
-            label14 = new Label();
-            txtDescFaltas = new TextBox();
-            codRecibo = new DataGridViewTextBoxColumn();
-            fechaEmision = new DataGridViewTextBoxColumn();
-            codEmpleado = new DataGridViewTextBoxColumn();
-            apenom = new DataGridViewTextBoxColumn();
-            moneda = new DataGridViewTextBoxColumn();
-            sueldoBase = new DataGridViewTextBoxColumn();
-            descEssalud = new DataGridViewTextBoxColumn();
-            descOnp = new DataGridViewTextBoxColumn();
-            descAfp = new DataGridViewTextBoxColumn();
-            descFaltas = new DataGridViewTextBoxColumn();
-            sueldoTotal = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgRecibos).BeginInit();
             groupBox1.SuspendLayout();
             gbBuscar.SuspendLayout();
@@ -90,13 +90,105 @@
             // 
             // dgRecibos
             // 
+            dgRecibos.AllowUserToAddRows = false;
+            dgRecibos.AllowUserToDeleteRows = false;
             dgRecibos.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgRecibos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgRecibos.Columns.AddRange(new DataGridViewColumn[] { codRecibo, fechaEmision, codEmpleado, apenom, moneda, sueldoBase, descEssalud, descOnp, descAfp, descFaltas, sueldoTotal });
             dgRecibos.Location = new Point(37, 147);
             dgRecibos.Name = "dgRecibos";
+            dgRecibos.ReadOnly = true;
+            dgRecibos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgRecibos.Size = new Size(829, 587);
             dgRecibos.TabIndex = 6;
+            dgRecibos.CellClick += dgRecibos_CellClick;
+            // 
+            // codRecibo
+            // 
+            codRecibo.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
+            codRecibo.DataPropertyName = "codRecibo";
+            codRecibo.HeaderText = "Codigo";
+            codRecibo.Name = "codRecibo";
+            codRecibo.ReadOnly = true;
+            codRecibo.Width = 71;
+            // 
+            // fechaEmision
+            // 
+            fechaEmision.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            fechaEmision.DataPropertyName = "fechaEmision";
+            fechaEmision.HeaderText = "Fecha de emisión";
+            fechaEmision.Name = "fechaEmision";
+            fechaEmision.ReadOnly = true;
+            // 
+            // codEmpleado
+            // 
+            codEmpleado.DataPropertyName = "codEmpleado";
+            codEmpleado.HeaderText = "Empleado";
+            codEmpleado.Name = "codEmpleado";
+            codEmpleado.ReadOnly = true;
+            codEmpleado.Visible = false;
+            // 
+            // apenom
+            // 
+            apenom.DataPropertyName = "apenom";
+            apenom.HeaderText = "Apellidos y Nombres";
+            apenom.Name = "apenom";
+            apenom.ReadOnly = true;
+            apenom.Visible = false;
+            // 
+            // moneda
+            // 
+            moneda.DataPropertyName = "moneda";
+            moneda.HeaderText = "Moneda";
+            moneda.Name = "moneda";
+            moneda.ReadOnly = true;
+            // 
+            // sueldoBase
+            // 
+            sueldoBase.DataPropertyName = "sueldoBase";
+            sueldoBase.HeaderText = "Sueldo Base";
+            sueldoBase.Name = "sueldoBase";
+            sueldoBase.ReadOnly = true;
+            sueldoBase.Visible = false;
+            // 
+            // descEssalud
+            // 
+            descEssalud.DataPropertyName = "descEssalud";
+            descEssalud.HeaderText = "Descuento Essalud";
+            descEssalud.Name = "descEssalud";
+            descEssalud.ReadOnly = true;
+            descEssalud.Visible = false;
+            // 
+            // descOnp
+            // 
+            descOnp.DataPropertyName = "descOnp";
+            descOnp.HeaderText = "Descuento ONP";
+            descOnp.Name = "descOnp";
+            descOnp.ReadOnly = true;
+            descOnp.Visible = false;
+            // 
+            // descAfp
+            // 
+            descAfp.DataPropertyName = "descAfp";
+            descAfp.HeaderText = "Descuento AFP";
+            descAfp.Name = "descAfp";
+            descAfp.ReadOnly = true;
+            descAfp.Visible = false;
+            // 
+            // descFaltas
+            // 
+            descFaltas.DataPropertyName = "descFaltas";
+            descFaltas.HeaderText = "Descuento Faltas";
+            descFaltas.Name = "descFaltas";
+            descFaltas.ReadOnly = true;
+            descFaltas.Visible = false;
+            // 
+            // sueldoTotal
+            // 
+            sueldoTotal.DataPropertyName = "sueldoTotal";
+            sueldoTotal.HeaderText = "Remuneracion";
+            sueldoTotal.Name = "sueldoTotal";
+            sueldoTotal.ReadOnly = true;
             // 
             // label2
             // 
@@ -161,6 +253,7 @@
             dtpFecInicio.Name = "dtpFecInicio";
             dtpFecInicio.Size = new Size(95, 23);
             dtpFecInicio.TabIndex = 15;
+            dtpFecInicio.ValueChanged += dtpFecInicio_ValueChanged;
             // 
             // label4
             // 
@@ -211,6 +304,69 @@
             gbBuscar.TabIndex = 9;
             gbBuscar.TabStop = false;
             gbBuscar.Text = "Informacion de seleccion:";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(38, 316);
+            label14.Name = "label14";
+            label14.Size = new Size(62, 15);
+            label14.TabIndex = 58;
+            label14.Text = "Por faltas: ";
+            // 
+            // txtDescFaltas
+            // 
+            txtDescFaltas.BorderStyle = BorderStyle.FixedSingle;
+            txtDescFaltas.Location = new Point(116, 311);
+            txtDescFaltas.Name = "txtDescFaltas";
+            txtDescFaltas.ReadOnly = true;
+            txtDescFaltas.Size = new Size(144, 23);
+            txtDescFaltas.TabIndex = 57;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(38, 287);
+            label13.Name = "label13";
+            label13.Size = new Size(38, 15);
+            label13.TabIndex = 56;
+            label13.Text = "ONP: ";
+            // 
+            // txtDescOnp
+            // 
+            txtDescOnp.BorderStyle = BorderStyle.FixedSingle;
+            txtDescOnp.Location = new Point(116, 282);
+            txtDescOnp.Name = "txtDescOnp";
+            txtDescOnp.ReadOnly = true;
+            txtDescOnp.Size = new Size(144, 23);
+            txtDescOnp.TabIndex = 55;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(38, 259);
+            label12.Name = "label12";
+            label12.Size = new Size(34, 15);
+            label12.TabIndex = 54;
+            label12.Text = "AFP: ";
+            // 
+            // txtDescAfp
+            // 
+            txtDescAfp.BorderStyle = BorderStyle.FixedSingle;
+            txtDescAfp.Location = new Point(116, 254);
+            txtDescAfp.Name = "txtDescAfp";
+            txtDescAfp.ReadOnly = true;
+            txtDescAfp.Size = new Size(144, 23);
+            txtDescAfp.TabIndex = 53;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(38, 229);
+            label11.Name = "label11";
+            label11.Size = new Size(61, 15);
+            label11.TabIndex = 52;
+            label11.Text = "ESSALUD: ";
             // 
             // txtSueldoTotal
             // 
@@ -330,6 +486,7 @@
             button1.TabIndex = 39;
             button1.Text = "DESCARGAR PDF";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // txtCodRecibo
             // 
@@ -349,145 +506,6 @@
             label17.TabIndex = 17;
             label17.Text = "Nro. Recibo:";
             // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(38, 229);
-            label11.Name = "label11";
-            label11.Size = new Size(61, 15);
-            label11.TabIndex = 52;
-            label11.Text = "ESSALUD: ";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(38, 259);
-            label12.Name = "label12";
-            label12.Size = new Size(34, 15);
-            label12.TabIndex = 54;
-            label12.Text = "AFP: ";
-            // 
-            // txtDescAfp
-            // 
-            txtDescAfp.BorderStyle = BorderStyle.FixedSingle;
-            txtDescAfp.Location = new Point(116, 254);
-            txtDescAfp.Name = "txtDescAfp";
-            txtDescAfp.ReadOnly = true;
-            txtDescAfp.Size = new Size(144, 23);
-            txtDescAfp.TabIndex = 53;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Location = new Point(38, 287);
-            label13.Name = "label13";
-            label13.Size = new Size(38, 15);
-            label13.TabIndex = 56;
-            label13.Text = "ONP: ";
-            // 
-            // txtDescOnp
-            // 
-            txtDescOnp.BorderStyle = BorderStyle.FixedSingle;
-            txtDescOnp.Location = new Point(116, 282);
-            txtDescOnp.Name = "txtDescOnp";
-            txtDescOnp.ReadOnly = true;
-            txtDescOnp.Size = new Size(144, 23);
-            txtDescOnp.TabIndex = 55;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(38, 316);
-            label14.Name = "label14";
-            label14.Size = new Size(62, 15);
-            label14.TabIndex = 58;
-            label14.Text = "Por faltas: ";
-            // 
-            // txtDescFaltas
-            // 
-            txtDescFaltas.BorderStyle = BorderStyle.FixedSingle;
-            txtDescFaltas.Location = new Point(116, 311);
-            txtDescFaltas.Name = "txtDescFaltas";
-            txtDescFaltas.ReadOnly = true;
-            txtDescFaltas.Size = new Size(144, 23);
-            txtDescFaltas.TabIndex = 57;
-            // 
-            // codRecibo
-            // 
-            codRecibo.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
-            codRecibo.DataPropertyName = "codRecibo";
-            codRecibo.HeaderText = "Codigo";
-            codRecibo.Name = "codRecibo";
-            codRecibo.Width = 71;
-            // 
-            // fechaEmision
-            // 
-            fechaEmision.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            fechaEmision.DataPropertyName = "fechaEmision";
-            fechaEmision.HeaderText = "Fecha de emisión";
-            fechaEmision.Name = "fechaEmision";
-            // 
-            // codEmpleado
-            // 
-            codEmpleado.DataPropertyName = "codEmpleado";
-            codEmpleado.HeaderText = "Empleado";
-            codEmpleado.Name = "codEmpleado";
-            codEmpleado.Visible = false;
-            // 
-            // apenom
-            // 
-            apenom.DataPropertyName = "apenom";
-            apenom.HeaderText = "Apellidos y Nombres";
-            apenom.Name = "apenom";
-            apenom.Visible = false;
-            // 
-            // moneda
-            // 
-            moneda.DataPropertyName = "moneda";
-            moneda.HeaderText = "Moneda";
-            moneda.Name = "moneda";
-            // 
-            // sueldoBase
-            // 
-            sueldoBase.DataPropertyName = "sueldoBase";
-            sueldoBase.HeaderText = "Sueldo Base";
-            sueldoBase.Name = "sueldoBase";
-            sueldoBase.Visible = false;
-            // 
-            // descEssalud
-            // 
-            descEssalud.DataPropertyName = "descEssalud";
-            descEssalud.HeaderText = "Descuento Essalud";
-            descEssalud.Name = "descEssalud";
-            descEssalud.Visible = false;
-            // 
-            // descOnp
-            // 
-            descOnp.DataPropertyName = "descOnp";
-            descOnp.HeaderText = "Descuento ONP";
-            descOnp.Name = "descOnp";
-            descOnp.Visible = false;
-            // 
-            // descAfp
-            // 
-            descAfp.DataPropertyName = "descAfp";
-            descAfp.HeaderText = "Descuento AFP";
-            descAfp.Name = "descAfp";
-            descAfp.Visible = false;
-            // 
-            // descFaltas
-            // 
-            descFaltas.DataPropertyName = "descFaltas";
-            descFaltas.HeaderText = "Descuento Faltas";
-            descFaltas.Name = "descFaltas";
-            descFaltas.Visible = false;
-            // 
-            // sueldoTotal
-            // 
-            sueldoTotal.DataPropertyName = "sueldoTotal";
-            sueldoTotal.HeaderText = "Remuneracion";
-            sueldoTotal.Name = "sueldoTotal";
-            // 
             // Recibos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -502,6 +520,7 @@
             Name = "Recibos";
             Text = "Recibos";
             WindowState = FormWindowState.Maximized;
+            Load += Recibos_Load;
             ((System.ComponentModel.ISupportInitialize)dgRecibos).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

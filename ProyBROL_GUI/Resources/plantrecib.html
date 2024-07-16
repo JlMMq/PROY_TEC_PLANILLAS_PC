@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 50px;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: none; 
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="margin-bottom: 10px; text-align: center;">AREA DE TALENTO HUMANO Y</h3>
+    <h3 style="margin-top: 0px; text-align: center;">RECURSOS HUMANOS RRHH</h3>
+    <h2 style="text-align: center;">RECIBO DE PAGO</h2>
+    <hr />
+    <br />
+    <div style="margin: 25px;">
+        <p><strong>Nro. Recibo:</strong> @CODRECIBO</p>
+        <p><strong>Codigo Empleado:</strong> @CODEMPLEADO</p>
+        <p><strong>Apellidos y Nombres:</strong> @APENOM</p>
+        <p><strong>Fecha de Emision:</strong> @FECHAEMISION</p>
+        <p><strong>Moneda:</strong> @MONEDA</p>
+    </div>
+    <hr />
+    <div style="margin: 25px;">
+        <table>
+            <tr>
+                <th>Concepto</th>
+                <th>Monto</th>
+            </tr>
+            <tr>
+                <td>Sueldo Base</td>
+                <td>S/. @SUELDOBASE</td>
+            </tr>
+            <tr>
+                <th>Descuentos</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>ESSALUD</td>
+                <td>S/. -@DESCESSALUD</td>
+            </tr>
+            <tr>
+                <td>ONP</td>
+                <td>S/. -@DESCONP</td>
+            </tr>
+            <tr>
+                <td>AFP</td>
+                <td>S/. -@DESCAFP</td>
+            </tr>
+            <tr>
+                <td>Descuento por Faltas</td>
+                <td>S/. -@DESCFALTAS</td>
+            </tr>
+            <tr>
+                <th>Total Neto</th>
+                <th>S/. @SUELDOTOTAL</th>
+            </tr>
+        </table>
+    </div>
+    <div style="padding-top: 20%; text-align: right;">
+        <p>Lima, @FECHAEMISION</p>
+    </div>
+    <hr />
+    <div style="text-align: center;">
+        <p>Representaciones BROLSAL - BROLSAC</p>
+        <p>2024</p>
+    </div>
+</body>
+</html>

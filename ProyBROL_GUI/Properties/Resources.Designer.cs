@@ -134,6 +134,38 @@ namespace ProyBROL_GUI.Properties {
         ///   Busca una cadena traducida similar a &lt;!DOCTYPE html&gt;
         ///&lt;html&gt;
         ///&lt;head&gt;
+        ///    &lt;style&gt;
+        ///        body {
+        ///            font-family: Cambria, Cochin, Georgia, Times, &apos;Times New Roman&apos;, serif;
+        ///            margin: 50px;
+        ///            padding: 20px;
+        ///        }
+        ///        table {
+        ///            width: 100%;
+        ///            border-collapse: collapse;
+        ///        }
+        ///        th, td {
+        ///            border: none; 
+        ///            padding: 10px;
+        ///            text-align: left;
+        ///        }
+        ///        th {
+        ///            background-color: #f2f2f2;
+        ///        }
+        ///    &lt;/style&gt;
+        ///&lt;/head&gt;
+        ///&lt; [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string plantrecib {
+            get {
+                return ResourceManager.GetString("plantrecib", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a &lt;!DOCTYPE html&gt;
+        ///&lt;html&gt;
+        ///&lt;head&gt;
         ///    
         ///    &lt;style&gt;
         ///        body {

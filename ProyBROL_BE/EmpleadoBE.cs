@@ -31,6 +31,10 @@ namespace ProyBROL_BE
         public int? estado { get; set; }
 
     }
+    public class EmpleadoInsertResponse
+    {
+        public int codigo { get; set; }
+    }
     public class EmpleadoObjBE
     {
         public int codEmpleado { get; set; }

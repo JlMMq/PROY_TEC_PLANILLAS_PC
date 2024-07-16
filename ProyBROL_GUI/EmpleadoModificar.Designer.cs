@@ -69,9 +69,18 @@
             label1 = new Label();
             label18 = new Label();
             lblCodigo = new Label();
+            gbSueldo = new GroupBox();
+            rbOnp = new RadioButton();
+            rbAfp = new RadioButton();
+            label20 = new Label();
+            chckEssalud = new CheckBox();
+            label19 = new Label();
+            txtSueldo = new TextBox();
+            label21 = new Label();
             ((System.ComponentModel.ISupportInitialize)imgFoto).BeginInit();
             groupBox1.SuspendLayout();
             gbDatosPers.SuspendLayout();
+            gbSueldo.SuspendLayout();
             SuspendLayout();
             // 
             // btnIngrFoto
@@ -97,7 +106,7 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Leelawadee", 9.75F);
             btnCancelar.ForeColor = SystemColors.ControlLightLight;
-            btnCancelar.Location = new Point(238, 487);
+            btnCancelar.Location = new Point(238, 636);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(103, 48);
             btnCancelar.TabIndex = 15;
@@ -112,7 +121,7 @@
             btnAceptar.FlatStyle = FlatStyle.Flat;
             btnAceptar.Font = new Font("Leelawadee", 9.75F);
             btnAceptar.ForeColor = SystemColors.ControlLightLight;
-            btnAceptar.Location = new Point(129, 487);
+            btnAceptar.Location = new Point(129, 636);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(103, 48);
             btnAceptar.TabIndex = 14;
@@ -505,11 +514,97 @@
             lblCodigo.TabIndex = 18;
             lblCodigo.Text = "0000";
             // 
+            // gbSueldo
+            // 
+            gbSueldo.Controls.Add(rbOnp);
+            gbSueldo.Controls.Add(rbAfp);
+            gbSueldo.Controls.Add(label20);
+            gbSueldo.Controls.Add(chckEssalud);
+            gbSueldo.Controls.Add(label19);
+            gbSueldo.Controls.Add(txtSueldo);
+            gbSueldo.Controls.Add(label21);
+            gbSueldo.Location = new Point(12, 487);
+            gbSueldo.Name = "gbSueldo";
+            gbSueldo.Size = new Size(329, 143);
+            gbSueldo.TabIndex = 19;
+            gbSueldo.TabStop = false;
+            gbSueldo.Text = "Sueldo y Afiliaciones";
+            // 
+            // rbOnp
+            // 
+            rbOnp.AutoSize = true;
+            rbOnp.Location = new Point(143, 102);
+            rbOnp.Name = "rbOnp";
+            rbOnp.Size = new Size(50, 19);
+            rbOnp.TabIndex = 18;
+            rbOnp.TabStop = true;
+            rbOnp.Text = "ONP";
+            rbOnp.UseVisualStyleBackColor = true;
+            // 
+            // rbAfp
+            // 
+            rbAfp.AutoSize = true;
+            rbAfp.Location = new Point(87, 102);
+            rbAfp.Name = "rbAfp";
+            rbAfp.Size = new Size(46, 19);
+            rbAfp.TabIndex = 17;
+            rbAfp.TabStop = true;
+            rbAfp.Text = "AFP";
+            rbAfp.UseVisualStyleBackColor = true;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(20, 102);
+            label20.Name = "label20";
+            label20.Size = new Size(60, 15);
+            label20.TabIndex = 16;
+            label20.Text = "Afiliacion:";
+            // 
+            // chckEssalud
+            // 
+            chckEssalud.AutoSize = true;
+            chckEssalud.FlatStyle = FlatStyle.Flat;
+            chckEssalud.Location = new Point(87, 65);
+            chckEssalud.Name = "chckEssalud";
+            chckEssalud.Size = new Size(71, 19);
+            chckEssalud.TabIndex = 15;
+            chckEssalud.Text = "ESSALUD";
+            chckEssalud.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(20, 67);
+            label19.Name = "label19";
+            label19.Size = new Size(47, 15);
+            label19.TabIndex = 14;
+            label19.Text = "Seguro:";
+            // 
+            // txtSueldo
+            // 
+            txtSueldo.BorderStyle = BorderStyle.FixedSingle;
+            txtSueldo.Location = new Point(110, 26);
+            txtSueldo.MaxLength = 9;
+            txtSueldo.Name = "txtSueldo";
+            txtSueldo.Size = new Size(186, 23);
+            txtSueldo.TabIndex = 13;
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Location = new Point(20, 28);
+            label21.Name = "label21";
+            label21.Size = new Size(71, 15);
+            label21.TabIndex = 0;
+            label21.Text = "Sueldo (S/.):";
+            // 
             // EmpleadoModificar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(693, 561);
+            ClientSize = new Size(693, 706);
+            Controls.Add(gbSueldo);
             Controls.Add(lblCodigo);
             Controls.Add(label18);
             Controls.Add(btnIngrFoto);
@@ -533,6 +628,8 @@
             groupBox1.PerformLayout();
             gbDatosPers.ResumeLayout(false);
             gbDatosPers.PerformLayout();
+            gbSueldo.ResumeLayout(false);
+            gbSueldo.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -579,5 +676,13 @@
         private Label label1;
         private Label label18;
         private Label lblCodigo;
+        private GroupBox gbSueldo;
+        private RadioButton rbOnp;
+        private RadioButton rbAfp;
+        private Label label20;
+        private CheckBox chckEssalud;
+        private Label label19;
+        private TextBox txtSueldo;
+        private Label label21;
     }
 }

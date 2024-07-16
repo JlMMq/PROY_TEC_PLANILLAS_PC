@@ -31,35 +31,48 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Recibos));
             label1 = new Label();
             dgRecibos = new DataGridView();
-            codigo = new DataGridViewTextBoxColumn();
-            fecha = new DataGridViewTextBoxColumn();
-            Archivo = new DataGridViewTextBoxColumn();
             label2 = new Label();
             groupBox1 = new GroupBox();
-            txtCodSolicitante = new TextBox();
+            txtCantReg = new TextBox();
             label5 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            dtpFecIngreso = new DateTimePicker();
+            dtpFecFin = new DateTimePicker();
+            dtpFecInicio = new DateTimePicker();
             label4 = new Label();
             label3 = new Label();
             gbBuscar = new GroupBox();
-            textBox6 = new TextBox();
-            label11 = new Label();
-            textBox5 = new TextBox();
+            txtSueldoTotal = new TextBox();
             label10 = new Label();
             panel1 = new Panel();
-            textBox4 = new TextBox();
+            txtDescEssalud = new TextBox();
             label9 = new Label();
             line1 = new Panel();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
+            txtSueldoBase = new TextBox();
+            txtMoneda = new TextBox();
             label8 = new Label();
             label7 = new Label();
-            textBox1 = new TextBox();
+            txtFechaEmision = new TextBox();
             label6 = new Label();
             button1 = new Button();
-            txt1 = new TextBox();
+            txtCodRecibo = new TextBox();
             label17 = new Label();
+            label11 = new Label();
+            label12 = new Label();
+            txtDescAfp = new TextBox();
+            label13 = new Label();
+            txtDescOnp = new TextBox();
+            label14 = new Label();
+            txtDescFaltas = new TextBox();
+            codRecibo = new DataGridViewTextBoxColumn();
+            fechaEmision = new DataGridViewTextBoxColumn();
+            codEmpleado = new DataGridViewTextBoxColumn();
+            apenom = new DataGridViewTextBoxColumn();
+            moneda = new DataGridViewTextBoxColumn();
+            sueldoBase = new DataGridViewTextBoxColumn();
+            descEssalud = new DataGridViewTextBoxColumn();
+            descOnp = new DataGridViewTextBoxColumn();
+            descAfp = new DataGridViewTextBoxColumn();
+            descFaltas = new DataGridViewTextBoxColumn();
+            sueldoTotal = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgRecibos).BeginInit();
             groupBox1.SuspendLayout();
             gbBuscar.SuspendLayout();
@@ -79,30 +92,11 @@
             // 
             dgRecibos.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgRecibos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgRecibos.Columns.AddRange(new DataGridViewColumn[] { codigo, fecha, Archivo });
+            dgRecibos.Columns.AddRange(new DataGridViewColumn[] { codRecibo, fechaEmision, codEmpleado, apenom, moneda, sueldoBase, descEssalud, descOnp, descAfp, descFaltas, sueldoTotal });
             dgRecibos.Location = new Point(37, 147);
             dgRecibos.Name = "dgRecibos";
             dgRecibos.Size = new Size(829, 587);
             dgRecibos.TabIndex = 6;
-            // 
-            // codigo
-            // 
-            codigo.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
-            codigo.HeaderText = "Codigo";
-            codigo.Name = "codigo";
-            codigo.Width = 71;
-            // 
-            // fecha
-            // 
-            fecha.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            fecha.HeaderText = "Fecha de emisión";
-            fecha.Name = "fecha";
-            // 
-            // Archivo
-            // 
-            Archivo.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Archivo.HeaderText = "Archivo";
-            Archivo.Name = "Archivo";
             // 
             // label2
             // 
@@ -116,10 +110,10 @@
             // groupBox1
             // 
             groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            groupBox1.Controls.Add(txtCodSolicitante);
+            groupBox1.Controls.Add(txtCantReg);
             groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(dateTimePicker1);
-            groupBox1.Controls.Add(dtpFecIngreso);
+            groupBox1.Controls.Add(dtpFecFin);
+            groupBox1.Controls.Add(dtpFecInicio);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
             groupBox1.Location = new Point(37, 76);
@@ -129,16 +123,16 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Buscar recibos por Fecha:";
             // 
-            // txtCodSolicitante
+            // txtCantReg
             // 
-            txtCodSolicitante.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            txtCodSolicitante.BorderStyle = BorderStyle.FixedSingle;
-            txtCodSolicitante.Location = new Point(745, 29);
-            txtCodSolicitante.Name = "txtCodSolicitante";
-            txtCodSolicitante.ReadOnly = true;
-            txtCodSolicitante.Size = new Size(57, 23);
-            txtCodSolicitante.TabIndex = 18;
-            txtCodSolicitante.Text = "0";
+            txtCantReg.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            txtCantReg.BorderStyle = BorderStyle.FixedSingle;
+            txtCantReg.Location = new Point(745, 29);
+            txtCantReg.Name = "txtCantReg";
+            txtCantReg.ReadOnly = true;
+            txtCantReg.Size = new Size(57, 23);
+            txtCantReg.TabIndex = 18;
+            txtCantReg.Text = "0";
             // 
             // label5
             // 
@@ -150,23 +144,23 @@
             label5.TabIndex = 17;
             label5.Text = "Numero de recibos mostrados:";
             // 
-            // dateTimePicker1
+            // dtpFecFin
             // 
-            dateTimePicker1.CustomFormat = "";
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(307, 29);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(95, 23);
-            dateTimePicker1.TabIndex = 16;
+            dtpFecFin.CustomFormat = "";
+            dtpFecFin.Format = DateTimePickerFormat.Short;
+            dtpFecFin.Location = new Point(307, 29);
+            dtpFecFin.Name = "dtpFecFin";
+            dtpFecFin.Size = new Size(95, 23);
+            dtpFecFin.TabIndex = 16;
             // 
-            // dtpFecIngreso
+            // dtpFecInicio
             // 
-            dtpFecIngreso.CustomFormat = "";
-            dtpFecIngreso.Format = DateTimePickerFormat.Short;
-            dtpFecIngreso.Location = new Point(109, 29);
-            dtpFecIngreso.Name = "dtpFecIngreso";
-            dtpFecIngreso.Size = new Size(95, 23);
-            dtpFecIngreso.TabIndex = 15;
+            dtpFecInicio.CustomFormat = "";
+            dtpFecInicio.Format = DateTimePickerFormat.Short;
+            dtpFecInicio.Location = new Point(109, 29);
+            dtpFecInicio.Name = "dtpFecInicio";
+            dtpFecInicio.Size = new Size(95, 23);
+            dtpFecInicio.TabIndex = 15;
             // 
             // label4
             // 
@@ -189,61 +183,47 @@
             // gbBuscar
             // 
             gbBuscar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            gbBuscar.Controls.Add(textBox6);
+            gbBuscar.Controls.Add(label14);
+            gbBuscar.Controls.Add(txtDescFaltas);
+            gbBuscar.Controls.Add(label13);
+            gbBuscar.Controls.Add(txtDescOnp);
+            gbBuscar.Controls.Add(label12);
+            gbBuscar.Controls.Add(txtDescAfp);
             gbBuscar.Controls.Add(label11);
-            gbBuscar.Controls.Add(textBox5);
+            gbBuscar.Controls.Add(txtSueldoTotal);
             gbBuscar.Controls.Add(label10);
             gbBuscar.Controls.Add(panel1);
-            gbBuscar.Controls.Add(textBox4);
+            gbBuscar.Controls.Add(txtDescEssalud);
             gbBuscar.Controls.Add(label9);
             gbBuscar.Controls.Add(line1);
-            gbBuscar.Controls.Add(textBox3);
-            gbBuscar.Controls.Add(textBox2);
+            gbBuscar.Controls.Add(txtSueldoBase);
+            gbBuscar.Controls.Add(txtMoneda);
             gbBuscar.Controls.Add(label8);
             gbBuscar.Controls.Add(label7);
-            gbBuscar.Controls.Add(textBox1);
+            gbBuscar.Controls.Add(txtFechaEmision);
             gbBuscar.Controls.Add(label6);
             gbBuscar.Controls.Add(button1);
-            gbBuscar.Controls.Add(txt1);
+            gbBuscar.Controls.Add(txtCodRecibo);
             gbBuscar.Controls.Add(label17);
             gbBuscar.Location = new Point(896, 76);
             gbBuscar.Name = "gbBuscar";
-            gbBuscar.Size = new Size(364, 544);
+            gbBuscar.Size = new Size(364, 494);
             gbBuscar.TabIndex = 9;
             gbBuscar.TabStop = false;
             gbBuscar.Text = "Informacion de seleccion:";
             // 
-            // textBox6
+            // txtSueldoTotal
             // 
-            textBox6.BorderStyle = BorderStyle.FixedSingle;
-            textBox6.Location = new Point(27, 344);
-            textBox6.Multiline = true;
-            textBox6.Name = "textBox6";
-            textBox6.ReadOnly = true;
-            textBox6.Size = new Size(321, 88);
-            textBox6.TabIndex = 53;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(22, 326);
-            label11.Name = "label11";
-            label11.Size = new Size(87, 15);
-            label11.TabIndex = 52;
-            label11.Text = "Observaciones:";
-            // 
-            // textBox5
-            // 
-            textBox5.BorderStyle = BorderStyle.FixedSingle;
-            textBox5.Location = new Point(100, 256);
-            textBox5.Name = "textBox5";
-            textBox5.ReadOnly = true;
-            textBox5.Size = new Size(144, 23);
-            textBox5.TabIndex = 51;
+            txtSueldoTotal.BorderStyle = BorderStyle.FixedSingle;
+            txtSueldoTotal.Location = new Point(100, 366);
+            txtSueldoTotal.Name = "txtSueldoTotal";
+            txtSueldoTotal.ReadOnly = true;
+            txtSueldoTotal.Size = new Size(144, 23);
+            txtSueldoTotal.TabIndex = 51;
             // 
             // label10
             // 
-            label10.Location = new Point(22, 256);
+            label10.Location = new Point(22, 368);
             label10.Name = "label10";
             label10.Size = new Size(72, 32);
             label10.TabIndex = 50;
@@ -252,28 +232,28 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveCaptionText;
-            panel1.Location = new Point(22, 243);
+            panel1.Location = new Point(22, 352);
             panel1.Name = "panel1";
             panel1.Size = new Size(326, 1);
             panel1.TabIndex = 49;
             // 
-            // textBox4
+            // txtDescEssalud
             // 
-            textBox4.BorderStyle = BorderStyle.FixedSingle;
-            textBox4.Location = new Point(100, 198);
-            textBox4.Name = "textBox4";
-            textBox4.ReadOnly = true;
-            textBox4.Size = new Size(144, 23);
-            textBox4.TabIndex = 48;
+            txtDescEssalud.BorderStyle = BorderStyle.FixedSingle;
+            txtDescEssalud.Location = new Point(116, 224);
+            txtDescEssalud.Name = "txtDescEssalud";
+            txtDescEssalud.ReadOnly = true;
+            txtDescEssalud.Size = new Size(144, 23);
+            txtDescEssalud.TabIndex = 48;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(22, 202);
+            label9.Location = new Point(22, 200);
             label9.Name = "label9";
-            label9.Size = new Size(66, 15);
+            label9.Size = new Size(71, 15);
             label9.TabIndex = 47;
-            label9.Text = "Descuento:";
+            label9.Text = "Descuentos:";
             // 
             // line1
             // 
@@ -283,23 +263,23 @@
             line1.Size = new Size(326, 1);
             line1.TabIndex = 46;
             // 
-            // textBox3
+            // txtSueldoBase
             // 
-            textBox3.BorderStyle = BorderStyle.FixedSingle;
-            textBox3.Location = new Point(100, 163);
-            textBox3.Name = "textBox3";
-            textBox3.ReadOnly = true;
-            textBox3.Size = new Size(144, 23);
-            textBox3.TabIndex = 45;
+            txtSueldoBase.BorderStyle = BorderStyle.FixedSingle;
+            txtSueldoBase.Location = new Point(100, 163);
+            txtSueldoBase.Name = "txtSueldoBase";
+            txtSueldoBase.ReadOnly = true;
+            txtSueldoBase.Size = new Size(144, 23);
+            txtSueldoBase.TabIndex = 45;
             // 
-            // textBox2
+            // txtMoneda
             // 
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Location = new Point(100, 131);
-            textBox2.Name = "textBox2";
-            textBox2.ReadOnly = true;
-            textBox2.Size = new Size(144, 23);
-            textBox2.TabIndex = 44;
+            txtMoneda.BorderStyle = BorderStyle.FixedSingle;
+            txtMoneda.Location = new Point(100, 131);
+            txtMoneda.Name = "txtMoneda";
+            txtMoneda.ReadOnly = true;
+            txtMoneda.Size = new Size(144, 23);
+            txtMoneda.TabIndex = 44;
             // 
             // label8
             // 
@@ -319,14 +299,14 @@
             label7.TabIndex = 42;
             label7.Text = "Total:";
             // 
-            // textBox1
+            // txtFechaEmision
             // 
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Location = new Point(100, 68);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(206, 23);
-            textBox1.TabIndex = 41;
+            txtFechaEmision.BorderStyle = BorderStyle.FixedSingle;
+            txtFechaEmision.Location = new Point(100, 68);
+            txtFechaEmision.Name = "txtFechaEmision";
+            txtFechaEmision.ReadOnly = true;
+            txtFechaEmision.Size = new Size(206, 23);
+            txtFechaEmision.TabIndex = 41;
             // 
             // label6
             // 
@@ -344,21 +324,21 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Leelawadee", 9.75F);
             button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(218, 473);
+            button1.Location = new Point(209, 416);
             button1.Name = "button1";
             button1.Size = new Size(130, 48);
             button1.TabIndex = 39;
-            button1.Text = "DESCARGAR Y VISUALIZAR PDF";
+            button1.Text = "DESCARGAR PDF";
             button1.UseVisualStyleBackColor = false;
             // 
-            // txt1
+            // txtCodRecibo
             // 
-            txt1.BorderStyle = BorderStyle.FixedSingle;
-            txt1.Location = new Point(100, 35);
-            txt1.Name = "txt1";
-            txt1.ReadOnly = true;
-            txt1.Size = new Size(206, 23);
-            txt1.TabIndex = 19;
+            txtCodRecibo.BorderStyle = BorderStyle.FixedSingle;
+            txtCodRecibo.Location = new Point(100, 35);
+            txtCodRecibo.Name = "txtCodRecibo";
+            txtCodRecibo.ReadOnly = true;
+            txtCodRecibo.Size = new Size(206, 23);
+            txtCodRecibo.TabIndex = 19;
             // 
             // label17
             // 
@@ -368,6 +348,145 @@
             label17.Size = new Size(72, 15);
             label17.TabIndex = 17;
             label17.Text = "Nro. Recibo:";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(38, 229);
+            label11.Name = "label11";
+            label11.Size = new Size(61, 15);
+            label11.TabIndex = 52;
+            label11.Text = "ESSALUD: ";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(38, 259);
+            label12.Name = "label12";
+            label12.Size = new Size(34, 15);
+            label12.TabIndex = 54;
+            label12.Text = "AFP: ";
+            // 
+            // txtDescAfp
+            // 
+            txtDescAfp.BorderStyle = BorderStyle.FixedSingle;
+            txtDescAfp.Location = new Point(116, 254);
+            txtDescAfp.Name = "txtDescAfp";
+            txtDescAfp.ReadOnly = true;
+            txtDescAfp.Size = new Size(144, 23);
+            txtDescAfp.TabIndex = 53;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(38, 287);
+            label13.Name = "label13";
+            label13.Size = new Size(38, 15);
+            label13.TabIndex = 56;
+            label13.Text = "ONP: ";
+            // 
+            // txtDescOnp
+            // 
+            txtDescOnp.BorderStyle = BorderStyle.FixedSingle;
+            txtDescOnp.Location = new Point(116, 282);
+            txtDescOnp.Name = "txtDescOnp";
+            txtDescOnp.ReadOnly = true;
+            txtDescOnp.Size = new Size(144, 23);
+            txtDescOnp.TabIndex = 55;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(38, 316);
+            label14.Name = "label14";
+            label14.Size = new Size(62, 15);
+            label14.TabIndex = 58;
+            label14.Text = "Por faltas: ";
+            // 
+            // txtDescFaltas
+            // 
+            txtDescFaltas.BorderStyle = BorderStyle.FixedSingle;
+            txtDescFaltas.Location = new Point(116, 311);
+            txtDescFaltas.Name = "txtDescFaltas";
+            txtDescFaltas.ReadOnly = true;
+            txtDescFaltas.Size = new Size(144, 23);
+            txtDescFaltas.TabIndex = 57;
+            // 
+            // codRecibo
+            // 
+            codRecibo.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
+            codRecibo.DataPropertyName = "codRecibo";
+            codRecibo.HeaderText = "Codigo";
+            codRecibo.Name = "codRecibo";
+            codRecibo.Width = 71;
+            // 
+            // fechaEmision
+            // 
+            fechaEmision.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            fechaEmision.DataPropertyName = "fechaEmision";
+            fechaEmision.HeaderText = "Fecha de emisión";
+            fechaEmision.Name = "fechaEmision";
+            // 
+            // codEmpleado
+            // 
+            codEmpleado.DataPropertyName = "codEmpleado";
+            codEmpleado.HeaderText = "Empleado";
+            codEmpleado.Name = "codEmpleado";
+            codEmpleado.Visible = false;
+            // 
+            // apenom
+            // 
+            apenom.DataPropertyName = "apenom";
+            apenom.HeaderText = "Apellidos y Nombres";
+            apenom.Name = "apenom";
+            apenom.Visible = false;
+            // 
+            // moneda
+            // 
+            moneda.DataPropertyName = "moneda";
+            moneda.HeaderText = "Moneda";
+            moneda.Name = "moneda";
+            // 
+            // sueldoBase
+            // 
+            sueldoBase.DataPropertyName = "sueldoBase";
+            sueldoBase.HeaderText = "Sueldo Base";
+            sueldoBase.Name = "sueldoBase";
+            sueldoBase.Visible = false;
+            // 
+            // descEssalud
+            // 
+            descEssalud.DataPropertyName = "descEssalud";
+            descEssalud.HeaderText = "Descuento Essalud";
+            descEssalud.Name = "descEssalud";
+            descEssalud.Visible = false;
+            // 
+            // descOnp
+            // 
+            descOnp.DataPropertyName = "descOnp";
+            descOnp.HeaderText = "Descuento ONP";
+            descOnp.Name = "descOnp";
+            descOnp.Visible = false;
+            // 
+            // descAfp
+            // 
+            descAfp.DataPropertyName = "descAfp";
+            descAfp.HeaderText = "Descuento AFP";
+            descAfp.Name = "descAfp";
+            descAfp.Visible = false;
+            // 
+            // descFaltas
+            // 
+            descFaltas.DataPropertyName = "descFaltas";
+            descFaltas.HeaderText = "Descuento Faltas";
+            descFaltas.Name = "descFaltas";
+            descFaltas.Visible = false;
+            // 
+            // sueldoTotal
+            // 
+            sueldoTotal.DataPropertyName = "sueldoTotal";
+            sueldoTotal.HeaderText = "Remuneracion";
+            sueldoTotal.Name = "sueldoTotal";
             // 
             // Recibos
             // 
@@ -396,34 +515,47 @@
 
         private Label label1;
         private DataGridView dgRecibos;
-        private DataGridViewTextBoxColumn codigo;
-        private DataGridViewTextBoxColumn fecha;
-        private DataGridViewTextBoxColumn Archivo;
         private Label label2;
         private GroupBox groupBox1;
         private Label label4;
         private Label label3;
         private Label label5;
-        private DateTimePicker dateTimePicker1;
-        private DateTimePicker dtpFecIngreso;
-        private TextBox txtCodSolicitante;
+        private DateTimePicker dtpFecFin;
+        private DateTimePicker dtpFecInicio;
+        private TextBox txtCantReg;
         private GroupBox gbBuscar;
-        private TextBox txt1;
+        private TextBox txtCodRecibo;
         private Label label17;
         private Button button1;
-        private TextBox textBox3;
-        private TextBox textBox2;
+        private TextBox txtSueldoBase;
+        private TextBox txtMoneda;
         private Label label8;
         private Label label7;
-        private TextBox textBox1;
+        private TextBox txtFechaEmision;
         private Label label6;
-        private TextBox textBox4;
+        private TextBox txtDescEssalud;
         private Label label9;
         private Panel line1;
-        private TextBox textBox5;
+        private TextBox txtSueldoTotal;
         private Label label10;
         private Panel panel1;
-        private TextBox textBox6;
+        private Label label14;
+        private TextBox txtDescFaltas;
+        private Label label13;
+        private TextBox txtDescOnp;
+        private Label label12;
+        private TextBox txtDescAfp;
         private Label label11;
+        private DataGridViewTextBoxColumn codRecibo;
+        private DataGridViewTextBoxColumn fechaEmision;
+        private DataGridViewTextBoxColumn codEmpleado;
+        private DataGridViewTextBoxColumn apenom;
+        private DataGridViewTextBoxColumn moneda;
+        private DataGridViewTextBoxColumn sueldoBase;
+        private DataGridViewTextBoxColumn descEssalud;
+        private DataGridViewTextBoxColumn descOnp;
+        private DataGridViewTextBoxColumn descAfp;
+        private DataGridViewTextBoxColumn descFaltas;
+        private DataGridViewTextBoxColumn sueldoTotal;
     }
 }

@@ -32,8 +32,9 @@ namespace ProyBROL_GUI
         DocumentoBL objDocumentoBL = new DocumentoBL();
 
         HorarioBL objHorarioBL = new HorarioBL();
-        LoginOuBE _currentUser; 
+        LoginOuBE _currentUser;
 
+        PagoBL objPagoBL = new PagoBL();
 
         public EmpleadoNuevo(LoginOuBE currentUser)
         {
@@ -99,7 +100,7 @@ namespace ProyBROL_GUI
                 }
                 else
                 {
-                   objEmpleadoInsertBE.telefono = Convert.ToInt32(txtTelf.Text);
+                    objEmpleadoInsertBE.telefono = Convert.ToInt32(txtTelf.Text);
                 }
                 objEmpleadoInsertBE.fecIngreso = dtpFecIngreso.Value;
                 objEmpleadoInsertBE.codCargo = Convert.ToInt32(cmbCargo.SelectedValue);
@@ -128,10 +129,46 @@ namespace ProyBROL_GUI
                 objEmpleadoInsertBE.usu_Reg = _currentUser.nomUser;
                 objEmpleadoInsertBE.estado = 1;
 
-                if (objEmpleadoBL.InsertarEmpleado(objEmpleadoInsertBE))
+                EmpleadoInsertResponse resInsert = objEmpleadoBL.InsertarEmpleado(objEmpleadoInsertBE);
+                if (resInsert.codigo != 0 && resInsert.codigo != null)
                 {
-                    MessageBox.Show("Se ingreso correctamente el empleado.",
+                    SueldoInsert_Req sueldoReq = new SueldoInsert_Req();
+
+                    sueldoReq.sueldo = Convert.ToDouble(txtSueldo.Text.ToString());
+                    if (chckEssalud.Checked)
+                    {
+                        sueldoReq.flag_essalud = 1;
+                    }
+                    else
+                    {
+                        sueldoReq.flag_essalud = 0;
+                    }
+
+                    if (rbAfp.Checked)
+                    {
+                        sueldoReq.flag_afp = 1;
+                        sueldoReq.flag_onp = 0;
+                    }
+                    else
+                    {
+                        sueldoReq.flag_afp = 0;
+                        sueldoReq.flag_onp = 1;
+                    }
+
+                    sueldoReq.empleado = resInsert.codigo;
+                    sueldoReq.usuario = _currentUser.nomUser;
+
+                    PagoGeneric_Response resPago = objPagoBL.InsertarSueldo(sueldoReq);
+                    if (resPago != null && resPago.CODIGO != 0) {
+                        MessageBox.Show("Se ingreso correctamente el empleado.",
                         "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se pudo ingresar el sueldo del empleado.",
+                        "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    
                 }
                 else
                 {
@@ -171,6 +208,14 @@ namespace ProyBROL_GUI
         }
 
         private void txtTelf_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtSueldo_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {

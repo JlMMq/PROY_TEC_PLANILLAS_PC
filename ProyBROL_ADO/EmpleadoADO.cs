@@ -93,10 +93,10 @@ namespace ProyBROL_ADO
             return res; 
         }
 
-        public bool InsertarEmpleado(EmpleadoInsertBE obj)
+        public EmpleadoInsertResponse InsertarEmpleado(EmpleadoInsertBE obj)
         {
             restService = _connect + "Empleado/InsertarEmpleado";
-            bool res = false;
+            EmpleadoInsertResponse res = new EmpleadoInsertResponse { codigo = 0 };
             try
             {
                 var client = new RestClient(restService);
@@ -106,12 +106,12 @@ namespace ProyBROL_ADO
                 var response = client.Execute<EmpleadoInsertBE>(request);
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    res = JsonConvert.DeserializeObject<bool>(response.Content);
+                    res = JsonConvert.DeserializeObject<EmpleadoInsertResponse>(response.Content);
                 }
             }
             catch (Exception ex)
             {
-                res = false;
+                res.codigo = 0;
             }
             return res;
         }

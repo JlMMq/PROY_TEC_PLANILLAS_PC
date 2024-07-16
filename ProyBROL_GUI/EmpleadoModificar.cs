@@ -32,6 +32,8 @@ namespace ProyBROL_GUI
         HorarioBL objHorarioBL = new HorarioBL();
         LoginOuBE _currentUser;
         public int codEmpleado;
+
+        PagoBL objPagoBL = new PagoBL();
         public EmpleadoModificar(LoginOuBE currentUser, int codEmpleado)
         {
             InitializeComponent();
@@ -108,8 +110,43 @@ namespace ProyBROL_GUI
 
                     if (objEmpleadoBL.ActualizarEmpleado(objEmpleadoActuBE))
                     {
-                        MessageBox.Show("Se ingreso correctamente el empleado.",
+                        SueldoUpdate_Req sueldoReq = new SueldoUpdate_Req();
+
+                        sueldoReq.sueldo = Convert.ToDouble(txtSueldo.Text.ToString());
+                        if (chckEssalud.Checked)
+                        {
+                            sueldoReq.flag_essalud = 1;
+                        }
+                        else
+                        {
+                            sueldoReq.flag_essalud = 0;
+                        }
+
+                        if (rbAfp.Checked)
+                        {
+                            sueldoReq.flag_afp = 1;
+                            sueldoReq.flag_onp = 0;
+                        }
+                        else
+                        {
+                            sueldoReq.flag_afp = 0;
+                            sueldoReq.flag_onp = 1;
+                        }
+
+                        sueldoReq.empleado = codEmpleado;
+                        sueldoReq.usuario = _currentUser.nomUser;
+
+                        PagoGeneric_Response resPago = objPagoBL.ActualizarSueldo(sueldoReq);
+                        if (resPago != null && resPago.CODIGO != 0)
+                        {
+                            MessageBox.Show("Se ingreso correctamente el empleado.",
                             "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se pudo actualizar el sueldo del empleado.",
+                            "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
                     else
                     {
@@ -200,6 +237,13 @@ namespace ProyBROL_GUI
                 string fotosTempPath = Path.Combine(basePath, "FotosTemp\\");
                 imgFoto.Image = Image.FromFile(fotosTempPath + "noimage.jpg");
             }
+
+            SueldoBE sueldoResponse = objPagoBL.ConsultarSueldoEmpleado(codEmpleado);
+            txtSueldo.Text = sueldoResponse.sueldo.ToString();
+
+            chckEssalud.Checked = (sueldoResponse.essalud == 1);
+            rbAfp.Checked = (sueldoResponse.afil_afp == 1);
+            rbOnp.Checked = (sueldoResponse.afil_onp == 1);
         }
 
         private void txtNumDoc_KeyPress(object sender, KeyPressEventArgs e)

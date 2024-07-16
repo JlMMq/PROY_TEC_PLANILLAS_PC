@@ -26,7 +26,7 @@ namespace ProyBROL_BL
         {
             return objEmpleadoADO.ListarEmpleadosGrilla();
         }
-        public bool InsertarEmpleado(EmpleadoInsertBE obj)
+        public EmpleadoInsertResponse InsertarEmpleado(EmpleadoInsertBE obj)
         {
             return objEmpleadoADO.InsertarEmpleado(obj);
         }

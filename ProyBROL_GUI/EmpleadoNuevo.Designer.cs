@@ -67,9 +67,18 @@
             btnAceptar = new Button();
             btnCancelar = new Button();
             btnIngrFoto = new Button();
+            gbSueldo = new GroupBox();
+            rbOnp = new RadioButton();
+            rbAfp = new RadioButton();
+            label20 = new Label();
+            chckEssalud = new CheckBox();
+            label19 = new Label();
+            txtSueldo = new TextBox();
+            label18 = new Label();
             gbDatosPers.SuspendLayout();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)imgFoto).BeginInit();
+            gbSueldo.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -443,7 +452,7 @@
             btnAceptar.FlatStyle = FlatStyle.Flat;
             btnAceptar.Font = new Font("Leelawadee", 9.75F);
             btnAceptar.ForeColor = SystemColors.ControlLightLight;
-            btnAceptar.Location = new Point(138, 465);
+            btnAceptar.Location = new Point(138, 614);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(103, 48);
             btnAceptar.TabIndex = 6;
@@ -458,7 +467,7 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Leelawadee", 9.75F);
             btnCancelar.ForeColor = SystemColors.ControlLightLight;
-            btnCancelar.Location = new Point(247, 465);
+            btnCancelar.Location = new Point(247, 614);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(103, 48);
             btnCancelar.TabIndex = 7;
@@ -482,12 +491,99 @@
             btnIngrFoto.UseVisualStyleBackColor = false;
             btnIngrFoto.Click += btnIngrFoto_Click;
             // 
+            // gbSueldo
+            // 
+            gbSueldo.Controls.Add(rbOnp);
+            gbSueldo.Controls.Add(rbAfp);
+            gbSueldo.Controls.Add(label20);
+            gbSueldo.Controls.Add(chckEssalud);
+            gbSueldo.Controls.Add(label19);
+            gbSueldo.Controls.Add(txtSueldo);
+            gbSueldo.Controls.Add(label18);
+            gbSueldo.Location = new Point(21, 465);
+            gbSueldo.Name = "gbSueldo";
+            gbSueldo.Size = new Size(329, 143);
+            gbSueldo.TabIndex = 9;
+            gbSueldo.TabStop = false;
+            gbSueldo.Text = "Sueldo y Afiliaciones";
+            // 
+            // rbOnp
+            // 
+            rbOnp.AutoSize = true;
+            rbOnp.Location = new Point(143, 102);
+            rbOnp.Name = "rbOnp";
+            rbOnp.Size = new Size(50, 19);
+            rbOnp.TabIndex = 18;
+            rbOnp.TabStop = true;
+            rbOnp.Text = "ONP";
+            rbOnp.UseVisualStyleBackColor = true;
+            // 
+            // rbAfp
+            // 
+            rbAfp.AutoSize = true;
+            rbAfp.Location = new Point(87, 102);
+            rbAfp.Name = "rbAfp";
+            rbAfp.Size = new Size(46, 19);
+            rbAfp.TabIndex = 17;
+            rbAfp.TabStop = true;
+            rbAfp.Text = "AFP";
+            rbAfp.UseVisualStyleBackColor = true;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(20, 102);
+            label20.Name = "label20";
+            label20.Size = new Size(60, 15);
+            label20.TabIndex = 16;
+            label20.Text = "Afiliacion:";
+            // 
+            // chckEssalud
+            // 
+            chckEssalud.AutoSize = true;
+            chckEssalud.FlatStyle = FlatStyle.Flat;
+            chckEssalud.Location = new Point(87, 65);
+            chckEssalud.Name = "chckEssalud";
+            chckEssalud.Size = new Size(71, 19);
+            chckEssalud.TabIndex = 15;
+            chckEssalud.Text = "ESSALUD";
+            chckEssalud.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(20, 67);
+            label19.Name = "label19";
+            label19.Size = new Size(47, 15);
+            label19.TabIndex = 14;
+            label19.Text = "Seguro:";
+            // 
+            // txtSueldo
+            // 
+            txtSueldo.BorderStyle = BorderStyle.FixedSingle;
+            txtSueldo.Location = new Point(110, 26);
+            txtSueldo.MaxLength = 9;
+            txtSueldo.Name = "txtSueldo";
+            txtSueldo.Size = new Size(186, 23);
+            txtSueldo.TabIndex = 13;
+            txtSueldo.KeyPress += txtSueldo_KeyPress;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(20, 28);
+            label18.Name = "label18";
+            label18.Size = new Size(71, 15);
+            label18.TabIndex = 0;
+            label18.Text = "Sueldo (S/.):";
+            // 
             // EmpleadoNuevo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLightLight;
-            ClientSize = new Size(727, 525);
+            ClientSize = new Size(727, 686);
+            Controls.Add(gbSueldo);
             Controls.Add(btnIngrFoto);
             Controls.Add(btnCancelar);
             Controls.Add(btnAceptar);
@@ -509,6 +605,8 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)imgFoto).EndInit();
+            gbSueldo.ResumeLayout(false);
+            gbSueldo.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -555,5 +653,13 @@
         private DateTimePicker dtpFecNac;
         private DateTimePicker dtpFecIngreso;
         private Label label17;
+        private GroupBox gbSueldo;
+        private Label label19;
+        private TextBox txtSueldo;
+        private Label label18;
+        private RadioButton rbOnp;
+        private RadioButton rbAfp;
+        private Label label20;
+        private CheckBox chckEssalud;
     }
 }

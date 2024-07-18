@@ -70,5 +70,27 @@ namespace ProyBROL_ADO
 
             return res;
         }
+
+        public List<DiarioView> ListarDiario()
+        {
+            restService = _connect + "Diario/ListarDiario";
+            List<DiarioView> res = new List<DiarioView>();
+            try
+            {
+                var client = new RestClient(restService);
+                var request = new RestRequest();
+                request.Method = Method.Get;
+                var response = client.Execute<List<DiarioView>>(request);
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    res = JsonConvert.DeserializeObject<List<DiarioView>>(response.Content);
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return res;
+        }
     }
 }

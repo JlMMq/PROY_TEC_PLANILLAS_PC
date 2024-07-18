@@ -18,6 +18,7 @@ namespace ProyBROL_GUI
         UsuariosEmp formUsuariosEmp;
         SolicitudEmp formSolicitudEmp;
         Recibos formRecibos;
+        Asistencias formAsistencias;
 
         private LoginOuBE _currentUser;
 
@@ -33,7 +34,7 @@ namespace ProyBROL_GUI
             {
                 btnEmpleados.Visible = true;
                 //btnHorarios.Visible = true;
-                //btnRegAsist.Visible = true;
+                btnRegAsist.Visible = true;
                 btnUsers.Visible = true;
                 btnSolicitudes.Visible = true;
                 btnRecibos.Visible = true;
@@ -41,14 +42,14 @@ namespace ProyBROL_GUI
             else if (_currentUser.permiso == 2)
             {
                 //btnHorarios.Visible = true;
-                //btnRegAsist.Visible = true;
+                btnRegAsist.Visible = true;
                 btnUsers.Visible = true;
                 btnSolicitudes.Visible = true;
                 btnRecibos.Visible = true;
             }
             else if (_currentUser.permiso == 1)
             {
-                //btnRegAsist.Visible = true;
+                btnRegAsist.Visible = true;
                 btnUsers.Visible = true;
                 btnSolicitudes.Visible = true;
                 btnRecibos.Visible = true;
@@ -135,7 +136,7 @@ namespace ProyBROL_GUI
 
         private void btnRecibos_Click(object sender, EventArgs e)
         {
-            if(formRecibos == null)
+            if (formRecibos == null)
             {
                 formRecibos = new Recibos(_currentUser);
                 formRecibos.MdiParent = this;
@@ -151,5 +152,25 @@ namespace ProyBROL_GUI
         {
             formRecibos = null;
         }
+
+        private void btnRegAsist_Click(object sender, EventArgs e)
+        {
+            if (formAsistencias == null)
+            {
+                formAsistencias = new Asistencias(_currentUser);
+                formAsistencias.MdiParent = this;
+                formAsistencias.FormClosed += new FormClosedEventHandler(EstaCerradoAsistencias);
+                formAsistencias.Show();
+            }
+            else
+            {
+                formAsistencias.BringToFront();
+            }
+        }
+        void EstaCerradoAsistencias(object sender, EventArgs e)
+        {
+            formAsistencias = null;
+        }
+
     }
 }

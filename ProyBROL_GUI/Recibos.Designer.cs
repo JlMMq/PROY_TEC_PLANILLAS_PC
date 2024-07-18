@@ -73,6 +73,7 @@
             button1 = new Button();
             txtCodRecibo = new TextBox();
             label17 = new Label();
+            btnBuscar = new Button();
             ((System.ComponentModel.ISupportInitialize)dgRecibos).BeginInit();
             groupBox1.SuspendLayout();
             gbBuscar.SuspendLayout();
@@ -202,6 +203,7 @@
             // groupBox1
             // 
             groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox1.Controls.Add(btnBuscar);
             groupBox1.Controls.Add(txtCantReg);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(dtpFecFin);
@@ -219,7 +221,7 @@
             // 
             txtCantReg.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             txtCantReg.BorderStyle = BorderStyle.FixedSingle;
-            txtCantReg.Location = new Point(745, 29);
+            txtCantReg.Location = new Point(655, 29);
             txtCantReg.Name = "txtCantReg";
             txtCantReg.ReadOnly = true;
             txtCantReg.Size = new Size(57, 23);
@@ -230,7 +232,7 @@
             // 
             label5.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label5.AutoSize = true;
-            label5.Location = new Point(558, 31);
+            label5.Location = new Point(479, 31);
             label5.Name = "label5";
             label5.Size = new Size(170, 15);
             label5.TabIndex = 17;
@@ -506,6 +508,22 @@
             label17.TabIndex = 17;
             label17.Text = "Nro. Recibo:";
             // 
+            // btnBuscar
+            // 
+            btnBuscar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnBuscar.BackColor = Color.Black;
+            btnBuscar.FlatAppearance.BorderSize = 0;
+            btnBuscar.FlatStyle = FlatStyle.Flat;
+            btnBuscar.Font = new Font("Leelawadee", 9.75F);
+            btnBuscar.ForeColor = SystemColors.ControlLightLight;
+            btnBuscar.Location = new Point(727, 18);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(84, 38);
+            btnBuscar.TabIndex = 41;
+            btnBuscar.Text = "BUSCAR";
+            btnBuscar.UseVisualStyleBackColor = false;
+            btnBuscar.Click += btnBuscar_Click;
+            // 
             // Recibos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -576,5 +594,6 @@
         private DataGridViewTextBoxColumn descAfp;
         private DataGridViewTextBoxColumn descFaltas;
         private DataGridViewTextBoxColumn sueldoTotal;
+        private Button btnBuscar;
     }
 }

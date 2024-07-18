@@ -91,7 +91,7 @@ namespace ProyBROL_GUI
         {
             try
             {
-                if (rowSelect!= null && rowSelect.codRecibo != 0 && rowSelect.codRecibo != null)
+                if (rowSelect != null && rowSelect.codRecibo != 0 && rowSelect.codRecibo != null)
                 {
                     Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
                     CultureInfo culture = new CultureInfo("es-ES");
@@ -115,7 +115,7 @@ namespace ProyBROL_GUI
                     template = template.Replace("@DESCAFP", rowSelect.descAfp.ToString("F2"));
                     template = template.Replace("@DESCFALTAS", rowSelect.descFaltas.ToString("F2"));
                     template = template.Replace("@SUELDOTOTAL", rowSelect.sueldoTotal.ToString("F2"));
-                    
+
 
                     if (savefile.ShowDialog() == DialogResult.OK)
                     {
@@ -148,6 +148,17 @@ namespace ProyBROL_GUI
             {
 
             }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            DateTime fechaInicio = dtpFecInicio.Value.Date;
+            DateTime fechaFin = dtpFecFin.Value;
+
+            List<ReciboBE> recibosFilter = recibos.Where(d => d.fechaEmision >= fechaInicio
+                                             && d.fechaEmision <= fechaFin).ToList();
+            dgRecibos.DataSource = recibosFilter;
+
         }
     }
 }

@@ -20,5 +20,10 @@ namespace ProyBROL_BL
         {
             return objDiarioADO.ConsultarDiarioFecEmpl(fec, empleado);
         }
+
+        public List<DiarioView> ListarDiario()
+        {
+            return objDiarioADO.ListarDiario();
+        }
     }
 }

@@ -163,6 +163,7 @@
             btnRegAsist.Text = "      Asistencias";
             btnRegAsist.UseVisualStyleBackColor = false;
             btnRegAsist.Visible = false;
+            btnRegAsist.Click += btnRegAsist_Click;
             // 
             // btnSolicitudes
             // 

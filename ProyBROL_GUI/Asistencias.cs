@@ -143,5 +143,13 @@ namespace ProyBROL_GUI
                 dtgDiario.Columns[5].Visible = true;
             }
         }
+
+        private void txtCodEmpleado_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

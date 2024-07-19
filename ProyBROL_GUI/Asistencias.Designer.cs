@@ -31,15 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Asistencias));
             label1 = new Label();
             dtgDiario = new DataGridView();
-            gbBusqueda = new GroupBox();
-            chkAdmin = new CheckBox();
-            btnBuscar = new Button();
-            txtCodEmpleado = new TextBox();
-            lblEmpleado = new Label();
-            dtpFecFin = new DateTimePicker();
-            dtpFecInicio = new DateTimePicker();
-            label4 = new Label();
-            label3 = new Label();
             codDiar = new DataGridViewTextBoxColumn();
             fecha = new DataGridViewTextBoxColumn();
             empleado = new DataGridViewTextBoxColumn();
@@ -54,6 +45,15 @@
             exeRefr = new DataGridViewTextBoxColumn();
             exeJornd = new DataGridViewTextBoxColumn();
             observ = new DataGridViewTextBoxColumn();
+            gbBusqueda = new GroupBox();
+            chkAdmin = new CheckBox();
+            btnBuscar = new Button();
+            txtCodEmpleado = new TextBox();
+            lblEmpleado = new Label();
+            dtpFecFin = new DateTimePicker();
+            dtpFecInicio = new DateTimePicker();
+            label4 = new Label();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)dtgDiario).BeginInit();
             gbBusqueda.SuspendLayout();
             SuspendLayout();
@@ -81,110 +81,6 @@
             dtgDiario.Size = new Size(1124, 551);
             dtgDiario.TabIndex = 6;
             dtgDiario.RowPrePaint += dtgDiario_RowPrePaint;
-            // 
-            // gbBusqueda
-            // 
-            gbBusqueda.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            gbBusqueda.Controls.Add(chkAdmin);
-            gbBusqueda.Controls.Add(btnBuscar);
-            gbBusqueda.Controls.Add(txtCodEmpleado);
-            gbBusqueda.Controls.Add(lblEmpleado);
-            gbBusqueda.Controls.Add(dtpFecFin);
-            gbBusqueda.Controls.Add(dtpFecInicio);
-            gbBusqueda.Controls.Add(label4);
-            gbBusqueda.Controls.Add(label3);
-            gbBusqueda.Location = new Point(32, 51);
-            gbBusqueda.Name = "gbBusqueda";
-            gbBusqueda.Size = new Size(1124, 78);
-            gbBusqueda.TabIndex = 7;
-            gbBusqueda.TabStop = false;
-            gbBusqueda.Text = "Busqueda";
-            // 
-            // chkAdmin
-            // 
-            chkAdmin.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            chkAdmin.AutoSize = true;
-            chkAdmin.FlatStyle = FlatStyle.Flat;
-            chkAdmin.Location = new Point(762, 34);
-            chkAdmin.Name = "chkAdmin";
-            chkAdmin.Size = new Size(165, 19);
-            chkAdmin.TabIndex = 41;
-            chkAdmin.Text = "Habilitar búsqueda general";
-            chkAdmin.UseVisualStyleBackColor = true;
-            chkAdmin.Visible = false;
-            chkAdmin.CheckedChanged += chkAdmin_CheckedChanged;
-            // 
-            // btnBuscar
-            // 
-            btnBuscar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnBuscar.BackColor = Color.Black;
-            btnBuscar.FlatAppearance.BorderSize = 0;
-            btnBuscar.FlatStyle = FlatStyle.Flat;
-            btnBuscar.Font = new Font("Leelawadee", 9.75F);
-            btnBuscar.ForeColor = SystemColors.ControlLightLight;
-            btnBuscar.Location = new Point(956, 24);
-            btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(153, 38);
-            btnBuscar.TabIndex = 40;
-            btnBuscar.Text = "BUSCAR";
-            btnBuscar.UseVisualStyleBackColor = false;
-            btnBuscar.Click += btnBuscar_Click;
-            // 
-            // txtCodEmpleado
-            // 
-            txtCodEmpleado.BorderStyle = BorderStyle.FixedSingle;
-            txtCodEmpleado.Location = new Point(549, 30);
-            txtCodEmpleado.Name = "txtCodEmpleado";
-            txtCodEmpleado.Size = new Size(184, 23);
-            txtCodEmpleado.TabIndex = 22;
-            txtCodEmpleado.Visible = false;
-            // 
-            // lblEmpleado
-            // 
-            lblEmpleado.AutoSize = true;
-            lblEmpleado.Location = new Point(422, 32);
-            lblEmpleado.Name = "lblEmpleado";
-            lblEmpleado.Size = new Size(121, 15);
-            lblEmpleado.TabIndex = 21;
-            lblEmpleado.Text = "Codigo de Empleado:";
-            lblEmpleado.Visible = false;
-            // 
-            // dtpFecFin
-            // 
-            dtpFecFin.CustomFormat = "";
-            dtpFecFin.Format = DateTimePickerFormat.Short;
-            dtpFecFin.Location = new Point(305, 30);
-            dtpFecFin.Name = "dtpFecFin";
-            dtpFecFin.Size = new Size(95, 23);
-            dtpFecFin.TabIndex = 20;
-            // 
-            // dtpFecInicio
-            // 
-            dtpFecInicio.CustomFormat = "";
-            dtpFecInicio.Format = DateTimePickerFormat.Short;
-            dtpFecInicio.Location = new Point(107, 30);
-            dtpFecInicio.Name = "dtpFecInicio";
-            dtpFecInicio.Size = new Size(95, 23);
-            dtpFecInicio.TabIndex = 19;
-            dtpFecInicio.ValueChanged += dtpFecInicio_ValueChanged;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(225, 32);
-            label4.Name = "label4";
-            label4.Size = new Size(74, 15);
-            label4.TabIndex = 18;
-            label4.Text = "Fecha de fin:";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(28, 32);
-            label3.Name = "label3";
-            label3.Size = new Size(73, 15);
-            label3.TabIndex = 17;
-            label3.Text = "Fecha inicio:";
             // 
             // codDiar
             // 
@@ -293,6 +189,111 @@
             observ.HeaderText = "Observacion";
             observ.Name = "observ";
             observ.ReadOnly = true;
+            // 
+            // gbBusqueda
+            // 
+            gbBusqueda.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            gbBusqueda.Controls.Add(chkAdmin);
+            gbBusqueda.Controls.Add(btnBuscar);
+            gbBusqueda.Controls.Add(txtCodEmpleado);
+            gbBusqueda.Controls.Add(lblEmpleado);
+            gbBusqueda.Controls.Add(dtpFecFin);
+            gbBusqueda.Controls.Add(dtpFecInicio);
+            gbBusqueda.Controls.Add(label4);
+            gbBusqueda.Controls.Add(label3);
+            gbBusqueda.Location = new Point(32, 51);
+            gbBusqueda.Name = "gbBusqueda";
+            gbBusqueda.Size = new Size(1124, 78);
+            gbBusqueda.TabIndex = 7;
+            gbBusqueda.TabStop = false;
+            gbBusqueda.Text = "Busqueda";
+            // 
+            // chkAdmin
+            // 
+            chkAdmin.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            chkAdmin.AutoSize = true;
+            chkAdmin.FlatStyle = FlatStyle.Flat;
+            chkAdmin.Location = new Point(762, 34);
+            chkAdmin.Name = "chkAdmin";
+            chkAdmin.Size = new Size(165, 19);
+            chkAdmin.TabIndex = 41;
+            chkAdmin.Text = "Habilitar búsqueda general";
+            chkAdmin.UseVisualStyleBackColor = true;
+            chkAdmin.Visible = false;
+            chkAdmin.CheckedChanged += chkAdmin_CheckedChanged;
+            // 
+            // btnBuscar
+            // 
+            btnBuscar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnBuscar.BackColor = Color.Black;
+            btnBuscar.FlatAppearance.BorderSize = 0;
+            btnBuscar.FlatStyle = FlatStyle.Flat;
+            btnBuscar.Font = new Font("Leelawadee", 9.75F);
+            btnBuscar.ForeColor = SystemColors.ControlLightLight;
+            btnBuscar.Location = new Point(956, 24);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(153, 38);
+            btnBuscar.TabIndex = 40;
+            btnBuscar.Text = "BUSCAR";
+            btnBuscar.UseVisualStyleBackColor = false;
+            btnBuscar.Click += btnBuscar_Click;
+            // 
+            // txtCodEmpleado
+            // 
+            txtCodEmpleado.BorderStyle = BorderStyle.FixedSingle;
+            txtCodEmpleado.Location = new Point(549, 30);
+            txtCodEmpleado.Name = "txtCodEmpleado";
+            txtCodEmpleado.Size = new Size(184, 23);
+            txtCodEmpleado.TabIndex = 22;
+            txtCodEmpleado.Visible = false;
+            txtCodEmpleado.KeyPress += txtCodEmpleado_KeyPress;
+            // 
+            // lblEmpleado
+            // 
+            lblEmpleado.AutoSize = true;
+            lblEmpleado.Location = new Point(422, 32);
+            lblEmpleado.Name = "lblEmpleado";
+            lblEmpleado.Size = new Size(121, 15);
+            lblEmpleado.TabIndex = 21;
+            lblEmpleado.Text = "Codigo de Empleado:";
+            lblEmpleado.Visible = false;
+            // 
+            // dtpFecFin
+            // 
+            dtpFecFin.CustomFormat = "";
+            dtpFecFin.Format = DateTimePickerFormat.Short;
+            dtpFecFin.Location = new Point(305, 30);
+            dtpFecFin.Name = "dtpFecFin";
+            dtpFecFin.Size = new Size(95, 23);
+            dtpFecFin.TabIndex = 20;
+            // 
+            // dtpFecInicio
+            // 
+            dtpFecInicio.CustomFormat = "";
+            dtpFecInicio.Format = DateTimePickerFormat.Short;
+            dtpFecInicio.Location = new Point(107, 30);
+            dtpFecInicio.Name = "dtpFecInicio";
+            dtpFecInicio.Size = new Size(95, 23);
+            dtpFecInicio.TabIndex = 19;
+            dtpFecInicio.ValueChanged += dtpFecInicio_ValueChanged;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(225, 32);
+            label4.Name = "label4";
+            label4.Size = new Size(74, 15);
+            label4.TabIndex = 18;
+            label4.Text = "Fecha de fin:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(28, 32);
+            label3.Name = "label3";
+            label3.Size = new Size(73, 15);
+            label3.TabIndex = 17;
+            label3.Text = "Fecha inicio:";
             // 
             // Asistencias
             // 
